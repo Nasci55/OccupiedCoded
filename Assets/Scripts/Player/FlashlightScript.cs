@@ -21,5 +21,32 @@ public class FlashlightScript : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0,0,rotationZ);
 
+        if (Input.GetMouseButton(0))
+        {
+            foreach (Transform child in transform) 
+            {
+                child.gameObject.SetActive(false);
+                
+            }
+        }
+        if (Input.GetMouseButton(0))
+        {
+            foreach (Transform child in transform)
+            {
+                child.gameObject.SetActive(true);
+
+            }
+        }
+
+
+    }
+
+
+    void DeactivateChildren(GameObject gb, bool turn)
+    {
+        foreach (Transform child in transform)
+        {
+            DeactivateChildren(child.gameObject, turn);            
+        }
     }
 }
