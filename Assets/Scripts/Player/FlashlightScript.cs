@@ -21,36 +21,39 @@ public class FlashlightScript : MonoBehaviour
         float rotationZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
 
         transform.rotation = Quaternion.Euler(0,0,rotationZ);
+        
+        flashlight();
+    
+    }
+
+
+    void flashlight()
+    {
         if (lightTurn == true)
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 foreach (Transform child in transform)
                 {
                     child.gameObject.SetActive(false);
-
                 }
+
+                lightTurn = false;
+                Debug.Log("Turned On");
             }
         }
         else
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 foreach (Transform child in transform)
                 {
                     child.gameObject.SetActive(true);
 
                 }
+                lightTurn = true;
+                Debug.Log("Turned Off");
             }
-        }
-    }
-
-
-    void DeactivateChildren(GameObject gb, bool turn)
-    {
-        foreach (Transform child in transform)
-        {
-            DeactivateChildren(child.gameObject, turn);            
         }
     }
 }
