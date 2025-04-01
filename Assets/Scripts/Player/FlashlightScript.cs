@@ -5,6 +5,7 @@ public class FlashlightScript : MonoBehaviour
 
     private Rigidbody2D rb;
     [SerializeField] private Camera mainCamera;
+    private bool lightTurn = true;
     private void Start()
     {
         mainCamera = Camera.main;
@@ -20,25 +21,28 @@ public class FlashlightScript : MonoBehaviour
         float rotationZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
 
         transform.rotation = Quaternion.Euler(0,0,rotationZ);
-
-        if (Input.GetMouseButton(0))
+        if (lightTurn == true)
         {
-            foreach (Transform child in transform) 
+            if (Input.GetMouseButton(0))
             {
-                child.gameObject.SetActive(false);
-                
+                foreach (Transform child in transform)
+                {
+                    child.gameObject.SetActive(false);
+
+                }
             }
         }
-        if (Input.GetMouseButton(0))
+        else
         {
-            foreach (Transform child in transform)
+            if (Input.GetMouseButton(0))
             {
-                child.gameObject.SetActive(true);
+                foreach (Transform child in transform)
+                {
+                    child.gameObject.SetActive(true);
 
+                }
             }
         }
-
-
     }
 
 
