@@ -1,0 +1,2428 @@
+fileFormatVersion: 2
+guid: 08aeef7693e8c114eabe655a55720dac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6170682682788772629
+    second: Occupied_Mocup_0
+  - first:
+      213: -8372444751492935148
+    second: Occupied_Mocup_1
+  - first:
+      213: -7659066945230628850
+    second: Occupied_Mocup_2
+  - first:
+      213: 546813249419899749
+    second: Occupied_Mocup_3
+  - first:
+      213: -993275631717680405
+    second: Occupied_Mocup_4
+  - first:
+      213: -3304592926444550160
+    second: Occupied_Mocup_5
+  - first:
+      213: 6655328871777225870
+    second: Occupied_Mocup_6
+  - first:
+      213: 5355768397863157859
+    second: Occupied_Mocup_7
+  - first:
+      213: 4515615199896389513
+    second: Occupied_Mocup_8
+  - first:
+      213: 3496662206273787029
+    second: Occupied_Mocup_9
+  - first:
+      213: -3533499781012029671
+    second: Occupied_Mocup_10
+  - first:
+      213: 8185562990068085157
+    second: Occupied_Mocup_11
+  - first:
+      213: 850309098169017970
+    second: Occupied_Mocup_12
+  - first:
+      213: -900073333801824917
+    second: Occupied_Mocup_13
+  - first:
+      213: -4469718084788390319
+    second: Occupied_Mocup_14
+  - first:
+      213: 5448930675259912428
+    second: Occupied_Mocup_15
+  - first:
+      213: 8403438731564148553
+    second: Occupied_Mocup_16
+  - first:
+      213: 7336793041111558019
+    second: Occupied_Mocup_17
+  - first:
+      213: -6194480291534840274
+    second: Occupied_Mocup_18
+  - first:
+      213: 3808956811103822127
+    second: Occupied_Mocup_19
+  - first:
+      213: 3656218031911005925
+    second: Occupied_Mocup_20
+  - first:
+      213: -6846533140688433289
+    second: Occupied_Mocup_21
+  - first:
+      213: -65148611547911462
+    second: Occupied_Mocup_22
+  - first:
+      213: 530278920477236642
+    second: Occupied_Mocup_23
+  - first:
+      213: 9092332825855955759
+    second: Occupied_Mocup_24
+  - first:
+      213: 1310927136328354534
+    second: Occupied_Mocup_25
+  - first:
+      213: 4430484206869160743
+    second: Occupied_Mocup_26
+  - first:
+      213: -4197794088657093191
+    second: Occupied_Mocup_27
+  - first:
+      213: -7361954194615472823
+    second: Occupied_Mocup_28
+  - first:
+      213: -1717952002449412116
+    second: Occupied_Mocup_29
+  - first:
+      213: 140354781725067185
+    second: Occupied_Mocup_30
+  - first:
+      213: -4090460673665103489
+    second: Occupied_Mocup_31
+  - first:
+      213: -8412827283522433557
+    second: Occupied_Mocup_32
+  - first:
+      213: 5337471187822123091
+    second: Occupied_Mocup_33
+  - first:
+      213: 8102828420973330166
+    second: Occupied_Mocup_34
+  - first:
+      213: 1674065230242674433
+    second: Occupied_Mocup_35
+  - first:
+      213: 531684236787057301
+    second: Occupied_Mocup_36
+  - first:
+      213: -2484452069319643015
+    second: Occupied_Mocup_37
+  - first:
+      213: -320753014344617042
+    second: Occupied_Mocup_38
+  - first:
+      213: 2408217144260311526
+    second: Occupied_Mocup_39
+  - first:
+      213: 7270521838990283824
+    second: Occupied_Mocup_40
+  - first:
+      213: 996962883158817141
+    second: Occupied_Mocup_41
+  - first:
+      213: 1105153411017505169
+    second: Occupied_Mocup_42
+  - first:
+      213: -3352207202094477159
+    second: Occupied_Mocup_43
+  - first:
+      213: -9027684151244797124
+    second: Occupied_Mocup_44
+  - first:
+      213: 9180670527027598919
+    second: Occupied_Mocup_45
+  - first:
+      213: -7066558084054758013
+    second: Occupied_Mocup_46
+  - first:
+      213: -6296295012003929888
+    second: Occupied_Mocup_47
+  - first:
+      213: 803925991939621720
+    second: Occupied_Mocup_48
+  - first:
+      213: -4413866433653198429
+    second: Occupied_Mocup_49
+  - first:
+      213: 1842067131796385018
+    second: Occupied_Mocup_50
+  - first:
+      213: -2985570539723151369
+    second: Occupied_Mocup_51
+  - first:
+      213: -5223950982214879285
+    second: Occupied_Mocup_52
+  - first:
+      213: -6011985327905035930
+    second: Occupied_Mocup_53
+  - first:
+      213: -7776883589138451056
+    second: Occupied_Mocup_54
+  - first:
+      213: 8747039868737051884
+    second: Occupied_Mocup_55
+  - first:
+      213: -4113247766186343330
+    second: Occupied_Mocup_56
+  - first:
+      213: -6667416863306651522
+    second: Occupied_Mocup_57
+  - first:
+      213: -9192614150297291381
+    second: Occupied_Mocup_58
+  - first:
+      213: -8177924425768208812
+    second: Occupied_Mocup_59
+  - first:
+      213: -8083863858577094390
+    second: Occupied_Mocup_60
+  - first:
+      213: -1868415286899553025
+    second: Occupied_Mocup_61
+  - first:
+      213: 6878830345057451477
+    second: Occupied_Mocup_62
+  - first:
+      213: 4087438776643900731
+    second: Occupied_Mocup_63
+  - first:
+      213: -7175960630503587758
+    second: Occupied_Mocup_64
+  - first:
+      213: 1899580154899625468
+    second: Occupied_Mocup_65
+  - first:
+      213: 5887389264725020014
+    second: Occupied_Mocup_66
+  - first:
+      213: 3468015617459434738
+    second: Occupied_Mocup_67
+  - first:
+      213: -3208769126708962937
+    second: Occupied_Mocup_68
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Occupied_Mocup_0
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 129
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 5}
+        - {x: -8, y: 5}
+        - {x: -8, y: -7}
+        - {x: 8, y: -7}
+      physicsShape:
+      - - {x: 8, y: 4}
+        - {x: -8, y: 4}
+        - {x: -8, y: -7}
+        - {x: 8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b7741d43ba2a550800000000000000
+      internalID: 6170682682788772629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_1
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 133
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 9, y: 6}
+        - {x: -9, y: 6}
+        - {x: -9, y: -4}
+        - {x: -8, y: -6}
+        - {x: 9, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4121ead8bd91fcb80800000000000000
+      internalID: -8372444751492935148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_2
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 111
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 25, y: 9}
+        - {x: -25, y: 9}
+        - {x: -25, y: -9}
+        - {x: 25, y: -9}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08979a513785b590800000000000000
+      internalID: -7659066945230628850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_3
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 63
+        width: 39
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 19.5, y: 21.5}
+        - {x: 8.5, y: 33.5}
+        - {x: -18.5, y: 33.5}
+        - {x: -19.5, y: 30.5}
+        - {x: -19.5, y: 9.5}
+        - {x: -18.5, y: 7.5}
+        - {x: -1.5, y: -33.5}
+        - {x: 19.5, y: -33.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5637622d0cba69700800000000000000
+      internalID: 546813249419899749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_4
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 95
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 15, y: 16.5}
+        - {x: -15, y: 16.5}
+        - {x: -15, y: -16.5}
+        - {x: 15, y: -16.5}
+      - - {x: -10, y: -10.5}
+        - {x: -10, y: 2.5}
+        - {x: -9, y: 3.5}
+        - {x: -7, y: 3.5}
+        - {x: -4, y: 5.5}
+        - {x: -4, y: 3.5}
+        - {x: -7, y: 0.5}
+        - {x: -7, y: -0.5}
+        - {x: -4, y: -3.5}
+        - {x: -4, y: -10.5}
+      - - {x: 7, y: 0.5}
+        - {x: 4, y: 3.5}
+        - {x: 4, y: 5.5}
+        - {x: 6, y: 3.5}
+        - {x: 10, y: 3.5}
+        - {x: 10, y: -10.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea7a67531d2732f0800000000000000
+      internalID: -993275631717680405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_5
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 96
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 15, y: 16.5}
+        - {x: -15, y: 16.5}
+        - {x: -15, y: -16.5}
+        - {x: 15, y: -16.5}
+      - - {x: -10, y: -9.5}
+        - {x: -10, y: 2.5}
+        - {x: -9, y: 3.5}
+        - {x: -7, y: 3.5}
+        - {x: -4, y: 5.5}
+        - {x: -4, y: 3.5}
+        - {x: -7, y: 0.5}
+        - {x: -7, y: -0.5}
+        - {x: -6, y: -1.5}
+        - {x: -7, y: -5.5}
+        - {x: -4, y: -8.5}
+        - {x: -4, y: -9.5}
+      - - {x: 8, y: 1.5}
+        - {x: 4, y: 3.5}
+        - {x: 4, y: 5.5}
+        - {x: 6, y: 3.5}
+        - {x: 10, y: 3.5}
+        - {x: 10, y: -9.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7010ced3ab322d0800000000000000
+      internalID: -3304592926444550160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_6
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 117
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 3}
+        - {x: -8, y: 3}
+        - {x: -8, y: -3}
+        - {x: 8, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ccea1f85a7c5c50800000000000000
+      internalID: 6655328871777225870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_7
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 117
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 2.5}
+        - {x: 5, y: 4.5}
+        - {x: -7, y: 4.5}
+        - {x: -8, y: 3.5}
+        - {x: -8, y: -4.5}
+        - {x: 8, y: -4.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36085e55bf2835a40800000000000000
+      internalID: 5355768397863157859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_8
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 117
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 2.5}
+        - {x: 5, y: 4.5}
+        - {x: -7, y: 4.5}
+        - {x: -8, y: 3.5}
+        - {x: -8, y: -4.5}
+        - {x: 8, y: -4.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987cd2c7910baae30800000000000000
+      internalID: 4515615199896389513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_9
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 111
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 17, y: 5.5}
+        - {x: 12, y: 8.5}
+        - {x: -2, y: 8.5}
+        - {x: -16, y: 4.5}
+        - {x: -17, y: 3.5}
+        - {x: -17, y: -8.5}
+        - {x: 17, y: -8.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5949b7020c3a68030800000000000000
+      internalID: 3496662206273787029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_10
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 63
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 25, y: -24}
+        - {x: 25, y: 25}
+        - {x: -25, y: 25}
+        - {x: -25, y: -23}
+        - {x: -24, y: -25}
+        - {x: 24, y: -25}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f7bd2abac76fec0800000000000000
+      internalID: -3533499781012029671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_11
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 79
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6.5, y: -6}
+        - {x: 5.5, y: -5}
+        - {x: 5.5, y: 16}
+        - {x: 4.5, y: 16}
+        - {x: 4.5, y: -5}
+        - {x: 3.5, y: -6}
+        - {x: 3.5, y: -9}
+        - {x: 6.5, y: -9}
+      - - {x: -10.5, y: 0}
+        - {x: -10.5, y: 9}
+        - {x: -10.5, y: 16}
+        - {x: -10.5, y: 17}
+        - {x: -11.5, y: 16}
+        - {x: -11.5, y: 9}
+        - {x: -11.5, y: 0}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1b795ab26f89170800000000000000
+      internalID: 8185562990068085157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_12
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 95
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 15, y: 5}
+        - {x: 10, y: 9}
+        - {x: -11, y: 9}
+        - {x: -15, y: 6}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276a5a1ae97eccb00800000000000000
+      internalID: 850309098169017970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_13
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 95
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 4}
+        - {x: 3, y: 9}
+        - {x: -7, y: 9}
+        - {x: -7, y: -9}
+        - {x: 7, y: -9}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6dc0fa521c4283f0800000000000000
+      internalID: -900073333801824917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_14
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 95
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 9}
+        - {x: -7, y: 9}
+        - {x: -7, y: -9}
+        - {x: 7, y: -9}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1567c0e551f58f1c0800000000000000
+      internalID: -4469718084788390319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_15
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 95
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 7}
+        - {x: 5, y: 8}
+        - {x: -7, y: 8}
+        - {x: -7, y: -8}
+        - {x: 7, y: -8}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0b898549d7e9b40800000000000000
+      internalID: 5448930675259912428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_16
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 95
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 6}
+        - {x: -7, y: 6}
+        - {x: -7, y: -6}
+        - {x: 7, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947e3a6c0030f9470800000000000000
+      internalID: 8403438731564148553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_17
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 101
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 3}
+        - {x: -8, y: 3}
+        - {x: -8, y: -3}
+        - {x: 8, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387230e166681d560800000000000000
+      internalID: 7336793041111558019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_18
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 101
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 2.5}
+        - {x: 5, y: 4.5}
+        - {x: -7, y: 4.5}
+        - {x: -8, y: 3.5}
+        - {x: -8, y: -4.5}
+        - {x: 8, y: -4.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e58ee9ef8c80aa0800000000000000
+      internalID: -6194480291534840274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_19
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 101
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 2.5}
+        - {x: 5, y: 4.5}
+        - {x: -7, y: 4.5}
+        - {x: -8, y: 3.5}
+        - {x: -8, y: -4.5}
+        - {x: 8, y: -4.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21e5aaf9022cd430800000000000000
+      internalID: 3808956811103822127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_20
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 95
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 17, y: 5.5}
+        - {x: 12, y: 8.5}
+        - {x: -2, y: 8.5}
+        - {x: -16, y: 4.5}
+        - {x: -17, y: 3.5}
+        - {x: -17, y: -8.5}
+        - {x: 17, y: -8.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eeee65bdee7db230800000000000000
+      internalID: 3656218031911005925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_21
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 47
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 17, y: 25}
+        - {x: -12, y: 25}
+        - {x: -17, y: 18}
+        - {x: -17, y: -25}
+        - {x: 17, y: -25}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f835e026a3cf0a0800000000000000
+      internalID: -6846533140688433289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_22
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 64
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 15, y: 16.5}
+        - {x: -15, y: 16.5}
+        - {x: -15, y: -16.5}
+        - {x: 15, y: -16.5}
+      - - {x: -10, y: -10.5}
+        - {x: -10, y: 2.5}
+        - {x: -9, y: 3.5}
+        - {x: -7, y: 3.5}
+        - {x: -4, y: 5.5}
+        - {x: -4, y: 2.5}
+        - {x: -7, y: -0.5}
+        - {x: -7, y: -1.5}
+        - {x: -4, y: -4.5}
+        - {x: -4, y: -10.5}
+      - - {x: 7, y: -0.5}
+        - {x: 4, y: 2.5}
+        - {x: 4, y: 5.5}
+        - {x: 6, y: 3.5}
+        - {x: 10, y: 3.5}
+        - {x: 10, y: -10.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adaa317deab881ff0800000000000000
+      internalID: -65148611547911462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_23
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 64
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 15, y: 16.5}
+        - {x: -15, y: 16.5}
+        - {x: -15, y: -16.5}
+        - {x: 15, y: -16.5}
+      - - {x: -10, y: -9.5}
+        - {x: -10, y: 2.5}
+        - {x: -9, y: 3.5}
+        - {x: -7, y: 3.5}
+        - {x: -4, y: 5.5}
+        - {x: -4, y: 3.5}
+        - {x: -7, y: 0.5}
+        - {x: -7, y: -0.5}
+        - {x: -6, y: -1.5}
+        - {x: -7, y: -5.5}
+        - {x: -4, y: -8.5}
+        - {x: -4, y: -9.5}
+      - - {x: 8, y: 1.5}
+        - {x: 4, y: 3.5}
+        - {x: 4, y: 5.5}
+        - {x: 6, y: 3.5}
+        - {x: 10, y: 3.5}
+        - {x: 10, y: -9.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad5cee5eddeb5700800000000000000
+      internalID: 530278920477236642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_24
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 85
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 3}
+        - {x: -8, y: 3}
+        - {x: -8, y: -3}
+        - {x: 8, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2394c828847e2e70800000000000000
+      internalID: 9092332825855955759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 85
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 2.5}
+        - {x: 5, y: 4.5}
+        - {x: -7, y: 4.5}
+        - {x: -8, y: 3.5}
+        - {x: -8, y: -4.5}
+        - {x: 8, y: -4.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea854fe849513210800000000000000
+      internalID: 1310927136328354534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_26
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 85
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 2.5}
+        - {x: 5, y: 4.5}
+        - {x: -7, y: 4.5}
+        - {x: -8, y: 3.5}
+        - {x: -8, y: -4.5}
+        - {x: 8, y: -4.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7232a6599ed3c7d30800000000000000
+      internalID: 4430484206869160743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_27
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 79
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 17, y: 5.5}
+        - {x: 12, y: 8.5}
+        - {x: -2, y: 8.5}
+        - {x: -16, y: 4.5}
+        - {x: -17, y: 3.5}
+        - {x: -17, y: -8.5}
+        - {x: 17, y: -8.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdfb5964807eb5c0800000000000000
+      internalID: -4197794088657093191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_28
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 72
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 3, y: 3}
+        - {x: -4, y: 3}
+        - {x: -6, y: 0}
+        - {x: -6, y: -3}
+        - {x: 6, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d6f315aa515d990800000000000000
+      internalID: -7361954194615472823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_29
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 31
+        width: 12
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6, y: 20}
+        - {x: 5, y: 21}
+        - {x: -5, y: 21}
+        - {x: -6, y: 20}
+        - {x: -6, y: -21}
+        - {x: 6, y: -21}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefe4d081cb9828e0800000000000000
+      internalID: -1717952002449412116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_30
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 31
+        width: 17
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8.5, y: 3}
+        - {x: 6.5, y: 20}
+        - {x: 5.5, y: 21}
+        - {x: -4.5, y: 21}
+        - {x: -5.5, y: 20}
+        - {x: -4.5, y: 16}
+        - {x: -8.5, y: -6}
+        - {x: -8.5, y: -19}
+        - {x: -6.5, y: -21}
+        - {x: 8.5, y: -21}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7004b2ee3a2f100800000000000000
+      internalID: 140354781725067185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_31
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 72
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 3, y: 3}
+        - {x: -4, y: 3}
+        - {x: -6, y: 0}
+        - {x: -6, y: -3}
+        - {x: 6, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f798c7280b3cb37c0800000000000000
+      internalID: -4090460673665103489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_32
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 72
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 3, y: 3}
+        - {x: -4, y: 3}
+        - {x: -6, y: 0}
+        - {x: -6, y: -3}
+        - {x: 6, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed4ee0a822af3b80800000000000000
+      internalID: -8412827283522433557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_33
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 31
+        width: 12
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6, y: 20}
+        - {x: 5, y: 21}
+        - {x: -6, y: 21}
+        - {x: -6, y: -21}
+        - {x: 6, y: -21}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358150524c1821a40800000000000000
+      internalID: 5337471187822123091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_34
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 63
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 15, y: 5}
+        - {x: 10, y: 9}
+        - {x: -11, y: 9}
+        - {x: -15, y: 6}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fefd0ca487037070800000000000000
+      internalID: 8102828420973330166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_35
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 63
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 4}
+        - {x: 3, y: 9}
+        - {x: -7, y: 9}
+        - {x: -7, y: -9}
+        - {x: 7, y: -9}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107727315797b3710800000000000000
+      internalID: 1674065230242674433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_36
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 63
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 9}
+        - {x: -4, y: 9}
+        - {x: -7, y: 6}
+        - {x: -7, y: -9}
+        - {x: 7, y: -9}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5920e521ffbe06700800000000000000
+      internalID: 531684236787057301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_37
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 63
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 7}
+        - {x: 5, y: 8}
+        - {x: -7, y: 8}
+        - {x: -7, y: -8}
+        - {x: 7, y: -8}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970f7b29104758dd0800000000000000
+      internalID: -2484452069319643015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_38
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 63
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 6}
+        - {x: -7, y: 6}
+        - {x: -7, y: -6}
+        - {x: 7, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea37a5735d47c8bf0800000000000000
+      internalID: -320753014344617042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_39
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 31
+        width: 15
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7.5, y: 21}
+        - {x: -4.5, y: 21}
+        - {x: -7.5, y: 19}
+        - {x: -7.5, y: -21}
+        - {x: 7.5, y: -21}
+      - - {x: -1.5, y: -3}
+        - {x: -2.5, y: 5}
+        - {x: -1.5, y: 4}
+        - {x: 1.5, y: 4}
+        - {x: 2.5, y: 5}
+        - {x: 1.5, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e934a1cbb4bb6120800000000000000
+      internalID: 2408217144260311526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_40
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 31
+        width: 15
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7.5, y: 21}
+        - {x: -4.5, y: 21}
+        - {x: -7.5, y: 19}
+        - {x: -7.5, y: -21}
+        - {x: 7.5, y: -21}
+      - - {x: -1.5, y: -3}
+        - {x: -2.5, y: 5}
+        - {x: -1.5, y: 4}
+        - {x: 1.5, y: 4}
+        - {x: 2.5, y: 5}
+        - {x: 1.5, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0345cb8771516e460800000000000000
+      internalID: 7270521838990283824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_41
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 31
+        width: 15
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7.5, y: 21}
+        - {x: -4.5, y: 21}
+        - {x: -7.5, y: 19}
+        - {x: -7.5, y: -21}
+        - {x: 7.5, y: -21}
+      - - {x: -1.5, y: -3}
+        - {x: -2.5, y: 5}
+        - {x: -1.5, y: 4}
+        - {x: 1.5, y: 4}
+        - {x: 2.5, y: 5}
+        - {x: 1.5, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5793ee8c57ce5dd00800000000000000
+      internalID: 996962883158817141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_42
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 15
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 17}
+        - {x: -7, y: 17}
+        - {x: -7, y: -17}
+        - {x: 7, y: -17}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19972060c2b465f00800000000000000
+      internalID: 1105153411017505169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_43
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 15
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 17}
+        - {x: -7, y: 17}
+        - {x: -7, y: -17}
+        - {x: 7, y: -17}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99017a97f419a71d0800000000000000
+      internalID: -3352207202094477159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_44
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 15
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 9, y: 17}
+        - {x: -9, y: 17}
+        - {x: -9, y: -17}
+        - {x: 9, y: -17}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b41ac581937b280800000000000000
+      internalID: -9027684151244797124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_45
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 15
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 9, y: 17}
+        - {x: -9, y: 17}
+        - {x: -9, y: -17}
+        - {x: 9, y: -17}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746d06bf33b486f70800000000000000
+      internalID: 9180670527027598919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_46
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 47
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 25, y: 9}
+        - {x: -25, y: 9}
+        - {x: -25, y: -9}
+        - {x: 25, y: -9}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d404fdcda8eed90800000000000000
+      internalID: -7066558084054758013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_47
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 47
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 3.5}
+        - {x: 5, y: 6.5}
+        - {x: -5, y: 6.5}
+        - {x: -8, y: 4.5}
+        - {x: -8, y: -4.5}
+        - {x: -6, y: -6.5}
+        - {x: 8, y: -6.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e02178bb011f98a0800000000000000
+      internalID: -6296295012003929888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_48
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 47
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 3.5}
+        - {x: 5, y: 6.5}
+        - {x: -5, y: 6.5}
+        - {x: -8, y: 4.5}
+        - {x: -8, y: -4.5}
+        - {x: -6, y: -6.5}
+        - {x: 8, y: -6.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853c3472e6e182b00800000000000000
+      internalID: 803925991939621720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_49
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 47
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 4, y: -1}
+        - {x: 4, y: 3}
+        - {x: -4, y: 3}
+        - {x: -4, y: 0}
+        - {x: -2, y: -3}
+        - {x: 2, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1b4104ddbceb2c0800000000000000
+      internalID: -4413866433653198429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_50
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 47
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 4, y: -1}
+        - {x: 4, y: 3}
+        - {x: -4, y: 3}
+        - {x: -4, y: 0}
+        - {x: -2, y: -3}
+        - {x: 2, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc6523fb46509910800000000000000
+      internalID: 1842067131796385018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_51
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 31
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 15, y: 5}
+        - {x: 10, y: 9}
+        - {x: -11, y: 9}
+        - {x: -15, y: 6}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f72eef896f1196d0800000000000000
+      internalID: -2985570539723151369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_52
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 31
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 6.5}
+        - {x: 5, y: 8.5}
+        - {x: -7, y: 8.5}
+        - {x: -7, y: -8.5}
+        - {x: 7, y: -8.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc77705624cc087b0800000000000000
+      internalID: -5223950982214879285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_53
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 31
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 8.5}
+        - {x: -1, y: 8.5}
+        - {x: -7, y: 5.5}
+        - {x: -7, y: -8.5}
+        - {x: 7, y: -8.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6692c577233219ca0800000000000000
+      internalID: -6011985327905035930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_54
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 31
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 15, y: 16.5}
+        - {x: -15, y: 16.5}
+        - {x: -15, y: -16.5}
+        - {x: 15, y: -16.5}
+      - - {x: -10, y: -10.5}
+        - {x: -10, y: 2.5}
+        - {x: -9, y: 3.5}
+        - {x: -7, y: 3.5}
+        - {x: -4, y: 5.5}
+        - {x: -4, y: 3.5}
+        - {x: -7, y: 0.5}
+        - {x: -7, y: -0.5}
+        - {x: -4, y: -3.5}
+        - {x: -4, y: -10.5}
+      - - {x: 7, y: 0.5}
+        - {x: 4, y: 3.5}
+        - {x: 4, y: 5.5}
+        - {x: 6, y: 3.5}
+        - {x: 10, y: 3.5}
+        - {x: 10, y: -10.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09576d15495f21490800000000000000
+      internalID: -7776883589138451056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_55
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 31
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 15, y: 16.5}
+        - {x: -15, y: 16.5}
+        - {x: -15, y: -16.5}
+        - {x: 15, y: -16.5}
+      - - {x: -10, y: -9.5}
+        - {x: -10, y: 2.5}
+        - {x: -9, y: 3.5}
+        - {x: -7, y: 3.5}
+        - {x: -4, y: 5.5}
+        - {x: -4, y: 3.5}
+        - {x: -7, y: 0.5}
+        - {x: -7, y: -0.5}
+        - {x: -6, y: -1.5}
+        - {x: -7, y: -5.5}
+        - {x: -4, y: -8.5}
+        - {x: -4, y: -9.5}
+      - - {x: 8, y: 1.5}
+        - {x: 4, y: 3.5}
+        - {x: 4, y: 5.5}
+        - {x: 6, y: 3.5}
+        - {x: 10, y: 3.5}
+        - {x: 10, y: -9.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec5044ba6ab36970800000000000000
+      internalID: 8747039868737051884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_56
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 31
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6, y: 11}
+        - {x: 5, y: 16}
+        - {x: -3, y: 16}
+        - {x: -6, y: 13}
+        - {x: -6, y: -15}
+        - {x: -5, y: -16}
+        - {x: 6, y: -16}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e544b4713fecae6c0800000000000000
+      internalID: -4113247766186343330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_57
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 31
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6, y: 11}
+        - {x: 5, y: 16}
+        - {x: -3, y: 16}
+        - {x: -6, y: 13}
+        - {x: -6, y: -15}
+        - {x: -5, y: -16}
+        - {x: 6, y: -16}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78682530b39873a0800000000000000
+      internalID: -6667416863306651522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_58
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 31
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6, y: 11}
+        - {x: 5, y: 16}
+        - {x: -3, y: 16}
+        - {x: -6, y: 13}
+        - {x: -6, y: -15}
+        - {x: -5, y: -16}
+        - {x: 6, y: -16}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85fc4682264d6080800000000000000
+      internalID: -9192614150297291381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_59
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 31
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 14, y: 6}
+        - {x: -14, y: 6}
+        - {x: -14, y: -6}
+        - {x: 14, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4567812301d228e80800000000000000
+      internalID: -8177924425768208812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_60
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 31
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 14, y: 6}
+        - {x: -14, y: 6}
+        - {x: -14, y: -6}
+        - {x: 14, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09c4e896a850df80800000000000000
+      internalID: -8083863858577094390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_61
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 31
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 5.5}
+        - {x: 2, y: 7.5}
+        - {x: -6, y: 7.5}
+        - {x: -7, y: 6.5}
+        - {x: -7, y: -7.5}
+        - {x: 7, y: -7.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc4173223e0216e0800000000000000
+      internalID: -1868415286899553025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_62
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 31
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 5.5}
+        - {x: -7, y: 5.5}
+        - {x: -7, y: -5.5}
+        - {x: 7, y: -5.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddb353d0c3867f50800000000000000
+      internalID: 6878830345057451477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_63
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 0
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6, y: 10.5}
+        - {x: 2, y: 12.5}
+        - {x: -4, y: 12.5}
+        - {x: -6, y: 8.5}
+        - {x: -6, y: -10.5}
+        - {x: -4, y: -12.5}
+        - {x: 6, y: -12.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35540349ef79b830800000000000000
+      internalID: 4087438776643900731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_64
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 0
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6, y: 10.5}
+        - {x: 2, y: 12.5}
+        - {x: -4, y: 12.5}
+        - {x: -6, y: 8.5}
+        - {x: -6, y: -10.5}
+        - {x: -4, y: -12.5}
+        - {x: 6, y: -12.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25045a093ddd96c90800000000000000
+      internalID: -7175960630503587758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_65
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 0
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6, y: 10.5}
+        - {x: 2, y: 12.5}
+        - {x: -4, y: 12.5}
+        - {x: -6, y: 8.5}
+        - {x: -6, y: -10.5}
+        - {x: -4, y: -12.5}
+        - {x: 6, y: -12.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf57c23261aac5a10800000000000000
+      internalID: 1899580154899625468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_66
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 0
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 14}
+        - {x: -6, y: 14}
+        - {x: -8, y: 10}
+        - {x: -8, y: -14}
+        - {x: 8, y: -14}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d0262f75534b150800000000000000
+      internalID: 5887389264725020014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_67
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 0
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 14}
+        - {x: -6, y: 14}
+        - {x: -8, y: 10}
+        - {x: -8, y: -14}
+        - {x: 8, y: -14}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f43d2a64ddd02030800000000000000
+      internalID: 3468015617459434738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Occupied_Mocup_68
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 0
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 14}
+        - {x: -6, y: 14}
+        - {x: -8, y: 10}
+        - {x: -8, y: -14}
+        - {x: 8, y: -14}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7899544ea792873d0800000000000000
+      internalID: -3208769126708962937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 236dbe089095a76439bf1aa030147605
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Occupied_Mocup_0: 6170682682788772629
+      Occupied_Mocup_1: -8372444751492935148
+      Occupied_Mocup_10: -3533499781012029671
+      Occupied_Mocup_11: 8185562990068085157
+      Occupied_Mocup_12: 850309098169017970
+      Occupied_Mocup_13: -900073333801824917
+      Occupied_Mocup_14: -4469718084788390319
+      Occupied_Mocup_15: 5448930675259912428
+      Occupied_Mocup_16: 8403438731564148553
+      Occupied_Mocup_17: 7336793041111558019
+      Occupied_Mocup_18: -6194480291534840274
+      Occupied_Mocup_19: 3808956811103822127
+      Occupied_Mocup_2: -7659066945230628850
+      Occupied_Mocup_20: 3656218031911005925
+      Occupied_Mocup_21: -6846533140688433289
+      Occupied_Mocup_22: -65148611547911462
+      Occupied_Mocup_23: 530278920477236642
+      Occupied_Mocup_24: 9092332825855955759
+      Occupied_Mocup_25: 1310927136328354534
+      Occupied_Mocup_26: 4430484206869160743
+      Occupied_Mocup_27: -4197794088657093191
+      Occupied_Mocup_28: -7361954194615472823
+      Occupied_Mocup_29: -1717952002449412116
+      Occupied_Mocup_3: 546813249419899749
+      Occupied_Mocup_30: 140354781725067185
+      Occupied_Mocup_31: -4090460673665103489
+      Occupied_Mocup_32: -8412827283522433557
+      Occupied_Mocup_33: 5337471187822123091
+      Occupied_Mocup_34: 8102828420973330166
+      Occupied_Mocup_35: 1674065230242674433
+      Occupied_Mocup_36: 531684236787057301
+      Occupied_Mocup_37: -2484452069319643015
+      Occupied_Mocup_38: -320753014344617042
+      Occupied_Mocup_39: 2408217144260311526
+      Occupied_Mocup_4: -993275631717680405
+      Occupied_Mocup_40: 7270521838990283824
+      Occupied_Mocup_41: 996962883158817141
+      Occupied_Mocup_42: 1105153411017505169
+      Occupied_Mocup_43: -3352207202094477159
+      Occupied_Mocup_44: -9027684151244797124
+      Occupied_Mocup_45: 9180670527027598919
+      Occupied_Mocup_46: -7066558084054758013
+      Occupied_Mocup_47: -6296295012003929888
+      Occupied_Mocup_48: 803925991939621720
+      Occupied_Mocup_49: -4413866433653198429
+      Occupied_Mocup_5: -3304592926444550160
+      Occupied_Mocup_50: 1842067131796385018
+      Occupied_Mocup_51: -2985570539723151369
+      Occupied_Mocup_52: -5223950982214879285
+      Occupied_Mocup_53: -6011985327905035930
+      Occupied_Mocup_54: -7776883589138451056
+      Occupied_Mocup_55: 8747039868737051884
+      Occupied_Mocup_56: -4113247766186343330
+      Occupied_Mocup_57: -6667416863306651522
+      Occupied_Mocup_58: -9192614150297291381
+      Occupied_Mocup_59: -8177924425768208812
+      Occupied_Mocup_6: 6655328871777225870
+      Occupied_Mocup_60: -8083863858577094390
+      Occupied_Mocup_61: -1868415286899553025
+      Occupied_Mocup_62: 6878830345057451477
+      Occupied_Mocup_63: 4087438776643900731
+      Occupied_Mocup_64: -7175960630503587758
+      Occupied_Mocup_65: 1899580154899625468
+      Occupied_Mocup_66: 5887389264725020014
+      Occupied_Mocup_67: 3468015617459434738
+      Occupied_Mocup_68: -3208769126708962937
+      Occupied_Mocup_7: 5355768397863157859
+      Occupied_Mocup_8: 4515615199896389513
+      Occupied_Mocup_9: 3496662206273787029
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
