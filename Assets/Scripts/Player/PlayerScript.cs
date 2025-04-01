@@ -44,5 +44,10 @@ public class PlayerScript : MonoBehaviour
         {
             rb.AddForce(Vector2.up * velocity.y, ForceMode2D.Impulse);
         }
+
+        if (Input.GetKey(KeyCode.LeftShift) == true)
+        {
+            rb.linearVelocity = new Vector2(moveDir * velocity.x/2, rb.linearVelocity.y);
+        }
     }
 }
