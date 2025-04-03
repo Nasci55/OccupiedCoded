@@ -31,7 +31,7 @@ public class FlashlightScript : MonoBehaviour
     {
         if (lightTurn == true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && (transform.right.x > 0))
             {
                 foreach (Transform child in transform)
                 {
@@ -44,7 +44,7 @@ public class FlashlightScript : MonoBehaviour
         }
         else
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && (transform.right.x < 0))
             {
                 foreach (Transform child in transform)
                 {

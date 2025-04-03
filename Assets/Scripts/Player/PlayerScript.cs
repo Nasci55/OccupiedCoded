@@ -1,19 +1,33 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR;
 
 public class PlayerScript : MonoBehaviour
 {
-
+    [SerializeField]
+    private float groundCheckRadius = 2.0f;
     [SerializeField]
     private Vector2 velocity;
-    private Rigidbody2D rb;
     [SerializeField]
+    private Transform groundCheck;
+    [SerializeField]
+    private LayerMask groundCheckLayers;
+    [SerializeField]
+    private float jumpMaxDuration;
+    [SerializeField]
+    private float gravityScaling = 2.0f;
+    [SerializeField]
+    private Transform cameraTarget;
+
+    private float jumpTimer;
+    private Rigidbody2D rb;
     private string horizontalAxisName = "Horizontal";
     private SpriteRenderer spriteRenderer;
     private Camera mainCamera;
+    private bool isGrounded;
+    private float originalGravity = 1;
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         mainCamera = Camera.main;
@@ -24,10 +38,16 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ComputeGrounded();
+        
         Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         float moveDir = Input.GetAxis(horizontalAxisName);
 
-        rb.linearVelocity = new Vector2(moveDir * velocity.x, rb.linearVelocity.y);
+
+        Vector2 currentVelocity = rb.linearVelocity;
+
+        currentVelocity.x = moveDir * velocity.x;
+
 
         if (mousePos.x < transform.position.x)
         {
@@ -40,14 +60,59 @@ public class PlayerScript : MonoBehaviour
         
         
         
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Jump"))
         {
-            rb.AddForce(Vector2.up * velocity.y, ForceMode2D.Impulse);
+            if (isGrounded)
+            {
+                currentVelocity.y = velocity.y;
+                jumpTimer = 0;
+                rb.gravityScale = originalGravity;
+            }
+        }
+        else if (jumpTimer < jumpMaxDuration)
+        {
+            jumpTimer += Time.deltaTime;
+            if (Input.GetButton("Jump"))
+            {
+                rb.gravityScale = Mathf.Lerp(gravityScaling, originalGravity, jumpTimer/jumpMaxDuration);
+            }
+            else
+            {
+                jumpTimer = jumpMaxDuration;
+                rb.gravityScale = originalGravity;
+            }
+        }
+        else
+        {
+            rb.gravityScale = originalGravity;
         }
 
         if (Input.GetKey(KeyCode.LeftShift) == true)
         {
-            rb.linearVelocity = new Vector2(moveDir * velocity.x/2, rb.linearVelocity.y);
+            currentVelocity.x /= 3;
         }
+        
+        rb.linearVelocity = currentVelocity;
+    }
+
+
+    void ComputeGrounded()
+    {
+        Collider2D collider = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundCheckLayers);
+
+        if (collider != null)
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+
+    }
+
+    public Transform GetCameraTarget()
+    {
+        return cameraTarget;
     }
 }

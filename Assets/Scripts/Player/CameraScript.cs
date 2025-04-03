@@ -2,28 +2,25 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
+    [SerializeField] private float cameraSpeed = 100.0f;
     private Transform playerTransform;
-    private Transform camLocation;
     void Start()
     {
-        camLocation = GetComponent<Transform>();
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        playerTransform = player.transform;
         
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (playerTransform == null)
+        {
+            PlayerScript player = FindFirstObjectByType<PlayerScript>();
+            if (player == null) return;
+            playerTransform = player.GetCameraTarget();
+        }
 
-        if (playerTransform.rotation.y == 0)
-        {
-            camLocation.position = new Vector3(playerTransform.position.x + 50, playerTransform.position.y + 50, -10f);
-        }
-        else
-        {
-            camLocation.position = new Vector3(playerTransform.position.x - 50, playerTransform.position.y + 50, -10f);
-            
-        }
+        Vector3 targetPos = playerTransform.position;
+        targetPos.z = transform.position.z;
+        transform.position = Vector3.MoveTowards(transform.position, targetPos, cameraSpeed * Time.deltaTime);
     }
 }

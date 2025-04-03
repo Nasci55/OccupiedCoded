@@ -203,6 +203,37 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &159196293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159196294}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &159196294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159196293}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.41, y: -0.23, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1937834012}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &442711591
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4b58e927bfa5034c8d3e6301e0ad7b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraSpeed: 100
 --- !u!1 &1155373562
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +684,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 519420031}
+--- !u!1 &1455457418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455457419}
+  m_Layer: 0
+  m_Name: CameraTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1455457419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455457418}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 39.7, y: 11.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1937834012}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1739550853
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,7 +810,7 @@ GameObject:
   - component: {fileID: 1866423304}
   - component: {fileID: 1866423307}
   - component: {fileID: 1866423305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -763,8 +826,8 @@ Transform:
   m_GameObject: {fileID: 1866423303}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.39, y: -4.05, z: -0.011528843}
-  m_LocalScale: {x: 413.97, y: 1.1768, z: 1.1768}
+  m_LocalPosition: {x: -0.39, y: -9.1, z: -0.011528843}
+  m_LocalScale: {x: 413.97, y: 8.037426, z: 1.1768}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1169901504}
@@ -901,8 +964,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdee9a1a60424b9499132f48ebf59219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: 100, y: 100}
-  horizontalAxisName: Horizontal
+  groundCheckRadius: 5
+  velocity: {x: 100, y: 130}
+  groundCheck: {fileID: 159196294}
+  groundCheckLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  jumpMaxDuration: 1
+  gravityScaling: 3
+  cameraTarget: {fileID: 1455457419}
 --- !u!61 &1937834009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -937,7 +1007,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 9.62639}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.6666667, y: 0}
@@ -947,7 +1017,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 4.83889, y: 19.25288}
   m_EdgeRadius: 0
 --- !u!50 &1937834010
 Rigidbody2D:
@@ -975,7 +1045,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!4 &1937834012
 Transform:
   m_ObjectHideFlags: 0
@@ -991,6 +1061,8 @@ Transform:
   m_Children:
   - {fileID: 442711592}
   - {fileID: 1178380500}
+  - {fileID: 159196294}
+  - {fileID: 1455457419}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
