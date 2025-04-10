@@ -471,7 +471,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4b58e927bfa5034c8d3e6301e0ad7b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraSpeed: 100
+  type: 2
+  cameraSpeed: 0.06
+  offset: {x: 0, y: 38, z: 0}
 --- !u!1 &1155373562
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +485,7 @@ GameObject:
   - component: {fileID: 1155373565}
   - component: {fileID: 1155373564}
   - component: {fileID: 1155373563}
+  - component: {fileID: 1155373566}
   m_Layer: 0
   m_Name: Beartrap
   m_TagString: Untagged
@@ -520,7 +523,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -606,6 +609,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1155373566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155373562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ab78078efcbcb409f364062c5533a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1169901503
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,7 +959,8 @@ GameObject:
   - component: {fileID: 1937834012}
   - component: {fileID: 1937834010}
   - component: {fileID: 1937834009}
-  - component: {fileID: 1937834008}
+  - component: {fileID: 1937834013}
+  - component: {fileID: 1937834014}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -952,27 +968,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1937834008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937834007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdee9a1a60424b9499132f48ebf59219, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groundCheckRadius: 5
-  velocity: {x: 100, y: 130}
-  groundCheck: {fileID: 159196294}
-  groundCheckLayers:
-    serializedVersion: 2
-    m_Bits: 64
-  jumpMaxDuration: 1
-  gravityScaling: 3
-  cameraTarget: {fileID: 1455457419}
 --- !u!61 &1937834009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1065,6 +1060,46 @@ Transform:
   - {fileID: 1455457419}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1937834013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937834007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdee9a1a60424b9499132f48ebf59219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundCheckRadius: 5
+  velocity: {x: 100, y: 100}
+  groundCheck: {fileID: 159196294}
+  groundCheckLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  jumpMaxDuration: 1
+  gravityScaling: 3
+  cameraTarget: {fileID: 1455457419}
+--- !u!251 &1937834014
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937834007}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
