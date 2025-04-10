@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR;
 
-public class PlayerScript : MonoBehaviour
+public class Player : MonoBehaviour
 {
     [SerializeField]
     private float groundCheckRadius = 2.0f;
@@ -33,7 +33,7 @@ public class PlayerScript : MonoBehaviour
         mainCamera = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+    }   
 
     // Update is called once per frame
     void Update()
@@ -96,7 +96,7 @@ public class PlayerScript : MonoBehaviour
     }
 
 
-    void ComputeGrounded()
+    private void ComputeGrounded()
     {
         Collider2D collider = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundCheckLayers);
 
@@ -110,6 +110,8 @@ public class PlayerScript : MonoBehaviour
         }
 
     }
+
+    public bool GetIsGrounded => isGrounded;
 
     public Transform GetCameraTarget()
     {
