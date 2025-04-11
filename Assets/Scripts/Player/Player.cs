@@ -18,6 +18,10 @@ public class Player : MonoBehaviour
     private float gravityScaling = 2.0f;
     [SerializeField]
     private Transform cameraTarget;
+    [SerializeField]
+    private ParticleSystem _explosionParticle;
+    [SerializeField]
+    private ParticleSystem _bubbleParticle;
 
     private float jumpTimer;
     private Rigidbody2D rb;
@@ -33,13 +37,13 @@ public class Player : MonoBehaviour
         mainCamera = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-    }   
+    }
 
     // Update is called once per frame
     void Update()
     {
         ComputeGrounded();
-        
+
         Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         float moveDir = Input.GetAxis(horizontalAxisName);
 
@@ -53,13 +57,13 @@ public class Player : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0.0f, 180.0f, 0.0f);
         }
-        else if(mousePos.x > transform.position.x)
+        else if (mousePos.x > transform.position.x)
         {
             transform.rotation = Quaternion.identity;
         }
-        
-        
-        
+
+
+
         if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded)
@@ -74,7 +78,7 @@ public class Player : MonoBehaviour
             jumpTimer += Time.deltaTime;
             if (Input.GetButton("Jump"))
             {
-                rb.gravityScale = Mathf.Lerp(gravityScaling, originalGravity, jumpTimer/jumpMaxDuration);
+                rb.gravityScale = Mathf.Lerp(gravityScaling, originalGravity, jumpTimer / jumpMaxDuration);
             }
             else
             {
@@ -91,8 +95,35 @@ public class Player : MonoBehaviour
         {
             currentVelocity.x /= 3;
         }
-        
+
         rb.linearVelocity = currentVelocity;
+
+        Explosion();
+        BUBBLES();
+
+
+    }
+
+    private void Explosion()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            _explosionParticle.Play();
+        }
+
+    }
+
+    private void BUBBLES()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            _bubbleParticle.Play();
+        }
+        else if (Input.GetKeyUp(KeyCode.Space))
+        {
+            _bubbleParticle.Stop();
+        }
+
     }
 
 
