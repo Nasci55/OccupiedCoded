@@ -1,26 +1,12 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections;
 
 public class TrapThatPlayerCanTurnOff : MonoBehaviour 
 {
-    private bool trapAcitvate = false;
-    private Player player;
-    private Collider2D trapCollider;
-    private Collider2D playerCollision;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        player = FindFirstObjectByType<Player>();
-        playerCollision = player.GetComponent<Collider2D>();
-        trapCollider = GetComponent<Collider2D>();
+        Debug.Log($"{name} collided with {collider.name}");
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-    
-    }
-
 
 }
