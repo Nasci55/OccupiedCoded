@@ -5,7 +5,7 @@ public class HealthSystem : MonoBehaviour
 {
     [SerializeField] private int MaxHealth = 3; 
 
-    int health;
+    private int health;
 
     private void Start()
     {
@@ -14,6 +14,7 @@ public class HealthSystem : MonoBehaviour
 
     public void DealDamage(int damage)
     {
+
         if (health > 0)
         {
             health -= damage;
@@ -23,4 +24,6 @@ public class HealthSystem : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public int Health { get => health; }
 }

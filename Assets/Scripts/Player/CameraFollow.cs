@@ -25,23 +25,9 @@ public class CameraFollow : MonoBehaviour
 
         Vector3 targetPos = playerTransform.position + offset;
         targetPos.z = transform.position.z;
-//        transform.position = Vector3.MoveTowards(transform.position, targetPos, cameraSpeed* Time.fixedDeltaTime);
-        
-        switch (type)
-        {
-            case Type.Teleport:
-                transform.position = targetPos;
-                break;
-            case Type.Linear:
-                transform.position = Vector3.MoveTowards(transform.position, targetPos, cameraSpeed * Time.fixedDeltaTime);
-                break;
-            case Type.FeedbackLoop:
-                {
-                    Vector3 toDestination = targetPos - transform.position;
-                    transform.position += toDestination * cameraSpeed;
-                }
-                break;
 
-        }
+      
+        Vector3 toDestination = targetPos - transform.position;
+        transform.position += toDestination * cameraSpeed;
     }
 }
