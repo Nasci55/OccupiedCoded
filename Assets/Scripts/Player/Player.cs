@@ -5,31 +5,33 @@ using UnityEngine.XR;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private float groundCheckRadius = 2.0f;
+    private float          groundCheckRadius = 2.0f;
     [SerializeField]
-    private Vector2 velocity;
+    private Vector2        velocity;
     [SerializeField]
-    private Transform groundCheck;
+    private Transform      groundCheck;
     [SerializeField]
-    private LayerMask groundCheckLayers;
+    private LayerMask      groundCheckLayers;
     [SerializeField]
-    private float jumpMaxDuration;
+    private float          jumpMaxDuration;
     [SerializeField]
-    private float gravityScaling = 2.0f;
+    private float          gravityScaling = 2.0f;
     [SerializeField]
-    private Transform cameraTarget;
+    private Transform      cameraTarget;
     [SerializeField]
     private ParticleSystem _explosionParticle;
     [SerializeField]
     private ParticleSystem _bubbleParticle;
 
-    private float jumpTimer;
-    private Rigidbody2D rb;
-    private string horizontalAxisName = "Horizontal";
+    private float          jumpTimer;
+    private Rigidbody2D    rb;
+    private string         horizontalAxisName = "Horizontal";
     private SpriteRenderer spriteRenderer;
-    private Camera mainCamera;
-    private bool isGrounded;
-    private float originalGravity = 1;
+    private Camera         mainCamera;
+    private bool           isGrounded;
+    private float          originalGravity = 1;
+    private Vector2        currentVelocity;
+
 
 
     void Start()
@@ -48,7 +50,7 @@ public class Player : MonoBehaviour
         float moveDir = Input.GetAxis(horizontalAxisName);
 
 
-        Vector2 currentVelocity = rb.linearVelocity;
+        currentVelocity = rb.linearVelocity;
 
         currentVelocity.x = moveDir * velocity.x;
 

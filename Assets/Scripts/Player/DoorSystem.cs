@@ -28,8 +28,8 @@ public class DoorSystem : MonoBehaviour
         
         if (isPlayerInside && Input.GetKeyDown(KeyCode.W))
         {
-            player.transform.position = Door.position;
-            Debug.Log("Player teleported to door position");
+            player.transform.position = new Vector3 (Door.position.x, Door.position.y, player.transform.position.z);
+            //Debug.Log("Player teleported to door position");
         }
     }
 }
