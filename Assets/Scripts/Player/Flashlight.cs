@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Flashlight : MonoBehaviour
 {
@@ -33,10 +34,14 @@ public class Flashlight : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                foreach (Transform child in transform)
+                
+                Light2D light = transform.GetComponentInChildren<Light2D>();
+                /*foreach (Transform child in transform)
                 {
                     child.gameObject.SetActive(false);
-                }
+                }*/
+                //light.gameObject.SetActive(false);
+                light.GetComponent<Light2D>().enabled = false;
 
                 lightTurn = false;
                 Debug.Log("Turned On");
@@ -46,11 +51,15 @@ public class Flashlight : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                foreach (Transform child in transform)
+                Light2D light = transform.GetComponentInChildren<Light2D>();
+                /*foreach (Transform child in transform)
                 {
                     child.gameObject.SetActive(true);
 
-                }
+                }*/
+                //light.gameObject.SetActive(true);
+                light.GetComponent<Light2D>().enabled = true;
+
                 lightTurn = true;
                 Debug.Log("Turned Off");
             }
