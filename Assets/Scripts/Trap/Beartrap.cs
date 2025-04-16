@@ -1,19 +1,25 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections;
+using UnityEditor.Experimental.GraphView;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class Beartrap : MonoBehaviour 
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private int damage = 1; 
+    private void OnTriggerStay2D(Collider2D collider)
     {
-        Collider2D collider = GetComponent<Collider2D>();
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-
+        HealthSystem healthSystem = collider.GetComponentInParent<HealthSystem>();
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            Debug.Log($"The {name} is deactivated");
+        }
+        else
+        {
+            Debug.Log($"{name} collided with {healthSystem.name}");
+            healthSystem.DealDamage(damage);
+            Destroy(gameObject);
+            Debug.Log($"The player Health now is {healthSystem.Health}");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

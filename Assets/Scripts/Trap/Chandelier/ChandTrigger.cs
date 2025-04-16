@@ -6,11 +6,6 @@ public class ChandTrigger : MonoBehaviour
     [SerializeField]
     private Rigidbody2D rb;
 
-    void Start()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (Input.GetKey(KeyCode.LeftShift))
@@ -20,6 +15,7 @@ public class ChandTrigger : MonoBehaviour
         else
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
+            Destroy(gameObject);
         }
     }
 }

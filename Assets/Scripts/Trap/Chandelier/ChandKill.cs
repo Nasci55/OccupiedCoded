@@ -1,17 +1,15 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using System.Collections;
-using UnityEditor.Experimental.GraphView;
 
-public class TrapThatPlayerCanTurnOff : MonoBehaviour 
+public class ChandKill : MonoBehaviour
 {
-    [SerializeField] private int damage = 1; 
-    private void OnTriggerStay2D(Collider2D collider)
+    [SerializeField] private int damage = 1;
+    
+    private void OnTriggerEnter2D(Collider2D collider)
     {
         HealthSystem healthSystem = collider.GetComponentInParent<HealthSystem>();
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (healthSystem == null)
         {
-            Debug.Log($"The {name} is deactivated");
+            Destroy(gameObject);
         }
         else
         {
@@ -20,6 +18,6 @@ public class TrapThatPlayerCanTurnOff : MonoBehaviour
             Destroy(gameObject);
             Debug.Log($"The player Health now is {healthSystem.Health}");
         }
-    }
 
+    }
 }
