@@ -1,16 +1,23 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Trap180 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private Trigger180 trigger180;
+    [SerializeField]
+    private float LerpChange = 0.1f;
+    
+    private float Rotation;
 
-    // Update is called once per frame
-    void Update()
+
+    private void Update()
     {
         
+        if (trigger180.IsActivated() == true)
+        { 
+            Rotation = Mathf.Lerp(0, -90, LerpChange);
+            gameObject.transform.rotation = Quaternion.Euler(0, 0, Rotation);
+        }
     }
 }

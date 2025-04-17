@@ -12,7 +12,6 @@ public class Trigger180 : MonoBehaviour
         if (player != null)
         {
             isActivated = true;
-            Destroy(gameObject);
             Debug.Log($"This is {collider.name}");
         }
         else
@@ -21,5 +20,5 @@ public class Trigger180 : MonoBehaviour
         }
     }
 
-    private void IsActivated() => isActivated;
+    public bool IsActivated() => isActivated;
 }
