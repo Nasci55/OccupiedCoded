@@ -5,31 +5,30 @@ using UnityEngine.XR;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private float          groundCheckRadius = 2.0f;
-    [SerializeField]
     private Vector2        velocity;
     [SerializeField]
-    private Transform      groundCheck;
-    [SerializeField]
     private LayerMask      groundCheckLayers;
-    [SerializeField]
-    private float          jumpMaxDuration;
-    [SerializeField]
-    private float          gravityScaling = 2.0f;
     [SerializeField]
     private Transform      cameraTarget;
     [SerializeField]
     private ParticleSystem _explosionParticle;
     [SerializeField]
     private ParticleSystem _bubbleParticle;
+    [SerializeField, Header("Jump Stuff")]
+    private float          gravityScaling = 2.0f;
+    [SerializeField]
+    private float          jumpMaxDuration = 0.1f;
+    [SerializeField]
+    private Transform      groundCheck;
+    [SerializeField]
+    private float          groundCheckRadius = 2.0f;
 
     private float          jumpTimer;
     private Rigidbody2D    rb;
     private string         horizontalAxisName = "Horizontal";
-    private SpriteRenderer spriteRenderer;
     private Camera         mainCamera;
     private bool           isGrounded;
-    private float          originalGravity = 1;
+    private float          originalGravity;
     private Vector2        currentVelocity;
 
 
@@ -38,7 +37,7 @@ public class Player : MonoBehaviour
     {
         mainCamera = Camera.main;
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        originalGravity = rb.gravityScale;
     }
 
     // Update is called once per frame
@@ -71,8 +70,8 @@ public class Player : MonoBehaviour
             if (isGrounded)
             {
                 currentVelocity.y = velocity.y;
-                jumpTimer = 0;
-                rb.gravityScale = originalGravity;
+                jumpTimer = 0.0f;
+                rb.gravityScale = gravityScaling;
             }
         }
         else if (jumpTimer < jumpMaxDuration)
@@ -87,7 +86,7 @@ public class Player : MonoBehaviour
                 jumpTimer = jumpMaxDuration;
                 rb.gravityScale = originalGravity;
             }
-        }
+        }   
         else
         {
             rb.gravityScale = originalGravity;

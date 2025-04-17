@@ -3,11 +3,13 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public enum Type{ Teleport, Linear,  FeedbackLoop };
-    public Type type;
-    [SerializeField] private float cameraSpeed = 100.0f;
+    
+    [SerializeField] 
+    private float cameraSpeed = 0.06f;
+    [SerializeField] 
+    Vector3 offset;
+    
     private Transform playerTransform;
-    [SerializeField] Vector3 offset;
     void Start()
     {
         
