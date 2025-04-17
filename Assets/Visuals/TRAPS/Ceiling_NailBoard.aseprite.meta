@@ -125,7 +125,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Ceiling_NailBoard
     originalName: 
-    pivot: {x: 0.031249853, y: 0.8561141}
+    pivot: {x: 0.03448276, y: 0.8571429}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 

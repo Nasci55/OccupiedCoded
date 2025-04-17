@@ -9,11 +9,15 @@ public class Player : MonoBehaviour
     [SerializeField]
     private LayerMask      groundCheckLayers;
     [SerializeField]
-    private Transform      cameraTarget;
-    [SerializeField]
     private ParticleSystem _explosionParticle;
     [SerializeField]
     private ParticleSystem _bubbleParticle;
+    
+    [SerializeField, Header("Camera Points")]
+    private Transform      cameraTarget1;
+    [SerializeField] 
+    private Transform cameraTarget2;
+
     [SerializeField, Header("Jump Stuff")]
     private float          gravityScaling = 2.0f;
     [SerializeField]
@@ -147,6 +151,6 @@ public class Player : MonoBehaviour
 
     public Transform GetCameraTarget()
     {
-        return cameraTarget;
+        return cameraTarget1;
     }
 }
