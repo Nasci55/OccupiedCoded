@@ -1,0 +1,2555 @@
+fileFormatVersion: 2
+guid: 8f58dfd52746ffe4eb21cafe7fc4fc15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4679445218542328843
+    second: House_Tile_Set_0
+  - first:
+      213: 805105025262329211
+    second: House_Tile_Set_1
+  - first:
+      213: 7890104837709590102
+    second: House_Tile_Set_2
+  - first:
+      213: 3514774127454506690
+    second: House_Tile_Set_3
+  - first:
+      213: -8681055695172104526
+    second: House_Tile_Set_4
+  - first:
+      213: 5052728757320834840
+    second: House_Tile_Set_5
+  - first:
+      213: -8189533477570305536
+    second: House_Tile_Set_6
+  - first:
+      213: -4358286317493229572
+    second: House_Tile_Set_7
+  - first:
+      213: -8047804469358042864
+    second: House_Tile_Set_8
+  - first:
+      213: -757683833991903104
+    second: House_Tile_Set_9
+  - first:
+      213: -3644156771756166331
+    second: House_Tile_Set_10
+  - first:
+      213: -4285000108936334328
+    second: House_Tile_Set_11
+  - first:
+      213: 1322702824993284909
+    second: House_Tile_Set_12
+  - first:
+      213: -6462382049382968487
+    second: House_Tile_Set_13
+  - first:
+      213: -2903641614818957131
+    second: House_Tile_Set_14
+  - first:
+      213: -6681721322636955954
+    second: House_Tile_Set_15
+  - first:
+      213: -3357561395151535674
+    second: House_Tile_Set_16
+  - first:
+      213: 6401981781651281417
+    second: House_Tile_Set_17
+  - first:
+      213: -9137924244038583078
+    second: House_Tile_Set_18
+  - first:
+      213: -5139001901308895825
+    second: House_Tile_Set_19
+  - first:
+      213: -347151572064601136
+    second: House_Tile_Set_20
+  - first:
+      213: -8406744406931922139
+    second: House_Tile_Set_21
+  - first:
+      213: 1343754828490589972
+    second: House_Tile_Set_22
+  - first:
+      213: -3498063249206953458
+    second: House_Tile_Set_23
+  - first:
+      213: -2191909290015385168
+    second: House_Tile_Set_24
+  - first:
+      213: 8992973011487105103
+    second: House_Tile_Set_25
+  - first:
+      213: 2931027384847747075
+    second: House_Tile_Set_26
+  - first:
+      213: -3122480836045745059
+    second: House_Tile_Set_27
+  - first:
+      213: -8328367432969584978
+    second: House_Tile_Set_28
+  - first:
+      213: -3638704517753756304
+    second: House_Tile_Set_29
+  - first:
+      213: 5201717724684886634
+    second: House_Tile_Set_30
+  - first:
+      213: 3176200676087567724
+    second: House_Tile_Set_31
+  - first:
+      213: 7892830765912105500
+    second: House_Tile_Set_32
+  - first:
+      213: 2618549095379772407
+    second: House_Tile_Set_33
+  - first:
+      213: 6928561083740874466
+    second: House_Tile_Set_34
+  - first:
+      213: -6884005268716326867
+    second: House_Tile_Set_35
+  - first:
+      213: -2632872344165830534
+    second: House_Tile_Set_36
+  - first:
+      213: -7408236418537799420
+    second: House_Tile_Set_37
+  - first:
+      213: 6356311130531741265
+    second: House_Tile_Set_38
+  - first:
+      213: 2826641052522515998
+    second: House_Tile_Set_39
+  - first:
+      213: -8259513602648275051
+    second: House_Tile_Set_40
+  - first:
+      213: -3582039915752720040
+    second: House_Tile_Set_41
+  - first:
+      213: -203038297546393788
+    second: House_Tile_Set_42
+  - first:
+      213: 181621270076014492
+    second: House_Tile_Set_43
+  - first:
+      213: -703749747797355608
+    second: House_Tile_Set_44
+  - first:
+      213: 4992343559682079947
+    second: House_Tile_Set_45
+  - first:
+      213: 4205226822258036256
+    second: House_Tile_Set_46
+  - first:
+      213: 264644584760984047
+    second: House_Tile_Set_47
+  - first:
+      213: -3050356882019083505
+    second: House_Tile_Set_48
+  - first:
+      213: -7010067582549928198
+    second: House_Tile_Set_49
+  - first:
+      213: -1187057501075999676
+    second: House_Tile_Set_50
+  - first:
+      213: 4596033525399550497
+    second: House_Tile_Set_51
+  - first:
+      213: -1935726346518601273
+    second: House_Tile_Set_52
+  - first:
+      213: -6081237360131054889
+    second: House_Tile_Set_53
+  - first:
+      213: -5620110938441234806
+    second: House_Tile_Set_54
+  - first:
+      213: 5459415597384356405
+    second: House_Tile_Set_55
+  - first:
+      213: 8848979452614397071
+    second: House_Tile_Set_56
+  - first:
+      213: -8104806351027802698
+    second: House_Tile_Set_57
+  - first:
+      213: 4762246174266604848
+    second: House_Tile_Set_58
+  - first:
+      213: -8059334579080418939
+    second: House_Tile_Set_59
+  - first:
+      213: -7811914157534203920
+    second: House_Tile_Set_60
+  - first:
+      213: -1959258709290302197
+    second: House_Tile_Set_61
+  - first:
+      213: -4213226751004110216
+    second: House_Tile_Set_62
+  - first:
+      213: -1571543114998682431
+    second: House_Tile_Set_63
+  - first:
+      213: -7288466738756600971
+    second: House_Tile_Set_64
+  - first:
+      213: -8659230169693147382
+    second: House_Tile_Set_65
+  - first:
+      213: 1230704308219088990
+    second: House_Tile_Set_66
+  - first:
+      213: 4113368879380425653
+    second: House_Tile_Set_67
+  - first:
+      213: 1478567099310132446
+    second: House_Tile_Set_68
+  - first:
+      213: -8979049077091920854
+    second: House_Tile_Set_69
+  - first:
+      213: 6520260502170175048
+    second: House_Tile_Set_70
+  - first:
+      213: -9015489649034288129
+    second: House_Tile_Set_71
+  - first:
+      213: -168022167084567318
+    second: House_Tile_Set_72
+  - first:
+      213: 8282652922883249899
+    second: House_Tile_Set_73
+  - first:
+      213: -2951923546798912091
+    second: House_Tile_Set_74
+  - first:
+      213: 2712320621723927674
+    second: House_Tile_Set_75
+  - first:
+      213: -1586052818946814873
+    second: House_Tile_Set_76
+  - first:
+      213: -2310611445303970745
+    second: House_Tile_Set_77
+  - first:
+      213: 5620124511837519942
+    second: House_Tile_Set_78
+  - first:
+      213: 4395240724691394173
+    second: House_Tile_Set_79
+  - first:
+      213: -6508143587009367221
+    second: House_Tile_Set_80
+  - first:
+      213: -5689167677580101203
+    second: House_Tile_Set_81
+  - first:
+      213: -7810770370139331047
+    second: House_Tile_Set_82
+  - first:
+      213: 5415613871056990140
+    second: House_Tile_Set_83
+  - first:
+      213: -6536792025009298203
+    second: House_Tile_Set_84
+  - first:
+      213: 2657208201458345593
+    second: House_Tile_Set_85
+  - first:
+      213: -2226241492718381221
+    second: House_Tile_Set_86
+  - first:
+      213: -6326726962262591192
+    second: House_Tile_Set_87
+  - first:
+      213: 8292682024624501992
+    second: House_Tile_Set_88
+  - first:
+      213: -220592690228899275
+    second: House_Tile_Set_89
+  - first:
+      213: -6582475712305707344
+    second: House_Tile_Set_90
+  - first:
+      213: 6813164058715066243
+    second: House_Tile_Set_91
+  - first:
+      213: -4267178698385094418
+    second: House_Tile_Set_92
+  - first:
+      213: -7070396301809702734
+    second: House_Tile_Set_93
+  - first:
+      213: 1461121381985450630
+    second: House_Tile_Set_94
+  - first:
+      213: -1353269746517525443
+    second: House_Tile_Set_95
+  - first:
+      213: -3728489002380215937
+    second: House_Tile_Set_96
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: House_Tile_Set_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 271
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f362e2dd554f0fb0800000000000000
+      internalID: -4679445218542328843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 319
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d94ad31ce4c2b00800000000000000
+      internalID: 805105025262329211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 271
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e654cdb884f7d60800000000000000
+      internalID: 7890104837709590102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_3
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 287
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cec8a4627cf6c030800000000000000
+      internalID: 3514774127454506690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_4
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 223
+        width: 39
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be82e5e6d1b68780800000000000000
+      internalID: -8681055695172104526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 287
+        width: 42
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f5286c806ee1640800000000000000
+      internalID: 5052728757320834840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_6
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 287
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002a04131bee85e80800000000000000
+      internalID: -8189533477570305536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_7
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 288
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7ee587fa14483c0800000000000000
+      internalID: -4358286317493229572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_8
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 272
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011ec166974705090800000000000000
+      internalID: -8047804469358042864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_9
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 288
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0884bde319a2c75f0800000000000000
+      internalID: -757683833991903104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_10
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 272
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543b3a149ba5d6dc0800000000000000
+      internalID: -3644156771756166331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 223
+        width: 73
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804f6549a1f9884c0800000000000000
+      internalID: -4285000108936334328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 207
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23612b163f2b5210800000000000000
+      internalID: 1322702824993284909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_13
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 207
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953daa7e3c10156a0800000000000000
+      internalID: -6462382049382968487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_14
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 255
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8aca1e55134b7d0800000000000000
+      internalID: -2903641614818957131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_15
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 256
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece221cbbd1c543a0800000000000000
+      internalID: -6681721322636955954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_16
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 223
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c18d6243bb8761d0800000000000000
+      internalID: -3357561395151535674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_17
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 223
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906d8d1e28868d850800000000000000
+      internalID: 6401981781651281417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_18
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 223
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc76a990529f2180800000000000000
+      internalID: -9137924244038583078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_19
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 223
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad1d649ff89ea8b0800000000000000
+      internalID: -5139001901308895825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_20
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 223
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dbfed70c7bae2bf0800000000000000
+      internalID: -347151572064601136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_21
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 191
+        width: 46
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5232253b08e355b80800000000000000
+      internalID: -8406744406931922139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_22
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 191
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 417c561a5e9f5a210800000000000000
+      internalID: 1343754828490589972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_23
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 191
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0abb252202647fc0800000000000000
+      internalID: -3498063249206953458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_24
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 175
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b911cc2d16c491e0800000000000000
+      internalID: -2191909290015385168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_25
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 196
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f402d50ae457dcc70800000000000000
+      internalID: 8992973011487105103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_26
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 111
+        width: 31
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308cac490e91da820800000000000000
+      internalID: 2931027384847747075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_27
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 175
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5457852938baa4d0800000000000000
+      internalID: -3122480836045745059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_28
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 191
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae7aeef1f1bb6c80800000000000000
+      internalID: -8328367432969584978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_29
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 175
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075ada01589b08dc0800000000000000
+      internalID: -3638704517753756304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_30
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 175
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6222b1f5b6303840800000000000000
+      internalID: 5201717724684886634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_31
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 175
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c651e89cfa1241c20800000000000000
+      internalID: 3176200676087567724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_32
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 175
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c12277a73c7f88d60800000000000000
+      internalID: 7892830765912105500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_33
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 177
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f328015784f65420800000000000000
+      internalID: 2618549095379772407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_34
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 181
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e668f8b891372060800000000000000
+      internalID: 6928561083740874466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_35
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 184
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20fe3e5ea91770a0800000000000000
+      internalID: -6884005268716326867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_36
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 143
+        width: 12
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70bb037d88267bd0800000000000000
+      internalID: -2632872344165830534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_37
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 143
+        width: 17
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40141f45a38a03990800000000000000
+      internalID: -7408236418537799420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_38
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 184
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15eb439cb47263850800000000000000
+      internalID: 6356311130531741265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_39
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 184
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e0423af0f3a3720800000000000000
+      internalID: 2826641052522515998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_40
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 143
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59784a0a320506d80800000000000000
+      internalID: -8259513602648275051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_41
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 177
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859f942dca90a4ec0800000000000000
+      internalID: -3582039915752720040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_42
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 143
+        width: 15
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44772fe7eb9ae2df0800000000000000
+      internalID: -203038297546393788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_43
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 175
+        width: 46
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f3986359f358200800000000000000
+      internalID: 181621270076014492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_44
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 159
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a394cf3557cb36f0800000000000000
+      internalID: -703749747797355608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_45
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 179
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc3f87540e584540800000000000000
+      internalID: 4992343559682079947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_46
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 159
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e82acb387fb5a30800000000000000
+      internalID: 4205226822258036256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_47
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 175
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1c86209d43ca300800000000000000
+      internalID: 264644584760984047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_48
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 159
+        width: 46
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b9519c394faa5d0800000000000000
+      internalID: -3050356882019083505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_49
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 143
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af651a2bcac37be90800000000000000
+      internalID: -7010067582549928198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_50
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 159
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444f668fd79b68fe0800000000000000
+      internalID: -1187057501075999676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_51
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 164
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12af939f32468cf30800000000000000
+      internalID: 4596033525399550497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_52
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 143
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1e46dc42be225e0800000000000000
+      internalID: -1935726346518601273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_53
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 143
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2ed8a37da1b9ba0800000000000000
+      internalID: -6081237360131054889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_54
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 143
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a864cebc0ea5102b0800000000000000
+      internalID: -5620110938441234806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_55
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 143
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53252538f8db3cb40800000000000000
+      internalID: 5459415597384356405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_56
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 111
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ccfc1ade3edca70800000000000000
+      internalID: 8848979452614397071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_57
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 133
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd68a99091f58f80800000000000000
+      internalID: -8104806351027802698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_58
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 143
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dbf1ef9a5e61240800000000000000
+      internalID: 4762246174266604848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_59
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 148
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589a3e786ed772090800000000000000
+      internalID: -8059334579080418939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_60
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 111
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff24588671869390800000000000000
+      internalID: -7811914157534203920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_61
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 143
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0549a1a5905fc4e0800000000000000
+      internalID: -1959258709290302197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_62
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 154
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8721a34b79c9785c0800000000000000
+      internalID: -4213226751004110216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_63
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 150
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ccea410dd1c03ae0800000000000000
+      internalID: -1571543114998682431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_64
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 127
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57bb927fd1a2ada90800000000000000
+      internalID: -7288466738756600971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_65
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 127
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f281b0a0c34d780800000000000000
+      internalID: -8659230169693147382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_66
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 131
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5011fa3c07541110800000000000000
+      internalID: 1230704308219088990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_67
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 111
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbed95c33f951930800000000000000
+      internalID: 4113368879380425653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_68
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 111
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edcc5fa61fce48410800000000000000
+      internalID: 1478567099310132446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_69
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 111
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24132bff62046380800000000000000
+      internalID: -8979049077091920854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_70
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 139
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8460dd2816e9c7a50800000000000000
+      internalID: 6520260502170175048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_71
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 127
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3a9192eeb82e280800000000000000
+      internalID: -9015489649034288129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_72
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 111
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae47880bab01badf0800000000000000
+      internalID: -168022167084567318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_73
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 111
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be69e4233f4e1f270800000000000000
+      internalID: 8282652922883249899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_74
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 115
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad80f49c29a807d0800000000000000
+      internalID: -2951923546798912091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_75
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 111
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7442d62c3914a520800000000000000
+      internalID: 2712320621723927674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_76
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 111
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c0bab4d553df9e0800000000000000
+      internalID: -1586052818946814873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_77
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 15
+        width: 65
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74474b4f12f0fefd0800000000000000
+      internalID: -2310611445303970745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_78
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 76
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6408a818771befd40800000000000000
+      internalID: 5620124511837519942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_79
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 81
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e9f81f6280ffc30800000000000000
+      internalID: 4395240724691394173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_80
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 79
+        width: 66
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43f115a3ed6ea5a0800000000000000
+      internalID: -6508143587009367221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_81
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 79
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da93436c3240c01b0800000000000000
+      internalID: -5689167677580101203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_82
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 80
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916e2b94bb19a9390800000000000000
+      internalID: -7810770370139331047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_83
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 84
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfa7016f10282b40800000000000000
+      internalID: 5415613871056990140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_84
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 15
+        width: 59
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4e6b26946a845a0800000000000000
+      internalID: -6536792025009298203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 47
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976ed2ed7cc40e420800000000000000
+      internalID: 2657208201458345593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_86
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b571942582dca11e0800000000000000
+      internalID: -2226241492718381221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_87
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 64
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829b3772953f238a0800000000000000
+      internalID: -6326726962262591192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_88
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 31
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4b2096d56851370800000000000000
+      internalID: 8292682024624501992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_89
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 31
+        width: 81
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532dbd2fd1c40fcf0800000000000000
+      internalID: -220592690228899275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_90
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 47
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b6c161173956a4a0800000000000000
+      internalID: -6582475712305707344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_91
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 47
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f8b2c1d983d8e50800000000000000
+      internalID: 6813164058715066243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee884a1159fe7c4c0800000000000000
+      internalID: -4267178698385094418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_93
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 47
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8a5692608e0ed90800000000000000
+      internalID: -7070396301809702734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_94
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 51
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a78f2d722f64410800000000000000
+      internalID: 1461121381985450630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_95
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 47
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c3a81e558383de0800000000000000
+      internalID: -1353269746517525443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_Tile_Set_96
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 47
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f793d28b10fb14cc0800000000000000
+      internalID: -3728489002380215937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
