@@ -68,7 +68,8 @@ public class Player : MonoBehaviour
         }
 
 
-
+        // Jump Button
+        
         if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded)
@@ -95,13 +96,29 @@ public class Player : MonoBehaviour
         {
             rb.gravityScale = originalGravity;
         }
-
+        
+        // Sneak Button
         if (Input.GetKey(KeyCode.LeftShift) == true)
         {
             currentVelocity.x /= 3;
         }
 
         rb.linearVelocity = currentVelocity;
+
+        // Crouch Button
+        if (Input.GetKey(KeyCode.LeftControl) == true)
+        {
+            currentVelocity.x /= 3;
+            rb.transform.localScale = new Vector3(0.5f, 0.5f, 1.0f);
+        }   
+        else if (Input.GetKeyUp(KeyCode.LeftControl) == true)
+        {
+            rb.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        }
+
+        rb.linearVelocity = currentVelocity;
+
+        
 
         Explosion();
         BUBBLES();
