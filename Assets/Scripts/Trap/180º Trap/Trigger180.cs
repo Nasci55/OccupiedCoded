@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Trigger180 : MonoBehaviour
 {
-    private bool isActivated = false;
+    private bool activated = false;
     Player player;
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -11,8 +11,9 @@ public class Trigger180 : MonoBehaviour
         player = collider.GetComponentInParent<Player>();
         if (player != null)
         {
-            isActivated = true;
+            activated = true;
             Debug.Log($"This is {collider.name}");
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
         else
         {
@@ -20,5 +21,11 @@ public class Trigger180 : MonoBehaviour
         }
     }
 
-    public bool IsActivated() => isActivated;
+    public bool isActivated() => activated;
+
+    public bool setActivate(bool condition)
+    {
+        return activated = condition;
+    }
+
 }

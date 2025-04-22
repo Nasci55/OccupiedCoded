@@ -1,3 +1,4 @@
+using System.Collections;
 using System.ComponentModel;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -6,8 +7,6 @@ public class Trap180 : MonoBehaviour
 {
     [SerializeField]
     private Trigger180 trigger180;
-    [SerializeField]
-    private float lerpChange = 0.1f;
     [SerializeField]    
     private float rotateSpeed;
     [SerializeField, Description("0 - 360")]
@@ -15,22 +14,38 @@ public class Trap180 : MonoBehaviour
     
     private float rotation;
 
+    private void Start()
+    {
+    }
 
     private void Update()
     {
-        if (trigger180.IsActivated() == true)
+        if (trigger180.isActivated() == true)
         { 
             rotation += Time.deltaTime * rotateSpeed;
-            if (transform.eulerAngles.z != angleToStop)
+            if (transform.eulerAngles.z > angleToStop)
             {
                 gameObject.transform.rotation = Quaternion.Euler(0, 0, -rotation);
                 Debug.Log(transform.eulerAngles.z);    
             }
             else 
             {
-                gameObject.transform.rotation = Quaternion.Euler(0, 0, -90f);
-                Debug.Log("POR FAVOR PARA");
+                StartCoroutine (returnToOriginalPos());
+                trigger180.setActivate(false);
             }
+
         }
+    }
+
+    private IEnumerator returnToOriginalPos()
+    {
+        yield return new WaitForSeconds(2);
+        rotation += Time.deltaTime * 1;
+        Debug.Log("RODA AO CONTRARIO");
+        if (transform.eulerAngles.x < 360)
+        {
+            gameObject.transform.rotation = Quaternion.identity;
+        }
+        
     }
 }
