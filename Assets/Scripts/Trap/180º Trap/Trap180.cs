@@ -16,8 +16,10 @@ public class Trap180 : MonoBehaviour
         
         if (trigger180.IsActivated() == true)
         { 
-            Rotation = Mathf.Lerp(0, -90, LerpChange);
-            gameObject.transform.rotation = Quaternion.Euler(0, 0, Rotation);
+            for (float i = 0; i > -90; i--)
+            {
+                gameObject.transform.rotation = Quaternion.Euler(0, 0, i*Time.deltaTime);
+            }
         }
     }
 }
