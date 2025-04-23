@@ -13,7 +13,7 @@ public class Trap180 : MonoBehaviour
     private float angleToStop = 270;
     
     private float rotation;
-
+    private int damage = 1;
     private void Start()
     {
     }
@@ -47,5 +47,21 @@ public class Trap180 : MonoBehaviour
             gameObject.transform.rotation = Quaternion.identity;
         }
         
+    }
+
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        HealthSystem healthSystem = collider.GetComponentInParent<HealthSystem>();
+        if (healthSystem == null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Debug.Log($"{name} collided with {healthSystem.name}");
+            healthSystem.DealDamage(damage);
+            Debug.Log($"The player Health now is {healthSystem.Health}");
+        }
+
     }
 }
