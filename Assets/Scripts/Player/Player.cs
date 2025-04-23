@@ -1,5 +1,8 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using UnityEngine.VFX;
 using UnityEngine.XR;
 
 public class Player : MonoBehaviour
@@ -44,6 +47,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
         health = GetComponent<HealthSystem>();
+        
     }
 
     // Update is called once per frame
@@ -128,7 +132,8 @@ public class Player : MonoBehaviour
         //Check the player health
         if (health.getHealth <= 0 )
         {
-            Destroy(gameObject);
+            Destroy(GetComponentInChildren<SpriteRenderer>());
+            StartCoroutine(Respawn());
         }
 
 
@@ -178,5 +183,11 @@ public class Player : MonoBehaviour
     {
         return cameraTarget1;
     }
-   
+
+    private IEnumerator Respawn()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 }
