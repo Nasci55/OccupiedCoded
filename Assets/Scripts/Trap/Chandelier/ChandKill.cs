@@ -16,7 +16,7 @@ public class ChandKill : MonoBehaviour
             Debug.Log($"{name} collided with {healthSystem.name}");
             healthSystem.DealDamage(damage);
             Destroy(gameObject);
-            Debug.Log($"The player Health now is {healthSystem.Health}");
+            Debug.Log($"The player Health now is {healthSystem.getHealth}");
         }
 
     }

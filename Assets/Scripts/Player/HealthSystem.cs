@@ -25,5 +25,5 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    public int Health { get => health; }
+    public int getHealth { get => health; }
 }

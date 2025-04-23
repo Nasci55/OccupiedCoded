@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
     private bool           isGrounded;
     private float          originalGravity;
     private Vector2        currentVelocity;
+    private HealthSystem health;
 
 
 
@@ -42,6 +43,7 @@ public class Player : MonoBehaviour
         mainCamera = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
+        health = GetComponent<HealthSystem>();
     }
 
     // Update is called once per frame
@@ -123,6 +125,12 @@ public class Player : MonoBehaviour
         Explosion();
         BUBBLES();
 
+        //Check the player health
+        if (health.getHealth <= 0 )
+        {
+            Destroy(gameObject);
+        }
+
 
     }
 
@@ -170,4 +178,5 @@ public class Player : MonoBehaviour
     {
         return cameraTarget1;
     }
+   
 }

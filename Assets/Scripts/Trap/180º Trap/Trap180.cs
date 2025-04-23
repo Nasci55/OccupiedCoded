@@ -60,7 +60,7 @@ public class Trap180 : MonoBehaviour
         {
             Debug.Log($"{name} collided with {healthSystem.name}");
             healthSystem.DealDamage(damage);
-            Debug.Log($"The player Health now is {healthSystem.Health}");
+            Debug.Log($"The player Health now is {healthSystem.getHealth}");
         }
 
     }
