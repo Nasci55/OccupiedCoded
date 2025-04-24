@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    private static SoundManager instance;
+    public static SoundManager instance;
 
     [SerializeField] private AudioSource sound;  
 
