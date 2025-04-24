@@ -6,6 +6,9 @@ public class ChandTrigger : MonoBehaviour
     [SerializeField]
     private Rigidbody2D rb;
 
+    [SerializeField]
+    private AudioClip audioClip;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (Input.GetKey(KeyCode.LeftShift))
@@ -15,7 +18,9 @@ public class ChandTrigger : MonoBehaviour
         else
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
-            Destroy(gameObject);
+            SoundManager.instance.playSound(audioClip, transform, 0.1f);
+            Destroy(gameObject.GetComponent<BoxCollider2D>());
+            Destroy(gameObject.GetComponent<SpriteRenderer>());
         }
     }
 }

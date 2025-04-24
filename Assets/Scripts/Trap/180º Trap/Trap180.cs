@@ -11,7 +11,9 @@ public class Trap180 : MonoBehaviour
     private float rotateSpeed;
     [SerializeField, Description("0 - 360")]
     private float angleToStop = 270;
-    
+
+
+
     private float rotation;
     private int damage = 1;
     private void Start()
@@ -21,20 +23,10 @@ public class Trap180 : MonoBehaviour
     private void Update()
     {
         if (trigger180.isActivated() == true)
-        { 
-            rotation += Time.deltaTime * rotateSpeed;
-            if (transform.eulerAngles.z > angleToStop)
-            {
-                gameObject.transform.rotation = Quaternion.Euler(0, 0, -rotation);
-                Debug.Log(transform.eulerAngles.z);    
-            }
-            else 
-            {
-                StartCoroutine (returnToOriginalPos());
-                trigger180.setActivate(false);
-            }
-
+        {
+            StartCoroutine(TrapActivating());
         }
+
     }
 
     private IEnumerator returnToOriginalPos()
@@ -48,6 +40,23 @@ public class Trap180 : MonoBehaviour
         }
         
     }
+    private IEnumerator TrapActivating()
+    {
+        yield return new WaitForSeconds(2.79f);
+        rotation += Time.deltaTime * rotateSpeed;
+        if (transform.eulerAngles.z > angleToStop)
+        {
+            gameObject.transform.rotation = Quaternion.Euler(0, 0, -rotation);
+            Debug.Log(transform.eulerAngles.z);
+
+        }
+        else
+        {
+            trigger180.setActivate(false);
+            StartCoroutine(returnToOriginalPos());
+        }
+    }
+
 
     public void OnTriggerEnter2D(Collider2D collider)
     {

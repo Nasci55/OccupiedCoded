@@ -1,0 +1,43 @@
+using System.Collections;
+using UnityEngine;
+
+public class Audio180Trap : MonoBehaviour
+{
+    private bool playOnce = true;
+    
+    [SerializeField]
+    private Trigger180 trigger180;
+    [SerializeField]
+    private AudioClip audioClipComingDown;
+    [SerializeField]
+    private AudioClip audioClipGoingUp;
+
+
+
+
+    void Update()
+    {
+        if (audioClipComingDown == null)
+        {
+            Debug.Log("Choose an audio File");
+        }
+
+        if (trigger180.isActivated() == true && playOnce == true)
+        {
+            SoundManager.instance.playSound(audioClipComingDown, transform, 0.5f);
+            playOnce = false;
+        }
+        else if (trigger180.isActivated() == false && playOnce == false)
+        {
+            StartCoroutine(delay());
+            playOnce = true;
+           
+        }
+
+    }
+    private IEnumerator delay()
+    {
+        yield return new WaitForSeconds(1f); 
+        SoundManager.instance.playSound(audioClipGoingUp, transform, 0.5f);
+    }
+}

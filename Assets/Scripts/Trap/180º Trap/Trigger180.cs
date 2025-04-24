@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Trigger180 : MonoBehaviour
 {
+    [SerializeField] private AudioClip audioClip;
+    
     private bool activated = false;
     Player player;
 
@@ -14,6 +16,9 @@ public class Trigger180 : MonoBehaviour
             activated = true;
             Debug.Log($"This is {collider.name}");
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            SoundManager.instance.playSound(audioClip, transform, 0.1f);
+            Destroy(gameObject.GetComponent<BoxCollider2D>());
+            Destroy(gameObject.GetComponent<SpriteRenderer>());
         }
         else
         {
