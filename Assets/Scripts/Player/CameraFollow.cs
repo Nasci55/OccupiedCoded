@@ -29,7 +29,6 @@ public class CameraFollow : MonoBehaviour
             targetPos.z = transform.position.z;
 
 
-        Debug.Log(Vector3.Distance(playerTransform.position, transform.position));
 
         if (Vector3.Distance(playerTransform.position, transform.position) <= 300)
         {

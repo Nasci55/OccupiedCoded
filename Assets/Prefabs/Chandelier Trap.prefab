@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3826166808209425753}
+  audioClip: {fileID: 8300000, guid: c8262fd3afd29fb4aa31d5d6a6418424, type: 3}
 --- !u!1 &4127802513513215515
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,3 +302,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  audioClip: {fileID: 8300000, guid: 2f4a33e0cab9eee4d83796d2c07579a3, type: 3}

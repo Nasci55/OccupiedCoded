@@ -24,7 +24,7 @@ public class Audio180Trap : MonoBehaviour
 
         if (trigger180.isActivated() == true && playOnce == true)
         {
-            SoundManager.instance.playSound(audioClipComingDown, transform, 0.5f);
+            SoundManager.instance.playSound(audioClipComingDown, transform, 1f);
             playOnce = false;
         }
         else if (trigger180.isActivated() == false && playOnce == false)
@@ -38,6 +38,6 @@ public class Audio180Trap : MonoBehaviour
     private IEnumerator delay()
     {
         yield return new WaitForSeconds(1f); 
-        SoundManager.instance.playSound(audioClipGoingUp, transform, 0.5f);
+        SoundManager.instance.playSound(audioClipGoingUp, transform, 1f);
     }
 }

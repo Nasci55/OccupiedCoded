@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f3843b861335c4a8a5cb70a75d2957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: c8262fd3afd29fb4aa31d5d6a6418424, type: 3}
 --- !u!61 &5677364477611752506
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,6 +136,7 @@ GameObject:
   - component: {fileID: 4658293208601026647}
   - component: {fileID: 367768394936367221}
   - component: {fileID: 8584526742210404093}
+  - component: {fileID: 7498460234226813813}
   - component: {fileID: 800117976395090313}
   m_Layer: 0
   m_Name: PointOfRotation
@@ -228,6 +230,21 @@ MonoBehaviour:
   trigger180: {fileID: 8932096686979409187}
   rotateSpeed: 360
   angleToStop: 270
+--- !u!114 &7498460234226813813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3797941073344891869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830c4d7b876d9c641a71b1df45136a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger180: {fileID: 8932096686979409187}
+  audioClipComingDown: {fileID: 8300000, guid: de30e0ece2037374baa60e90d326954c, type: 3}
+  audioClipGoingUp: {fileID: 8300000, guid: 5b4f5c054d2e6e144811f48cab6645b5, type: 3}
 --- !u!61 &800117976395090313
 BoxCollider2D:
   m_ObjectHideFlags: 0
