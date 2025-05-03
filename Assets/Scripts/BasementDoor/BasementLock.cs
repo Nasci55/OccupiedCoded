@@ -17,6 +17,7 @@ public class BasementLock : MonoBehaviour
         {
             IsLocked = true;
             Destroy(gameObject.GetComponent<SpriteRenderer>());
+            Destroy(gameObject.GetComponent<BoxCollider2D>());
         }
     }
 

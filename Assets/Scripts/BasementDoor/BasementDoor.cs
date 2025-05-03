@@ -23,15 +23,25 @@ public class BasementDoor : MonoBehaviour
     {
         player = FindFirstObjectByType<Player>();
         camera = FindFirstObjectByType<Camera>();
+        isUnlocked = FindFirstObjectByType<BasementLock>();
         
     }
 
     private void Update()
     {
 
-        if (isPlayerInside && Input.GetKeyDown(KeyCode.W))
+        if (isPlayerInside == true
+            && Input.GetKeyDown(KeyCode.W)
+            && isUnlocked.GeIsLocked() == true)
         {
-            
+            Debug.Log("Great Job");
         }
+        else if (isPlayerInside == true 
+                 &&  Input.GetKeyDown(KeyCode.W) 
+                 && isUnlocked.GeIsLocked() == false)
+        {
+            Debug.Log("Nope");
+        }
+        
     }
 }
