@@ -42,7 +42,7 @@ public class Trap180 : MonoBehaviour
     }
     private IEnumerator TrapActivating()
     {
-        yield return new WaitForSeconds(2.79f);
+        yield return new WaitForSeconds(1.0f);
         rotation += Time.deltaTime * rotateSpeed;
         if (transform.eulerAngles.z > angleToStop)
         {
