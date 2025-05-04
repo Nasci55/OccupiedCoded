@@ -32,7 +32,6 @@ public class AnimatorVelocityLinker : MonoBehaviour
         {   
             playerVelocity = player.GetCurrentVelocity();
             animator.SetFloat(velocityParameter, playerVelocity);
-            Debug.Log("Velocity: " + playerVelocity);
         }
     }
 }
