@@ -41,13 +41,13 @@ public class Player : MonoBehaviour
 
 
 
+
     void Start()
     {
         mainCamera = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
         health = GetComponent<HealthSystem>();
-        
     }
 
     // Update is called once per frame
@@ -115,19 +115,11 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftControl) == true)
         {
             currentVelocity.x /= 3;
-            rb.transform.localScale = new Vector3(0.5f, 0.5f, 1.0f);
         }   
-        else if (Input.GetKeyUp(KeyCode.LeftControl) == true)
-        {
-            rb.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
-        }
+
 
         rb.linearVelocity = currentVelocity;
 
-        
-
-        Explosion();
-        BUBBLES();
 
         //Check the player health
         if (health.getHealth <= 0 )
@@ -135,32 +127,13 @@ public class Player : MonoBehaviour
             Destroy(GetComponentInChildren<SpriteRenderer>());
             StartCoroutine(Respawn());
         }
-
+        
 
     }
-
-    private void Explosion()
+    public float GetCurrentVelocity()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            _explosionParticle.Play();
-        }
-
+        return currentVelocity.x;
     }
-
-    private void BUBBLES()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            _bubbleParticle.Play();
-        }
-        else if (Input.GetKeyUp(KeyCode.Space))
-        {
-            _bubbleParticle.Stop();
-        }
-
-    }
-
 
     private void ComputeGrounded()
     {
