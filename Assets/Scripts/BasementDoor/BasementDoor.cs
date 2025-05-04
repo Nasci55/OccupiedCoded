@@ -34,7 +34,7 @@ public class BasementDoor : MonoBehaviour
             && Input.GetKeyDown(KeyCode.W)
             && isUnlocked.GeIsLocked() == true)
         {
-            Debug.Log("Great Job");
+            player.transform.position = new Vector3(873.5f, -17.3999996f, -1.9902519f);
         }
         else if (isPlayerInside == true 
                  &&  Input.GetKeyDown(KeyCode.W) 
