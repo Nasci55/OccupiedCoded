@@ -244,7 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger180: {fileID: 8932096686979409187}
   audioClipComingDown: {fileID: 8300000, guid: 7220431b63014dc43b00ef8384d3a561, type: 3}
-  audioClipGoingUp: {fileID: 8300000, guid: 5b4f5c054d2e6e144811f48cab6645b5, type: 3}
+  audioClipGoingUp: {fileID: 8300000, guid: b1dfb6707b8e2694daa0b848b8ca5fb5, type: 3}
 --- !u!61 &800117976395090313
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -17,10 +17,6 @@ public class Audio180Trap : MonoBehaviour
 
     void Update()
     {
-        if (audioClipComingDown == null)
-        {
-            Debug.Log("Choose an audio File");
-        }
 
         if (trigger180.isActivated() == true && playOnce == true)
         {
@@ -37,7 +33,7 @@ public class Audio180Trap : MonoBehaviour
     }
     private IEnumerator delay()
     {
-        yield return new WaitForSeconds(1f); 
+        yield return new WaitForSeconds(2f); 
         SoundManager.instance.playSound(audioClipGoingUp, transform, 1f);
     }
 }

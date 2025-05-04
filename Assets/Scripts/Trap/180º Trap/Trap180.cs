@@ -11,6 +11,7 @@ public class Trap180 : MonoBehaviour
     private float rotateSpeed;
     [SerializeField, Description("0 - 360")]
     private float angleToStop = 270;
+    bool activate = true;
 
 
 
@@ -32,23 +33,28 @@ public class Trap180 : MonoBehaviour
     private IEnumerator returnToOriginalPos()
     {
         yield return new WaitForSeconds(2);
-        rotation += Time.deltaTime * 1;
+        rotation += Time.deltaTime * 3;
+        Quaternion start = transform.rotation;
         Debug.Log("RODA AO CONTRARIO");
-        if (transform.eulerAngles.x < 360)
+        if (transform.eulerAngles.z < 360)
         {
-            gameObject.transform.rotation = Quaternion.identity;
+            //gameObject.transform.rotation = Quaternion.identity;
+            //transform.rotation = Quaternion.RotateTowards(Quaternion.Euler(new Vector3(0,0,-90)) ,Quaternion.identity, rotation);
+            //transform.rotation = Quaternion.RotateTowards(start, Quaternion.identity, 90);
+            transform.rotation = Quaternion.Slerp(start, Quaternion.identity, 0.02f);
         }
-        
+
     }
     private IEnumerator TrapActivating()
     {
         yield return new WaitForSeconds(1.0f);
         rotation += Time.deltaTime * rotateSpeed;
-        if (transform.eulerAngles.z > angleToStop)
+        if (transform.eulerAngles.z > angleToStop && activate == true)
         {
             gameObject.transform.rotation = Quaternion.Euler(0, 0, -rotation);
             Debug.Log(transform.eulerAngles.z);
-
+            if (transform.eulerAngles.z == angleToStop)
+                    activate = false;
         }
         else
         {
