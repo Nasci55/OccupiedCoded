@@ -145,11 +145,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1229716850304897250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ab78078efcbcb409f364062c5533a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c38ef48ec132ce45a17484283ee3c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  audioClip: {fileID: 8300000, guid: 29781ebe8a07cbd46a10e1a196ba1636, type: 3}
+  audioClip: {fileID: 8300000, guid: 2f3994439b800f647953e83a2dfbca80, type: 3}
 --- !u!1 &2883944198520549074
 GameObject:
   m_ObjectHideFlags: 0
