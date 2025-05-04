@@ -150,7 +150,10 @@ public class Player : MonoBehaviour
 
     }
 
-    public bool GetIsGrounded => isGrounded;
+    public bool GetIsGrounded()
+    {
+        return isGrounded;
+    }
 
     public Transform GetCameraTarget()
     {
