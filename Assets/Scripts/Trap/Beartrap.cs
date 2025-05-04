@@ -1,7 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using System.Collections;
-using UnityEditor.Experimental.GraphView;
 
 public class Beartrap : MonoBehaviour 
 {

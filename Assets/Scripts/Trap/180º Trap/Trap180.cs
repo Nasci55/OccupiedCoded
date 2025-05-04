@@ -1,6 +1,5 @@
 using System.Collections;
 using System.ComponentModel;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Trap180 : MonoBehaviour
