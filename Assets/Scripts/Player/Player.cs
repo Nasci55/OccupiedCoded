@@ -11,15 +11,9 @@ public class Player : MonoBehaviour
     private Vector2        velocity;
     [SerializeField]
     private LayerMask      groundCheckLayers;
-    [SerializeField]
-    private ParticleSystem _explosionParticle;
-    [SerializeField]
-    private ParticleSystem _bubbleParticle;
     
     [SerializeField, Header("Camera Points")]
     private Transform      cameraTarget1;
-    [SerializeField] 
-    private Transform cameraTarget2;
 
     [SerializeField, Header("Jump Stuff")]
     private float          gravityScaling = 2.0f;
@@ -37,7 +31,7 @@ public class Player : MonoBehaviour
     private bool           isGrounded;
     private float          originalGravity;
     private Vector2        currentVelocity;
-    private HealthSystem health;
+    private HealthSystem   health;
 
 
 
@@ -120,14 +114,7 @@ public class Player : MonoBehaviour
 
         rb.linearVelocity = currentVelocity;
 
-
-        //Check the player health
-        if (health.getHealth <= 0 )
-        {
-            Destroy(GetComponentInChildren<SpriteRenderer>());
-            StartCoroutine(Respawn());
-        }
-        
+        PlayerKill();
 
     }
     public float GetCurrentVelocity()
@@ -160,10 +147,12 @@ public class Player : MonoBehaviour
         return cameraTarget1;
     }
 
-    private IEnumerator Respawn()
+    private void PlayerKill()
     {
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (health.getHealth <= 0)
+        {
+            velocity = new Vector2(0, 0);
+            health.Die();
+        }
     }
-
 }

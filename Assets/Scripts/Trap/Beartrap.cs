@@ -11,12 +11,12 @@ public class Beartrap : MonoBehaviour
         HealthSystem healthSystem = collider.GetComponentInParent<HealthSystem>();
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            Debug.Log($"The {name} is deactivated");
+            //Debug.Log($"The {name} is deactivated");
         }
         else
         {
             SoundManager.instance.playSound(audioClip, transform, 1f);
-            Debug.Log($"{name} collided with {healthSystem.name}");
+            //Debug.Log($"{name} collided with {healthSystem.name}");
             healthSystem.DealDamage(damage);
             Debug.Log($"The player Health now is {healthSystem.getHealth}");
             Destroy(gameObject.GetComponent<BoxCollider2D>());

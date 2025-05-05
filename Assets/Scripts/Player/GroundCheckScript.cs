@@ -26,11 +26,11 @@ public class GroundCheckScript : MonoBehaviour
             isGrounded = player.GetIsGrounded();
             if (isGrounded==true)
             {
-                Debug.Log("Grounded: " + isGrounded);
+                //Debug.Log("Grounded: " + isGrounded);
             }
             else
             {
-                Debug.Log("Grounded: " + isGrounded);
+                //Debug.Log("Grounded: " + isGrounded);
             }
             animator.SetBool(groundedParameter, isGrounded);
         }

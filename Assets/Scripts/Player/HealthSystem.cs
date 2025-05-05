@@ -1,5 +1,7 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -21,9 +23,26 @@ public class HealthSystem : MonoBehaviour
         }
         else if (health <= 0)
         {
-            Destroy(gameObject);
+
         }
     }
 
     public int getHealth { get => health; }
+
+    private IEnumerator Respawn()
+    {
+        yield return new WaitForSeconds(2);
+        Debug.Log(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void Die()
+    {
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+        StartCoroutine(Respawn());
+    }
+
 }
