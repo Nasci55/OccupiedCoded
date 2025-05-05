@@ -21,7 +21,7 @@ public class BasementLock : MonoBehaviour
         }
     }
 
-    public bool GeIsLocked()
+    public bool GetIsLocked()
     { return IsLocked; }
 
 

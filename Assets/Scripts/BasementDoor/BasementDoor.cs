@@ -6,6 +6,7 @@ public class BasementDoor : MonoBehaviour
     private bool isPlayerInside;
     private Player player;
     private Camera camera;
+    private SpriteRenderer lockSprite;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -24,21 +25,31 @@ public class BasementDoor : MonoBehaviour
         player = FindFirstObjectByType<Player>();
         camera = FindFirstObjectByType<Camera>();
         isUnlocked = FindFirstObjectByType<BasementLock>();
+        lockSprite = GetComponentInChildren<SpriteRenderer>();
         
     }
 
     private void Update()
     {
+        if (isUnlocked.GetIsLocked() == true)
+        {
+            lockSprite.enabled = false;
+        }
+        else
+        {
+            lockSprite.enabled = true;
+        }
 
         if (isPlayerInside == true
             && Input.GetKeyDown(KeyCode.W)
-            && isUnlocked.GeIsLocked() == true)
+            && isUnlocked.GetIsLocked() == true)
         {
             player.transform.position = new Vector3(873.5f, -17.3999996f, -1.9902519f);
+
         }
-        else if (isPlayerInside == true 
-                 &&  Input.GetKeyDown(KeyCode.W) 
-                 && isUnlocked.GeIsLocked() == false)
+        else if (isPlayerInside == true
+                 && Input.GetKeyDown(KeyCode.W)
+                 && isUnlocked.GetIsLocked() == false)
         {
             Debug.Log("Nope");
         }
