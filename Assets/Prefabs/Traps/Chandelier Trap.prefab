@@ -303,3 +303,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   audioClip: {fileID: 8300000, guid: 2f4a33e0cab9eee4d83796d2c07579a3, type: 3}
+  audioClipHitting: {fileID: 8300000, guid: 126d54a7d1020714ab244dd46e512d65, type: 3}
