@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class PlayerHiding : MonoBehaviour
 {
-    HidingPlaceTag hidingPlace;
+    private HidingPlaceTag hidingPlace;
+    private bool isHiding = false;
     void Start()
     {
         
@@ -19,7 +20,16 @@ public class PlayerHiding : MonoBehaviour
         hidingPlace = collider.GetComponent<HidingPlaceTag>();
         if (hidingPlace != null)
         {
-            
+            isHiding = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        hidingPlace = collider.GetComponent<HidingPlaceTag>();
+        if (hidingPlace != null)
+        {
+            isHiding = false;
         }
     }
 }
