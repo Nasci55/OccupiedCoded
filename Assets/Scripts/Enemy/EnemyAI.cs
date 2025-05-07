@@ -6,6 +6,7 @@ public class EnemyAI : MonoBehaviour
     private Player player;
     private Vector3 playerPos;
     private float currentVelocity;
+    private bool beingSeen; 
 
 
     [SerializeField]
@@ -24,7 +25,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (player != null)
         {
-            if (playerPos.x - transform.position.x < maxDistance || playerPos.x - transform.position.x > -maxDistance)
+            if (playerPos.x - transform.position.x < maxDistance && playerPos.x - transform.position.x >-maxDistance)
             {
                 Debug.Log("A velocidade é 0");
                 currentVelocity = 0;
