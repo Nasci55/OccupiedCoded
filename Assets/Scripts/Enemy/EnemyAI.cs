@@ -27,7 +27,7 @@ public class EnemyAI : MonoBehaviour
         {
             if (playerPos.x - transform.position.x < maxDistance && playerPos.x - transform.position.x >-maxDistance)
             {
-                Debug.Log("A velocidade é 0");
+                
                 currentVelocity = 0;
             }
             else
@@ -35,13 +35,13 @@ public class EnemyAI : MonoBehaviour
 
                 if (playerPos.x < transform.position.x)
                 {
-                    Debug.Log("Ta a atras");
-                    currentVelocity = 0-velocity.x;
+                    
+                    currentVelocity = -velocity.x;
                     
                 }
                 else if (playerPos.x > transform.position.x)
                 {
-                    Debug.Log("Ta a frente");
+                   
                     currentVelocity = velocity.x;
                 }
             }
