@@ -31,7 +31,10 @@ public class Player : MonoBehaviour
     private bool           isGrounded;
     private float          originalGravity;
     private Vector2        currentVelocity;
+    private Vector2        originalVelocity;
     private HealthSystem   health;
+
+    private PlayerHiding PlayerHiding;
 
 
 
@@ -42,6 +45,8 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
         health = GetComponent<HealthSystem>();
+        PlayerHiding = GetComponent<PlayerHiding>();
+        originalVelocity = velocity; 
     }
 
     // Update is called once per frame
@@ -116,6 +121,8 @@ public class Player : MonoBehaviour
 
         PlayerKill();
 
+        IsPlayerHiding();
+
     }
     public float GetCurrentVelocity()
     {
@@ -154,5 +161,14 @@ public class Player : MonoBehaviour
             velocity = new Vector2(0, 0);
             health.Die();
         }
+    }
+
+    private void IsPlayerHiding()
+    {
+        if (PlayerHiding.currentlyHiding == true)
+        {
+            velocity = new Vector2(0, 0);
+        }
+        else velocity = originalVelocity;
     }
 }

@@ -4,15 +4,18 @@ public class PlayerHiding : MonoBehaviour
 {
     private TAG_HidingPlace hidingPlace;
     private bool isHiding = false;
-    private bool currentlyHiding = false;
-    private TAG_PlayerDetection player;
+    public bool currentlyHiding { get; private set; }
+    private TAG_PlayerDetection playerDetection;
+    private Collider2D mainPlayerCollider;
     private Collider2D playerCollider;
 
 
     void Start()
     {
-        player = FindFirstObjectByType<TAG_PlayerDetection>();
-        playerCollider = player.GetComponentInChildren<Collider2D>();
+        playerDetection = FindFirstObjectByType<TAG_PlayerDetection>();
+        playerCollider = playerDetection.GetComponentInChildren<Collider2D>();
+        mainPlayerCollider = GetComponent<Collider2D>();
+        currentlyHiding = false;
     }
 
     // Update is called once per frame
@@ -30,9 +33,9 @@ public class PlayerHiding : MonoBehaviour
         }
         else if (isHiding == true && Input.GetKeyDown(KeyCode.W) && currentlyHiding == true)
         {
+            Debug.Log("Escondido");
             foreach (Transform child in transform)
             {
-                Debug.Log(child.gameObject);
                 child.gameObject.SetActive(true);
             }
             playerCollider.enabled = true;
@@ -45,6 +48,7 @@ public class PlayerHiding : MonoBehaviour
         hidingPlace = collider.GetComponent<TAG_HidingPlace>();
         if (hidingPlace != null)
         {
+            Debug.Log("Está escondido");
             isHiding = true;
         }
     }
@@ -54,7 +58,19 @@ public class PlayerHiding : MonoBehaviour
         hidingPlace = collider.GetComponent<TAG_HidingPlace>();
         if (hidingPlace != null)
         {
+            Debug.Log("Não está esocndido");
             isHiding = false;
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        hidingPlace = collider.GetComponent<TAG_HidingPlace>();
+        if (hidingPlace != null)
+        {
+            Debug.Log("Está esocndido");
+            isHiding = true;
+        }
+        
     }
 }

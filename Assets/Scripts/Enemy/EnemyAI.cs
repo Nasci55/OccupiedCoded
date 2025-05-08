@@ -28,7 +28,7 @@ public class EnemyAI : MonoBehaviour
     {
         playerPos = player.transform.position;
         Chase();
-        Debug.Log(visionState.IsPlayerBeingSeen);
+        //Debug.Log(visionState.IsPlayerBeingSeen);
     }
     private void Chase()
     {
