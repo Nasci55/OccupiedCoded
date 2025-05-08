@@ -7,7 +7,7 @@ public class EnemyVisionState : MonoBehaviour
     private TAG_SmallVisionEnemy smallVisionEnemy;
     private Collider2D cSmallVision;
     private Collider2D cBigVision;
-    private Player player;
+    private TAG_PlayerDetection player;
     private Collider2D playerCollider;
     public bool IsPlayerBeingSeen { get; private set; }
 
@@ -19,7 +19,7 @@ public class EnemyVisionState : MonoBehaviour
         cSmallVision = smallVisionEnemy.GetComponent<Collider2D>();
         bigVisionEnemy = FindFirstObjectByType <TAG_BigVisionEnemy>();
         cBigVision = bigVisionEnemy.GetComponent<Collider2D>();
-        player = FindFirstObjectByType<Player>();
+        player = FindFirstObjectByType<TAG_PlayerDetection>();
     }
 
     private void Update()
@@ -48,7 +48,7 @@ public class EnemyVisionState : MonoBehaviour
 
         if (playerCollider != null)
         {
-            if ((cBigVision || cSmallVision) == playerCollider )
+            if (playerCollider.IsTouching(cBigVision) || playerCollider.IsTouching(cSmallVision))
             {
                 IsPlayerBeingSeen = true;
             }

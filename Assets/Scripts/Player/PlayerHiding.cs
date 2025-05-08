@@ -5,15 +5,14 @@ public class PlayerHiding : MonoBehaviour
     private TAG_HidingPlace hidingPlace;
     private bool isHiding = false;
     private bool currentlyHiding = false;
+    private TAG_PlayerDetection player;
     private Collider2D playerCollider;
-    private Rigidbody2D playerRB;
-    private float originalGravity; 
+
 
     void Start()
     {
-        playerCollider = GetComponent<Collider2D>();
-        playerRB = GetComponent<Rigidbody2D>();
-        originalGravity = playerRB.gravityScale;
+        player = FindFirstObjectByType<TAG_PlayerDetection>();
+        playerCollider = player.GetComponentInChildren<Collider2D>();
     }
 
     // Update is called once per frame
@@ -25,6 +24,7 @@ public class PlayerHiding : MonoBehaviour
               {
                   child.gameObject.SetActive(false);
               }
+              playerCollider.enabled = false;  
               currentlyHiding = true; 
             
         }
@@ -35,6 +35,7 @@ public class PlayerHiding : MonoBehaviour
                 Debug.Log(child.gameObject);
                 child.gameObject.SetActive(true);
             }
+            playerCollider.enabled = true;
             currentlyHiding = false;
         }
     }
