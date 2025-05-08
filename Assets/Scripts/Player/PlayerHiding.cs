@@ -33,7 +33,6 @@ public class PlayerHiding : MonoBehaviour
         }
         else if (isHiding == true && Input.GetKeyDown(KeyCode.W) && currentlyHiding == true)
         {
-            Debug.Log("Escondido");
             foreach (Transform child in transform)
             {
                 child.gameObject.SetActive(true);
@@ -48,7 +47,6 @@ public class PlayerHiding : MonoBehaviour
         hidingPlace = collider.GetComponent<TAG_HidingPlace>();
         if (hidingPlace != null)
         {
-            Debug.Log("Está escondido");
             isHiding = true;
         }
     }
@@ -58,7 +56,6 @@ public class PlayerHiding : MonoBehaviour
         hidingPlace = collider.GetComponent<TAG_HidingPlace>();
         if (hidingPlace != null)
         {
-            Debug.Log("Não está esocndido");
             isHiding = false;
         }
     }
@@ -68,7 +65,6 @@ public class PlayerHiding : MonoBehaviour
         hidingPlace = collider.GetComponent<TAG_HidingPlace>();
         if (hidingPlace != null)
         {
-            Debug.Log("Está esocndido");
             isHiding = true;
         }
         
