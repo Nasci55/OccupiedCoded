@@ -47,7 +47,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Cursor.visible= false;
         ComputeGrounded();
 
         Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
