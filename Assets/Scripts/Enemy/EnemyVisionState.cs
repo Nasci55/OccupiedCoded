@@ -7,7 +7,9 @@ public class EnemyVisionState : MonoBehaviour
     private TAG_SmallVisionEnemy smallVisionEnemy;
     private Collider2D cSmallVision;
     private Collider2D cBigVision;
-    private bool flashlightState;
+    private Player player;
+    private Collider2D playerCollider;
+    public bool IsPlayerBeingSeen { get; private set; }
 
 
     private void Start()
@@ -17,22 +19,58 @@ public class EnemyVisionState : MonoBehaviour
         cSmallVision = smallVisionEnemy.GetComponent<Collider2D>();
         bigVisionEnemy = FindFirstObjectByType <TAG_BigVisionEnemy>();
         cBigVision = bigVisionEnemy.GetComponent<Collider2D>();
+        player = FindFirstObjectByType<Player>();
     }
 
     private void Update()
-    {    
-        
-        if (flashlight.GetFlashlightState() == true)
+    {
+        EnemyVisionRange();
+        EnemyDetection();
+    }
+
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        playerCollider = player.GetComponent<Collider2D>();
+
+        if (playerCollider != null)
         {
-            //Debug.Log("On" + flashlightState);
-            cBigVision.enabled = true;
-            cSmallVision.enabled = false;
+            if (collider == playerCollider)
+            {
+                IsPlayerBeingSeen = true;
+            }
+            else IsPlayerBeingSeen = false;
         }
-        else
+    }
+
+    private void EnemyDetection()
+    {
+        playerCollider = player.GetComponent<Collider2D>();
+
+        if (playerCollider != null)
         {
-            //Debug.Log("Off" + flashlightState);
-            cBigVision.enabled = false;
-            cSmallVision.enabled = true;
+            if ((cBigVision || cSmallVision) == playerCollider )
+            {
+                IsPlayerBeingSeen = true;
+            }
+            else IsPlayerBeingSeen = false;
+        }
+    }
+
+    private void EnemyVisionRange()
+    {
+        if (flashlight != null)
+        {
+            if (flashlight.GetFlashlightState() == true)
+            {
+
+                cBigVision.enabled = true;
+                cSmallVision.enabled = false;
+            }
+            else
+            {
+                cBigVision.enabled = false;
+                cSmallVision.enabled = true;
+            }
         }
     }
 }

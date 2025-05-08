@@ -6,7 +6,8 @@ public class EnemyAI : MonoBehaviour
     private Player player;
     private Vector3 playerPos;
     private float currentVelocity;
-    private bool beingSeen; 
+    private bool beingSeen;
+    private EnemyVisionState visionState;
 
 
     [SerializeField]
@@ -18,9 +19,17 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         player = FindFirstObjectByType<Player>();
+        visionState = GetComponentInChildren<EnemyVisionState>();
     }
 
     
+
+    private void Update()
+    {
+        playerPos = player.transform.position;
+        Chase();
+        //Debug.Log(visionState.IsPlayerBeingSeen);
+    }
     private void Chase()
     {
         if (player != null)
@@ -45,17 +54,8 @@ public class EnemyAI : MonoBehaviour
                     currentVelocity = velocity.x;
                 }
             }
-            
-            
-            
             transform.position = new Vector3(transform.position.x + currentVelocity, transform.position.y, transform.position.z);
 
         }
-    }
-
-    private void Update()
-    {
-        playerPos = player.transform.position;
-        Chase();
     }
 }
