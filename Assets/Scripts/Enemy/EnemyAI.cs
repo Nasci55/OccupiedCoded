@@ -27,8 +27,9 @@ public class EnemyAI : MonoBehaviour
     private void Update()
     {
         playerPos = player.transform.position;
-        Chase();
-        Debug.Log($"Is the enemy seeing you? {visionState.IsPlayerBeingSeen}");
+        //Chase();
+        //Debug.Log($"Is the enemy seeing you? {visionState.IsPlayerBeingSeen}");
+        transform.position = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
     }
     private void Chase()
     {

@@ -33,11 +33,13 @@ public class Player : MonoBehaviour
     private Vector2        currentVelocity;
     private Vector2        originalVelocity;
     private HealthSystem   health;
+    private Collider2D playerCollider;
+    private PlayerHiding playerHiding;
 
-    private PlayerHiding PlayerHiding;
 
 
-
+    private EnemyAI enemy;
+    private Collider2D enemyCollider;
 
     void Start()
     {
@@ -45,8 +47,11 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
         health = GetComponent<HealthSystem>();
-        PlayerHiding = GetComponent<PlayerHiding>();
-        originalVelocity = velocity; 
+        playerHiding = GetComponent<PlayerHiding>();
+        originalVelocity = velocity;
+        enemy = FindFirstObjectByType<EnemyAI>();
+        enemyCollider = enemy.GetComponent<Collider2D>();
+        playerCollider = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -165,10 +170,19 @@ public class Player : MonoBehaviour
 
     private void IsPlayerHiding()
     {
-        if (PlayerHiding.currentlyHiding == true)
+
+
+        if (playerHiding.currentlyHiding == true)
         {
             velocity = new Vector2(0, 0);
+
+
+            Physics2D.IgnoreCollision(playerCollider, enemyCollider, true);
         }
-        else velocity = originalVelocity;
+        else
+        {
+            velocity = originalVelocity;
+            Physics2D.IgnoreCollision(playerCollider, enemyCollider, false);
+        }
     }
 }
