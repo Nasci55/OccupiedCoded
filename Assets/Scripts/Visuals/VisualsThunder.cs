@@ -11,6 +11,11 @@ public class VisualsThunder : MonoBehaviour
     [SerializeField]
     private float timerBetweenThunders;
 
+    [SerializeField, Header("Sound Manager")] 
+    private AudioClip audioSound;
+    [SerializeField]
+    private float Volume = 1.0f;
+
     private Light2D thunderLight;
     private float originalTimer;
     private float timer;
@@ -36,6 +41,15 @@ public class VisualsThunder : MonoBehaviour
         {
             timer = originalTimer;
             StartCoroutine(ThunderDelay());
+            int fiftySound = Random.Range(0, 1);
+            if (fiftySound == 0)
+            {
+                if (audioSound != null)
+                {
+                    SoundManager.instance.playSound(audioSound, transform, Volume);
+                }
+            }
+
         }
 
 
