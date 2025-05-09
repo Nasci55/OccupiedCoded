@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -29,7 +30,8 @@ public class EnemyAI : MonoBehaviour
         playerPos = player.transform.position;
         //Chase();
         //Debug.Log($"Is the enemy seeing you? {visionState.IsPlayerBeingSeen}");
-        transform.position = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
+        //transform.position = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
+        StartCoroutine(Wandering());
     }
     private void Chase()
     {
@@ -59,4 +61,29 @@ public class EnemyAI : MonoBehaviour
 
         }
     }
+
+    private IEnumerator Wandering()
+    {
+        yield return new WaitForSeconds(Random.Range(3, 5));
+        
+        int randomPath = Random.Range(0, 2);
+
+
+        switch (randomPath)
+        {
+            case 0:
+                Debug.Log("Direita");
+                new Vector3(transform.position.x + currentVelocity, transform.position.y, transform.position.z);
+                break;
+            case 1:
+                Debug.Log("Esquerda");
+                new Vector3(transform.position.x - currentVelocity, transform.position.y, transform.position.z);
+                break;
+            case 2:
+                Debug.Log("Parado");
+                new Vector3(0, transform.position.y, transform.position.z);
+                break;
+        }
+
+        }
 }
