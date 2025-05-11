@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Player_Walk_Anim_Blue_withflashlight_0: -7768345041135387982
+      Player_Walk_Anim_Blue_withflashlight_1: -2999431638284768980
+      Player_Walk_Anim_Blue_withflashlight_10: 5991795333936183686
+      Player_Walk_Anim_Blue_withflashlight_11: 32404677758499402
+      Player_Walk_Anim_Blue_withflashlight_12: 1806356606090983910
+      Player_Walk_Anim_Blue_withflashlight_13: 1111532646249312737
+      Player_Walk_Anim_Blue_withflashlight_14: 4481231235824756819
+      Player_Walk_Anim_Blue_withflashlight_15: 4946282685897912827
+      Player_Walk_Anim_Blue_withflashlight_2: -8774181195727569938
+      Player_Walk_Anim_Blue_withflashlight_3: 7291045621428559974
+      Player_Walk_Anim_Blue_withflashlight_4: -927095910476185594
+      Player_Walk_Anim_Blue_withflashlight_5: 2626960504114780324
+      Player_Walk_Anim_Blue_withflashlight_6: -7130390502036646466
+      Player_Walk_Anim_Blue_withflashlight_7: 242342545921658160
+      Player_Walk_Anim_Blue_withflashlight_8: -3863071333989726838
+      Player_Walk_Anim_Blue_withflashlight_9: -7860693625564844912
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

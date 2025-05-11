@@ -372,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ui_Flipnote_0: -4934590521189592665
+      Ui_Flipnote_1: -5434265193172950655
+      Ui_Flipnote_2: 2564592459151653003
+      Ui_Flipnote_3: 3875636466800381977
+      Ui_Flipnote_4: -5076218775028787997
+      Ui_Flipnote_5: 4734961068326687937
+      Ui_Flipnote_6: 9133235674825169063
+      Ui_Flipnote_7: -4696673485501921803
+      Ui_Flipnote_8: 8843584694743867415
+      Ui_Flipnote_9: 5030591020276971853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
