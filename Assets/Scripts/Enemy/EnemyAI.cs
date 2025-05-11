@@ -72,19 +72,26 @@ public class EnemyAI : MonoBehaviour
     
     private IEnumerator Wandering()
     {
-        
+        float originalpos = transform.position.x;
+
         int randomPath = Random.Range(0, 2);
 
 
         switch (randomPath)
         {
             case 0:
-                Debug.Log("Direita");
-                transform.position = new Vector3(transform.position.x + velocity.x, transform.position.y, transform.position.z);
+                if (randomPath > originalpos || -randomPath < -originalpos)
+                {
+                    Debug.Log("Direita");
+                    transform.position = new Vector3(transform.position.x + velocity.x, transform.position.y, transform.position.z);
+                }
                 break;
             case 1:
-                Debug.Log("Esquerda");
-                transform.position = new Vector3(transform.position.x - velocity.x, transform.position.y, transform.position.z);
+                if (randomPath > originalpos || -randomPath < -originalpos)
+                {
+                    Debug.Log("Esquerda");
+                    transform.position = new Vector3(transform.position.x - velocity.x, transform.position.y, transform.position.z);
+                }
                 break;
             case 2:
                 Debug.Log("Parado");
