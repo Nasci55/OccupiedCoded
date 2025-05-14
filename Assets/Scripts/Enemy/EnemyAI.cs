@@ -12,15 +12,24 @@ public class EnemyAI : MonoBehaviour
     private Rigidbody2D rb;
     float changeInDirectionCooldown = 5;
     float randomDirection;
+    bool soundEffect = true;
 
 
 
 
-[SerializeField]
+
+
+    [SerializeField]
     private Vector2 velocity;
     
     [SerializeField]
     private float maxDistance;
+
+    [SerializeField, Header ("Audio")]
+    private AudioClip EnemyAudio;
+
+    [SerializeField]
+    private float volume = 0.1f;
 
     void Start()
     {
@@ -39,6 +48,7 @@ public class EnemyAI : MonoBehaviour
         if (visionState.IsPlayerBeingSeen == true)
         {
             Chase();
+            EnemySeeingPlayerAudio();
         }
         else
         {
@@ -74,7 +84,18 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    
+    private void EnemySeeingPlayerAudio()
+    {
+        if (visionState.IsPlayerBeingSeen == true && soundEffect == true)
+        {
+            SoundManager.instance.playSound(EnemyAudio, transform, volume);
+            soundEffect = false;
+        }
+        else if (visionState.IsPlayerBeingSeen == false && soundEffect == false)
+        {
+            soundEffect = true;
+        }
+    }
     
     
     private void Wandering()
