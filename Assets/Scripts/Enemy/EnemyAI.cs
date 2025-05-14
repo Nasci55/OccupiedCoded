@@ -10,10 +10,13 @@ public class EnemyAI : MonoBehaviour
     private bool beingSeen;
     private EnemyVisionState visionState;
     private Rigidbody2D rb;
+    float changeInDirectionCooldown = 5;
+    float randomDirection;
 
-    float randomPath;
 
-    [SerializeField]
+
+
+[SerializeField]
     private Vector2 velocity;
     
     [SerializeField]
@@ -23,7 +26,7 @@ public class EnemyAI : MonoBehaviour
     {
         player = FindFirstObjectByType<Player>();
         visionState = GetComponentInChildren<EnemyVisionState>();
-        randomPath = Random.Range(-75, 75);
+
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -49,7 +52,7 @@ public class EnemyAI : MonoBehaviour
             if (playerPos.x - transform.position.x < maxDistance && playerPos.x - transform.position.x >-maxDistance)
             {
                 
-                currentVelocity = 0;
+                currentVelocity = velocity *0;
             }
             else
             {
@@ -57,16 +60,16 @@ public class EnemyAI : MonoBehaviour
                 if (playerPos.x < transform.position.x)
                 {
                     
-                    currentVelocity = -velocity.x;
+                    currentVelocity = -velocity;
                     
                 }
                 else if (playerPos.x > transform.position.x)
                 {
                    
-                    currentVelocity = velocity.x;
+                    currentVelocity = velocity;
                 }
             }
-            transform.position = new Vector3(transform.position.x + currentVelocity, transform.position.y, transform.position.z);
+            rb.linearVelocity = currentVelocity;
 
         }
     }
@@ -76,34 +79,28 @@ public class EnemyAI : MonoBehaviour
     
     private void Wandering()
     {
-        float originalpos = transform.position.x;
-
-        randomPath = Random.Range(-25, 25);
-
-        float newPosition = originalpos + randomPath;
+         changeInDirectionCooldown -= Time.deltaTime;
        
-        if (originalpos > newPosition && randomPath < 0)
+        
+        
+        if(changeInDirectionCooldown <= 0)
+        {
+            randomDirection = Random.Range(-1f, 1f);
+            changeInDirectionCooldown = Random.Range(2f, 3f);   
+            Debug.Log($"Cooldown : {changeInDirectionCooldown} \n velocity = {rb.linearVelocity}");
+        }
+        else
+        {
+            if (randomDirection < 0)
             {
-
-                velocity = new Vector2(2f, 0f); 
-                currentVelocity = -velocity.x;
+                rb.linearVelocity = velocity/1.25f * -1;
             }
-        else if (originalpos < newPosition && randomPath > 0)
-           {
-                velocity =new Vector2 (2f, 0f);
-                currentVelocity = velocity.x;
-            }
-
-
-        currentVelocity = rb.linearVelocity;
-
-        currentVelocity.x = moveDir * velocity.x;
-
-
-
-
-
-        //transform.position = new Vector3(transform.position.x + currentVelocity, transform.position.y, transform.position.z);
+            else
+            {
+                rb.linearVelocity = velocity/1.25f * 1;
+            }        
+        
+        }
 
     }
 }
