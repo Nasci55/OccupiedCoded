@@ -6,10 +6,12 @@ public class EnemyAI : MonoBehaviour
 {
     private Player player;
     private Vector3 playerPos;
-    private float currentVelocity;
+    private Vector2 currentVelocity;
     private bool beingSeen;
     private EnemyVisionState visionState;
+    private Rigidbody2D rb;
 
+    float randomPath;
 
     [SerializeField]
     private Vector2 velocity;
@@ -21,6 +23,8 @@ public class EnemyAI : MonoBehaviour
     {
         player = FindFirstObjectByType<Player>();
         visionState = GetComponentInChildren<EnemyVisionState>();
+        randomPath = Random.Range(-75, 75);
+        rb = GetComponent<Rigidbody2D>();
     }
 
     
@@ -35,7 +39,7 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            StartCoroutine(Wandering());
+          Wandering();
         }
     }
     private void Chase()
@@ -70,36 +74,36 @@ public class EnemyAI : MonoBehaviour
     
     
     
-    private IEnumerator Wandering()
+    private void Wandering()
     {
         float originalpos = transform.position.x;
 
-        int randomPath = Random.Range(0, 2);
+        randomPath = Random.Range(-25, 25);
+
+        float newPosition = originalpos + randomPath;
+       
+        if (originalpos > newPosition && randomPath < 0)
+            {
+
+                velocity = new Vector2(2f, 0f); 
+                currentVelocity = -velocity.x;
+            }
+        else if (originalpos < newPosition && randomPath > 0)
+           {
+                velocity =new Vector2 (2f, 0f);
+                currentVelocity = velocity.x;
+            }
 
 
-        switch (randomPath)
-        {
-            case 0:
-                if (randomPath > originalpos || -randomPath < -originalpos)
-                {
-                    Debug.Log("Direita");
-                    transform.position = new Vector3(transform.position.x + velocity.x, transform.position.y, transform.position.z);
-                }
-                break;
-            case 1:
-                if (randomPath > originalpos || -randomPath < -originalpos)
-                {
-                    Debug.Log("Esquerda");
-                    transform.position = new Vector3(transform.position.x - velocity.x, transform.position.y, transform.position.z);
-                }
-                break;
-            case 2:
-                Debug.Log("Parado");
-                transform.position = new Vector3(0, transform.position.y, transform.position.z);
-                break;
-        }
-        yield return new WaitForSeconds(Random.Range(3, 5));
+        currentVelocity = rb.linearVelocity;
 
+        currentVelocity.x = moveDir * velocity.x;
+
+
+
+
+
+        //transform.position = new Vector3(transform.position.x + currentVelocity, transform.position.y, transform.position.z);
 
     }
 }

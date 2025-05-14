@@ -113,7 +113,6 @@ public class Player : MonoBehaviour
             currentVelocity.x /= 3;
         }
 
-        rb.linearVelocity = currentVelocity;
 
         // Crouch Button
         if (Input.GetKey(KeyCode.LeftControl) == true)
