@@ -65,4 +65,6 @@ public class Flashlight : MonoBehaviour
             }
         }
     }
+
+   public bool GetFlashlightState() => lightTurn;
 }

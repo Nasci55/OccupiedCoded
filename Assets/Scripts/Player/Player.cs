@@ -31,10 +31,15 @@ public class Player : MonoBehaviour
     private bool           isGrounded;
     private float          originalGravity;
     private Vector2        currentVelocity;
+    private Vector2        originalVelocity;
     private HealthSystem   health;
+    private Collider2D playerCollider;
+    private PlayerHiding playerHiding;
 
 
 
+    private EnemyAI enemy;
+    private Collider2D enemyCollider;
 
     void Start()
     {
@@ -42,6 +47,11 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
         health = GetComponent<HealthSystem>();
+        playerHiding = GetComponent<PlayerHiding>();
+        originalVelocity = velocity;
+        enemy = FindFirstObjectByType<EnemyAI>();
+        enemyCollider = enemy.GetComponent<Collider2D>();
+        playerCollider = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -103,7 +113,6 @@ public class Player : MonoBehaviour
             currentVelocity.x /= 3;
         }
 
-        rb.linearVelocity = currentVelocity;
 
         // Crouch Button
         if (Input.GetKey(KeyCode.LeftControl) == true)
@@ -115,6 +124,8 @@ public class Player : MonoBehaviour
         rb.linearVelocity = currentVelocity;
 
         PlayerKill();
+
+        IsPlayerHiding();
 
     }
     public float GetCurrentVelocity()
@@ -153,6 +164,24 @@ public class Player : MonoBehaviour
         {
             velocity = new Vector2(0, 0);
             health.Die();
+        }
+    }
+
+    private void IsPlayerHiding()
+    {
+
+
+        if (playerHiding.currentlyHiding == true)
+        {
+            velocity = new Vector2(0, 0);
+
+
+            Physics2D.IgnoreCollision(playerCollider, enemyCollider, true);
+        }
+        else
+        {
+            velocity = originalVelocity;
+            Physics2D.IgnoreCollision(playerCollider, enemyCollider, false);
         }
     }
 }

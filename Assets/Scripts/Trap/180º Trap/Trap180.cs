@@ -37,9 +37,6 @@ public class Trap180 : MonoBehaviour
         Debug.Log("RODA AO CONTRARIO");
         if (transform.eulerAngles.z < 360)
         {
-            //gameObject.transform.rotation = Quaternion.identity;
-            //transform.rotation = Quaternion.RotateTowards(Quaternion.Euler(new Vector3(0,0,-90)) ,Quaternion.identity, rotation);
-            //transform.rotation = Quaternion.RotateTowards(start, Quaternion.identity, 90);
             transform.rotation = Quaternion.Slerp(start, Quaternion.identity, 0.02f);
         }
 
@@ -51,7 +48,6 @@ public class Trap180 : MonoBehaviour
         if (transform.eulerAngles.z > angleToStop && activate == true)
         {
             gameObject.transform.rotation = Quaternion.Euler(0, 0, -rotation);
-            Debug.Log(transform.eulerAngles.z);
             if (transform.eulerAngles.z == angleToStop)
                     activate = false;
         }

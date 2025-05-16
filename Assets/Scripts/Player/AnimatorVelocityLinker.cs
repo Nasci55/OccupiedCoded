@@ -31,7 +31,14 @@ public class AnimatorVelocityLinker : MonoBehaviour
         if (player != null)
         {   
             playerVelocity = player.GetCurrentVelocity();
-            animator.SetFloat(velocityParameter, playerVelocity);
+            if (player.transform.rotation == Quaternion.identity)
+            {
+                animator.SetFloat(velocityParameter, playerVelocity);
+            }
+            else
+            {
+                animator.SetFloat(velocityParameter, -playerVelocity);
+            }   
         }
     }
 }
