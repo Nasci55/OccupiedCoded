@@ -125,7 +125,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: PALLETE
     originalName: 
-    pivot: {x: 0.4375, y: 0}
+    pivot: {x: 0.42857146, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,7 +133,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 8
+      width: 7
       height: 1
     spriteID: 905d5658068b0df40bbd22a599925cfe
     spriteBone: []
@@ -159,7 +159,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 9
+        width: 8
         height: 1
       spriteId: 905d5658068b0df40bbd22a599925cfe
     linkedCells: []
@@ -180,5 +180,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 9, y: 1}
+  canvasSize: {x: 8, y: 1}
   previousTextureSize: {x: 16, y: 16}

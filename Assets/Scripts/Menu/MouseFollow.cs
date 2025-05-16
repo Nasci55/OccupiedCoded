@@ -12,6 +12,8 @@ public class MouseFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rectTransform.anchoredPosition = Input.mousePosition;
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition.z = 0;
+        transform.position = mousePosition;
     }
 }
