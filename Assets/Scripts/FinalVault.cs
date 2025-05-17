@@ -19,6 +19,7 @@ public class FinalVault : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(WallCollider.enabled);
         if (isPlayerInside == true
             && Input.GetKeyDown(KeyCode.W)
             && didThePLayerGetTheKey == true)

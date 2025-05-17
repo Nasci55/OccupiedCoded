@@ -16,7 +16,6 @@ public class DoorSystem : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(isPlayerInside);
         
         if (isPlayerInside && Input.GetKeyDown(KeyCode.W))
         {
