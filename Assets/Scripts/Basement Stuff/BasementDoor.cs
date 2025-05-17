@@ -8,12 +8,11 @@ public class BasementDoor : MonoBehaviour
     private bool isPlayerInside;
     private Player player;
     private SpriteRenderer lockSprite;
-    private Collider2D playerCollider;
 
     private void Start()
     {
         player = FindFirstObjectByType<Player>();
-        playerCollider = GetComponent<Collider2D>();
+ 
         lockSprite = GetComponentInChildren<SpriteRenderer>();
         
     }
@@ -45,7 +44,8 @@ public class BasementDoor : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider == playerCollider)
+        Player playerCollider = collider.GetComponent<Player>();
+        if (playerCollider != null)
         {
             isPlayerInside = true;
             Debug.Log("Player entered the area");
@@ -54,7 +54,8 @@ public class BasementDoor : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider == playerCollider)
+        Player playerCollider = collider.GetComponent<Player>();
+        if (playerCollider != null)
         {
             isPlayerInside = false;
             Debug.Log("Player left the area");
