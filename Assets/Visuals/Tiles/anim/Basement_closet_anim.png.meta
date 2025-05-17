@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Basement_closet_anim_0: -9148402623477114791
+      Basement_closet_anim_1: -2114806520026692264
+      Basement_closet_anim_2: -7001057497565509342
+      Basement_closet_anim_3: 2691508377134038057
+      Basement_closet_anim_4: -8840926223630181164
+      Basement_closet_anim_5: 8451546221141130406
+      Basement_closet_anim_6: -2824585771199014097
+      Basement_closet_anim_7: 1590004129750793766
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -108,7 +108,7 @@ public class EnemyAI : MonoBehaviour
         {
             randomDirection = Random.Range(-1f, 1f);
             changeInDirectionCooldown = Random.Range(2f, 3f);   
-            Debug.Log($"Cooldown : {changeInDirectionCooldown} \n velocity = {rb.linearVelocity}");
+            //Debug.Log($"Cooldown : {changeInDirectionCooldown} \n velocity = {rb.linearVelocity}");
         }
         else
         {

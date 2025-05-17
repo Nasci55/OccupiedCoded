@@ -1,0 +1,1192 @@
+fileFormatVersion: 2
+guid: 6d65686c2291c964e999e423dc8bd027
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1656720886421441437
+    second: Player_Walk_Anim_Blue_FINAL!_0
+  - first:
+      213: -2247254796582426020
+    second: Player_Walk_Anim_Blue_FINAL!_1
+  - first:
+      213: 8482785910613454018
+    second: Player_Walk_Anim_Blue_FINAL!_2
+  - first:
+      213: -7846985110048335779
+    second: Player_Walk_Anim_Blue_FINAL!_3
+  - first:
+      213: 6453234678802699388
+    second: Player_Walk_Anim_Blue_FINAL!_4
+  - first:
+      213: -1855243908437902485
+    second: Player_Walk_Anim_Blue_FINAL!_5
+  - first:
+      213: -479623901008148392
+    second: Player_Walk_Anim_Blue_FINAL!_6
+  - first:
+      213: -8322063906160345110
+    second: Player_Walk_Anim_Blue_FINAL!_7
+  - first:
+      213: 1278473975548255612
+    second: Player_Walk_Anim_Blue_FINAL!_8
+  - first:
+      213: 1193908110061598345
+    second: Player_Walk_Anim_Blue_FINAL!_9
+  - first:
+      213: -5340726232576590522
+    second: Player_Walk_Anim_Blue_FINAL!_10
+  - first:
+      213: -2021995259182958304
+    second: Player_Walk_Anim_Blue_FINAL!_11
+  - first:
+      213: -6697958938532562477
+    second: Player_Walk_Anim_Blue_FINAL!_12
+  - first:
+      213: 246749078747114253
+    second: Player_Walk_Anim_Blue_FINAL!_13
+  - first:
+      213: -3560136166937382165
+    second: Player_Walk_Anim_Blue_FINAL!_14
+  - first:
+      213: -6381694812721829419
+    second: Player_Walk_Anim_Blue_FINAL!_15
+  - first:
+      213: -2867920254177249140
+    second: Player_Walk_Anim_Blue_FINAL!_16
+  - first:
+      213: 8129723919973253438
+    second: Player_Walk_Anim_Blue_FINAL!_17
+  - first:
+      213: -7154094089950797487
+    second: Player_Walk_Anim_Blue_FINAL!_18
+  - first:
+      213: -651512961629645039
+    second: Player_Walk_Anim_Blue_FINAL!_19
+  - first:
+      213: 2206147675346880319
+    second: Player_Walk_Anim_Blue_FINAL!_20
+  - first:
+      213: -3748115386517435702
+    second: Player_Walk_Anim_Blue_FINAL!_21
+  - first:
+      213: 1671287339460034791
+    second: Player_Walk_Anim_Blue_FINAL!_22
+  - first:
+      213: 1239538606487504545
+    second: Player_Walk_Anim_Blue_FINAL!_23
+  - first:
+      213: 7404322496224962997
+    second: Player_Walk_Anim_Blue_FINAL!_24
+  - first:
+      213: -2826851785704827726
+    second: Player_Walk_Anim_Blue_FINAL!_25
+  - first:
+      213: 4308373613106745773
+    second: Player_Walk_Anim_Blue_FINAL!_26
+  - first:
+      213: 205637701572541703
+    second: Player_Walk_Anim_Blue_FINAL!_27
+  - first:
+      213: 2208056493655680009
+    second: Player_Walk_Anim_Blue_FINAL!_28
+  - first:
+      213: 5154475471131239758
+    second: Player_Walk_Anim_Blue_FINAL!_29
+  - first:
+      213: 4715061696671057672
+    second: Player_Walk_Anim_Blue_FINAL!_30
+  - first:
+      213: -7363768492750478475
+    second: Player_Walk_Anim_Blue_FINAL!_31
+  - first:
+      213: -3924992393493215547
+    second: Player_Walk_Anim_Blue_FINAL!_32
+  - first:
+      213: 799563876721399253
+    second: Player_Walk_Anim_Blue_FINAL!_33
+  - first:
+      213: -1944067738339392698
+    second: Player_Walk_Anim_Blue_FINAL!_34
+  - first:
+      213: -688557903609044678
+    second: Player_Walk_Anim_Blue_FINAL!_35
+  - first:
+      213: -8587277187432597625
+    second: Player_Walk_Anim_Blue_FINAL!_36
+  - first:
+      213: 2546249335064425616
+    second: Player_Walk_Anim_Blue_FINAL!_37
+  - first:
+      213: 5068906005044217431
+    second: Player_Walk_Anim_Blue_FINAL!_38
+  - first:
+      213: 714830896449724370
+    second: Player_Walk_Anim_Blue_FINAL!_39
+  - first:
+      213: -4321645642455223754
+    second: Player_Walk_Anim_Blue_FINAL!_40
+  - first:
+      213: 196552682795207953
+    second: Player_Walk_Anim_Blue_FINAL!_41
+  - first:
+      213: 3687461792568153086
+    second: Player_Walk_Anim_Blue_FINAL!_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36431e8a1252209e0800000000000000
+      internalID: -1656720886421441437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a69e14ba520d0e0800000000000000
+      internalID: -2247254796582426020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ccadcb87d8e8b570800000000000000
+      internalID: 8482785910613454018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d581ac51e98e91390800000000000000
+      internalID: -7846985110048335779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74544aefbe7e8950800000000000000
+      internalID: 6453234678802699388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bf9d9ae79d046e0800000000000000
+      internalID: -1855243908437902485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8584f9a6a980859f0800000000000000
+      internalID: -479623901008148392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef763338f6128c80800000000000000
+      internalID: -8322063906160345110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d922f9e4d0eb110800000000000000
+      internalID: 1278473975548255612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 0
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986fdaab91d919010800000000000000
+      internalID: 1193908110061598345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d79a0b9cde1e5b0800000000000000
+      internalID: -5340726232576590522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_11
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 0
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02930e6560e60f3e0800000000000000
+      internalID: -2021995259182958304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_12
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d93d9c25d11c03a0800000000000000
+      internalID: -6697958938532562477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_13
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b6063daf0ac6300800000000000000
+      internalID: 246749078747114253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_14
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 0
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be23da1c40bd79ec0800000000000000
+      internalID: -3560136166937382165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_15
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 0
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d923c6216aaf67a0800000000000000
+      internalID: -6381694812721829419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_16
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 0
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88fd9549b91338d0800000000000000
+      internalID: -2867920254177249140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_17
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 0
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31800405d492d070800000000000000
+      internalID: 8129723919973253438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_18
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 0
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151e2c6445d87bc90800000000000000
+      internalID: -7154094089950797487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_19
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 0
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117908bc96c55f6f0800000000000000
+      internalID: -651512961629645039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_20
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 0
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37ca1f3f9fcd9e10800000000000000
+      internalID: 2206147675346880319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_21
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 0
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acac3711ae40cfbc0800000000000000
+      internalID: -3748115386517435702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_22
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 0
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e08f1afafa913710800000000000000
+      internalID: 1671287339460034791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_23
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 0
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a602159bc9b33110800000000000000
+      internalID: 1239538606487504545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_24
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b92ced941071c660800000000000000
+      internalID: 7404322496224962997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_25
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 0
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b49268374105c8d0800000000000000
+      internalID: -2826851785704827726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_26
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1d4e079fa6acb30800000000000000
+      internalID: 4308373613106745773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_27
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70db8aa66629ad200800000000000000
+      internalID: 205637701572541703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_28
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9046754aea794ae10800000000000000
+      internalID: 2208056493655680009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_29
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 0
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45ed34a120688740800000000000000
+      internalID: 5154475471131239758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_30
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 0
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8070124b1a34f6140800000000000000
+      internalID: 4715061696671057672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_31
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573e46d1293aec990800000000000000
+      internalID: -7363768492750478475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_32
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 0
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c60abfa630a789c0800000000000000
+      internalID: -3924992393493215547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_33
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 0
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5963f0c1f981b00800000000000000
+      internalID: 799563876721399253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_34
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643cbfc21b84505e0800000000000000
+      internalID: -1944067738339392698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_35
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31681c1c30c176f0800000000000000
+      internalID: -688557903609044678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_36
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 0
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787b34735ecd3d880800000000000000
+      internalID: -8587277187432597625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_37
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094f6169748165320800000000000000
+      internalID: 2546249335064425616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_38
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7564186c72f585640800000000000000
+      internalID: 5068906005044217431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_39
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df1c59b9e69be900800000000000000
+      internalID: 714830896449724370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_40
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 0
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632775c6f2e6604c0800000000000000
+      internalID: -4321645642455223754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_41
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d88a5af9b4ab200800000000000000
+      internalID: 196552682795207953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Walk_Anim_Blue_FINAL!_42
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef399dc96fe7c2330800000000000000
+      internalID: 3687461792568153086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
