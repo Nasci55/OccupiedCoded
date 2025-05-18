@@ -109,7 +109,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -123,7 +123,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -181,6 +181,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -188,12 +201,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 0
-        width: 9
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -210,12 +223,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_1
       rect:
         serializedVersion: 2
-        x: 42
+        x: 32
         y: 0
-        width: 9
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -232,12 +245,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_2
       rect:
         serializedVersion: 2
-        x: 74
+        x: 64
         y: 0
-        width: 9
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -254,12 +267,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_3
       rect:
         serializedVersion: 2
-        x: 106
+        x: 96
         y: 0
-        width: 9
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -276,12 +289,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_4
       rect:
         serializedVersion: 2
-        x: 138
+        x: 128
         y: 0
-        width: 9
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -298,12 +311,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_5
       rect:
         serializedVersion: 2
-        x: 161
+        x: 160
         y: 0
-        width: 26
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -320,12 +333,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_6
       rect:
         serializedVersion: 2
-        x: 193
+        x: 192
         y: 0
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -342,12 +355,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_7
       rect:
         serializedVersion: 2
-        x: 233
+        x: 224
         y: 0
-        width: 13
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -364,12 +377,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_8
       rect:
         serializedVersion: 2
-        x: 263
+        x: 256
         y: 0
-        width: 14
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -386,12 +399,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_9
       rect:
         serializedVersion: 2
-        x: 297
+        x: 288
         y: 0
-        width: 12
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -408,12 +421,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_10
       rect:
         serializedVersion: 2
-        x: 328
+        x: 320
         y: 0
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -430,12 +443,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_11
       rect:
         serializedVersion: 2
-        x: 360
+        x: 352
         y: 0
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -452,12 +465,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_12
       rect:
         serializedVersion: 2
-        x: 393
+        x: 384
         y: 0
-        width: 12
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -474,12 +487,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_13
       rect:
         serializedVersion: 2
-        x: 425
+        x: 416
         y: 0
-        width: 11
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -496,12 +509,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_14
       rect:
         serializedVersion: 2
-        x: 457
+        x: 448
         y: 0
-        width: 11
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -518,12 +531,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_15
       rect:
         serializedVersion: 2
-        x: 489
+        x: 480
         y: 0
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -540,12 +553,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_16
       rect:
         serializedVersion: 2
-        x: 522
+        x: 512
         y: 0
-        width: 9
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -562,12 +575,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_17
       rect:
         serializedVersion: 2
-        x: 553
+        x: 544
         y: 0
-        width: 13
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -584,12 +597,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_18
       rect:
         serializedVersion: 2
-        x: 584
+        x: 576
         y: 0
-        width: 13
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -606,12 +619,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_19
       rect:
         serializedVersion: 2
-        x: 612
+        x: 608
         y: 0
-        width: 19
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -628,12 +641,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_20
       rect:
         serializedVersion: 2
-        x: 644
+        x: 640
         y: 0
-        width: 22
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -650,12 +663,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_21
       rect:
         serializedVersion: 2
-        x: 676
+        x: 672
         y: 0
-        width: 22
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -672,12 +685,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_22
       rect:
         serializedVersion: 2
-        x: 709
+        x: 704
         y: 0
-        width: 21
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -694,12 +707,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_23
       rect:
         serializedVersion: 2
-        x: 743
+        x: 736
         y: 0
-        width: 25
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -716,12 +729,12 @@ TextureImporter:
       name: Enemy_Character_WithAttack_24
       rect:
         serializedVersion: 2
-        x: 775
+        x: 768
         y: 0
-        width: 24
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -738,7 +751,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: faa4e7db356348e43ae6714eca58b2fd
     internalID: 0
     vertices: []
     indices: 
