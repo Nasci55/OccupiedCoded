@@ -62,15 +62,15 @@ public class Trap180 : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collider)
     {
         HealthSystem healthSystem = collider.GetComponentInParent<HealthSystem>();
-        if (healthSystem == null)
-        {
-            Destroy(gameObject);
-        }
-        else
+        if (healthSystem != null)
         {
             Debug.Log($"{name} collided with {healthSystem.name}");
             healthSystem.DealDamage(damage);
-            Debug.Log($"The player Health now is {healthSystem.getHealth}");
+            Debug.Log($"The player Health now is {healthSystem.getHealth}");    
+        }
+        else
+        {
+
         }
 
     }

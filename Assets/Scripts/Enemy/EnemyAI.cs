@@ -45,7 +45,6 @@ public class EnemyAI : MonoBehaviour
     private void Update()
     {
         playerPos = player.transform.position;
-        //Chase();
         if (visionState.IsPlayerBeingSeen == true)
         {
             Chase();
@@ -64,6 +63,7 @@ public class EnemyAI : MonoBehaviour
             {
                 
                 currentVelocity = velocity *0;
+                enemyAttack.Attack();
 
             }
             else

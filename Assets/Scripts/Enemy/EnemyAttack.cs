@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    private TAG_EnemyAttackArea TAG_AttackArea;
-    private Collider2D attackCollider;
+    private EnemyAttackArea TAG_AttackArea;
+    private GameObject attackCollider;
+    [SerializeField]
     private bool attacking = false;
     private float timer = 0;
 
     void Start()
     {
-        TAG_AttackArea = FindFirstObjectByType<TAG_EnemyAttackArea>();
-        attackCollider = TAG_AttackArea.GetComponent<Collider2D>();
-        attackCollider.enabled = false;
+        TAG_AttackArea = FindFirstObjectByType<EnemyAttackArea>();
+        attackCollider = TAG_AttackArea.gameObject;
     }
 
     // Update is called once per frame
@@ -21,17 +21,17 @@ public class EnemyAttack : MonoBehaviour
     }
     public void Attack()
     {
-        Debug.Log(attackCollider.enabled);
+        Debug.Log(attackCollider);
         timer += Time.deltaTime;
-        Debug.Log(timer);
+        //Debug.Log($"{timer}-------{Time.deltaTime}");
         if (timer <= 0)
         {
             Attacking();
             Debug.Log("Enemy is attacking");
         }
-        else if (timer <= 5 || timer >= 0.01)
+        else if (timer <= 5 && timer >= 0.01)
         {
-            attacking = false;
+            StopAttacking();
             Debug.Log("Enemy attack is on cooldown");
         }
         else if (timer >= 5)
@@ -44,19 +44,13 @@ public class EnemyAttack : MonoBehaviour
     private void Attacking()
     {
         attacking = true;
-        attackCollider.enabled = attacking;
+        attackCollider.SetActive(attacking);
     }
 
-    private void OnDrawGizmos()
+    private void StopAttacking()
     {
-        if (attacking)
-        {
-            Gizmos.color = Color.yellow;
-        }
-        else
-        {
-            Gizmos.color= Color.red;
-        }
-             Gizmos.DrawWireCube(transform.position, transform.forward);
+        attacking = false;
+        attackCollider.SetActive (attacking);
     }
+
 }
