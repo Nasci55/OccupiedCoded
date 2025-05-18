@@ -9,7 +9,7 @@ public class Beartrap : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collider)
     {
         HealthSystem healthSystem = collider.GetComponentInParent<HealthSystem>();
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) || healthSystem == null)
         {
             //Debug.Log($"The {name} is deactivated");
         }

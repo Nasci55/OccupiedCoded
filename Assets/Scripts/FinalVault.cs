@@ -19,7 +19,7 @@ public class FinalVault : MonoBehaviour
     private void Update()
     {
         didThePLayerGetTheKey = Key.isKeyCollected;
-        Debug.Log($"Key: {didThePLayerGetTheKey}, Inside : {isPlayerInside}, W: {Input.GetKeyDown(KeyCode.W)}");
+        //Debug.Log($"Key: {didThePLayerGetTheKey}, Inside : {isPlayerInside}, W: {Input.GetKeyDown(KeyCode.W)}");
         if (isPlayerInside == true
             && Input.GetKeyDown(KeyCode.W)
             && didThePLayerGetTheKey == true)

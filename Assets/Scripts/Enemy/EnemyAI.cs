@@ -10,9 +10,10 @@ public class EnemyAI : MonoBehaviour
     private bool beingSeen;
     private EnemyVisionState visionState;
     private Rigidbody2D rb;
-    float changeInDirectionCooldown = 5;
-    float randomDirection;
-    bool soundEffect = true;
+    private float changeInDirectionCooldown = 5;
+    private float randomDirection;
+    private bool soundEffect = true;
+    private EnemyAttack enemyAttack;
 
 
 
@@ -35,6 +36,7 @@ public class EnemyAI : MonoBehaviour
     {
         player = FindFirstObjectByType<Player>();
         visionState = GetComponentInChildren<EnemyVisionState>();
+        enemyAttack = GetComponent<EnemyAttack>();
 
         rb = GetComponent<Rigidbody2D>();
     }
@@ -43,6 +45,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
+        enemyAttack.Attack();
         playerPos = player.transform.position;
         //Chase();
         if (visionState.IsPlayerBeingSeen == true)
@@ -63,6 +66,7 @@ public class EnemyAI : MonoBehaviour
             {
                 
                 currentVelocity = velocity *0;
+
             }
             else
             {
