@@ -7,19 +7,19 @@ public class FinalVault : MonoBehaviour
 
     private bool didThePLayerGetTheKey;
     private bool isPlayerInside = false;
+    [SerializeField]
     private Collider2D WallCollider;
     private Player player;
         
     private void Start()
     {
-       didThePLayerGetTheKey = Key.isKeyCollected;
-       WallCollider = GetComponentInChildren<Collider2D>();
        player = FindFirstObjectByType<Player>();
     }
 
     private void Update()
     {
-        Debug.Log(WallCollider.enabled);
+        didThePLayerGetTheKey = Key.isKeyCollected;
+        Debug.Log($"Key: {didThePLayerGetTheKey}, Inside : {isPlayerInside}, W: {Input.GetKeyDown(KeyCode.W)}");
         if (isPlayerInside == true
             && Input.GetKeyDown(KeyCode.W)
             && didThePLayerGetTheKey == true)
@@ -37,7 +37,7 @@ public class FinalVault : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider == player.GetComponent<Collider2D>())
+        if (collider != null)
         {
             isPlayerInside = true;
         }
@@ -45,7 +45,7 @@ public class FinalVault : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider == player.GetComponent<Collider2D>())
+        if (collider != null)
         {
             isPlayerInside = false;
         }

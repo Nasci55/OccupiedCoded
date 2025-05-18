@@ -222,6 +222,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1184,7 +1197,50 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Player_Walk_Anim_Blue_FINAL!_0: -1656720886421441437
+      Player_Walk_Anim_Blue_FINAL!_1: -2247254796582426020
+      Player_Walk_Anim_Blue_FINAL!_10: -5340726232576590522
+      Player_Walk_Anim_Blue_FINAL!_11: -2021995259182958304
+      Player_Walk_Anim_Blue_FINAL!_12: -6697958938532562477
+      Player_Walk_Anim_Blue_FINAL!_13: 246749078747114253
+      Player_Walk_Anim_Blue_FINAL!_14: -3560136166937382165
+      Player_Walk_Anim_Blue_FINAL!_15: -6381694812721829419
+      Player_Walk_Anim_Blue_FINAL!_16: -2867920254177249140
+      Player_Walk_Anim_Blue_FINAL!_17: 8129723919973253438
+      Player_Walk_Anim_Blue_FINAL!_18: -7154094089950797487
+      Player_Walk_Anim_Blue_FINAL!_19: -651512961629645039
+      Player_Walk_Anim_Blue_FINAL!_2: 8482785910613454018
+      Player_Walk_Anim_Blue_FINAL!_20: 2206147675346880319
+      Player_Walk_Anim_Blue_FINAL!_21: -3748115386517435702
+      Player_Walk_Anim_Blue_FINAL!_22: 1671287339460034791
+      Player_Walk_Anim_Blue_FINAL!_23: 1239538606487504545
+      Player_Walk_Anim_Blue_FINAL!_24: 7404322496224962997
+      Player_Walk_Anim_Blue_FINAL!_25: -2826851785704827726
+      Player_Walk_Anim_Blue_FINAL!_26: 4308373613106745773
+      Player_Walk_Anim_Blue_FINAL!_27: 205637701572541703
+      Player_Walk_Anim_Blue_FINAL!_28: 2208056493655680009
+      Player_Walk_Anim_Blue_FINAL!_29: 5154475471131239758
+      Player_Walk_Anim_Blue_FINAL!_3: -7846985110048335779
+      Player_Walk_Anim_Blue_FINAL!_30: 4715061696671057672
+      Player_Walk_Anim_Blue_FINAL!_31: -7363768492750478475
+      Player_Walk_Anim_Blue_FINAL!_32: -3924992393493215547
+      Player_Walk_Anim_Blue_FINAL!_33: 799563876721399253
+      Player_Walk_Anim_Blue_FINAL!_34: -1944067738339392698
+      Player_Walk_Anim_Blue_FINAL!_35: -688557903609044678
+      Player_Walk_Anim_Blue_FINAL!_36: -8587277187432597625
+      Player_Walk_Anim_Blue_FINAL!_37: 2546249335064425616
+      Player_Walk_Anim_Blue_FINAL!_38: 5068906005044217431
+      Player_Walk_Anim_Blue_FINAL!_39: 714830896449724370
+      Player_Walk_Anim_Blue_FINAL!_4: 6453234678802699388
+      Player_Walk_Anim_Blue_FINAL!_40: -4321645642455223754
+      Player_Walk_Anim_Blue_FINAL!_41: 196552682795207953
+      Player_Walk_Anim_Blue_FINAL!_42: 3687461792568153086
+      Player_Walk_Anim_Blue_FINAL!_5: -1855243908437902485
+      Player_Walk_Anim_Blue_FINAL!_6: -479623901008148392
+      Player_Walk_Anim_Blue_FINAL!_7: -8322063906160345110
+      Player_Walk_Anim_Blue_FINAL!_8: 1278473975548255612
+      Player_Walk_Anim_Blue_FINAL!_9: 1193908110061598345
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

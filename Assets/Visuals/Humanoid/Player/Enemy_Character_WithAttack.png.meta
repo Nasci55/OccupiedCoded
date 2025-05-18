@@ -168,6 +168,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -734,7 +747,32 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Enemy_Character_WithAttack_0: 2729380028303142027
+      Enemy_Character_WithAttack_1: -6306112829975890452
+      Enemy_Character_WithAttack_10: 2956050868140219899
+      Enemy_Character_WithAttack_11: -4061351165966349390
+      Enemy_Character_WithAttack_12: -4508338131736169773
+      Enemy_Character_WithAttack_13: -4747130110766364774
+      Enemy_Character_WithAttack_14: -1937986909577621166
+      Enemy_Character_WithAttack_15: -2450358759330135531
+      Enemy_Character_WithAttack_16: -2081252440728868275
+      Enemy_Character_WithAttack_17: 2397329687880624814
+      Enemy_Character_WithAttack_18: 1089842257258785012
+      Enemy_Character_WithAttack_19: 5174113195997226201
+      Enemy_Character_WithAttack_2: -8314382126029631062
+      Enemy_Character_WithAttack_20: 8141286996729566274
+      Enemy_Character_WithAttack_21: 5814818805194834834
+      Enemy_Character_WithAttack_22: -4125761567106018193
+      Enemy_Character_WithAttack_23: -2369299912755710390
+      Enemy_Character_WithAttack_24: 876620700808254441
+      Enemy_Character_WithAttack_3: 8274817574778449613
+      Enemy_Character_WithAttack_4: 4362742978296545927
+      Enemy_Character_WithAttack_5: 2175609987017306049
+      Enemy_Character_WithAttack_6: 7457899079047407316
+      Enemy_Character_WithAttack_7: 6388102759785113534
+      Enemy_Character_WithAttack_8: 2293596309841302337
+      Enemy_Character_WithAttack_9: 1492829049223685153
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

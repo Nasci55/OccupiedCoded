@@ -195,6 +195,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -959,7 +972,41 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Player_Walk_Anim_Blue_withdeath_0: -1748319728479804949
+      Player_Walk_Anim_Blue_withdeath_1: -9082443281079427019
+      Player_Walk_Anim_Blue_withdeath_10: 1473457243766217297
+      Player_Walk_Anim_Blue_withdeath_11: -6863938314507205983
+      Player_Walk_Anim_Blue_withdeath_12: -8094708966179483091
+      Player_Walk_Anim_Blue_withdeath_13: -153683746665598291
+      Player_Walk_Anim_Blue_withdeath_14: -5375845196141111313
+      Player_Walk_Anim_Blue_withdeath_15: 6319389785645717896
+      Player_Walk_Anim_Blue_withdeath_16: -5606715212184170687
+      Player_Walk_Anim_Blue_withdeath_17: 6740607888896941362
+      Player_Walk_Anim_Blue_withdeath_18: -1166379841294995760
+      Player_Walk_Anim_Blue_withdeath_19: -2546412496082761949
+      Player_Walk_Anim_Blue_withdeath_2: -7296699942583214507
+      Player_Walk_Anim_Blue_withdeath_20: -8847904911352940394
+      Player_Walk_Anim_Blue_withdeath_21: 2729213558801024528
+      Player_Walk_Anim_Blue_withdeath_22: -4850152135688634370
+      Player_Walk_Anim_Blue_withdeath_23: 2474489700478614726
+      Player_Walk_Anim_Blue_withdeath_24: 3896394200185338455
+      Player_Walk_Anim_Blue_withdeath_25: -1904908282581895559
+      Player_Walk_Anim_Blue_withdeath_26: 5653808830241828968
+      Player_Walk_Anim_Blue_withdeath_27: 1978669404924366973
+      Player_Walk_Anim_Blue_withdeath_28: -5839775281545388011
+      Player_Walk_Anim_Blue_withdeath_29: -7539134359169873281
+      Player_Walk_Anim_Blue_withdeath_3: 7216976138622383710
+      Player_Walk_Anim_Blue_withdeath_30: -3398695238608438158
+      Player_Walk_Anim_Blue_withdeath_31: -5319715597661890327
+      Player_Walk_Anim_Blue_withdeath_32: 7295762093324092227
+      Player_Walk_Anim_Blue_withdeath_33: -3944172304154557509
+      Player_Walk_Anim_Blue_withdeath_4: 7282106268634402257
+      Player_Walk_Anim_Blue_withdeath_5: 7471691401797807805
+      Player_Walk_Anim_Blue_withdeath_6: -1144467280635947036
+      Player_Walk_Anim_Blue_withdeath_7: -3564565220088171477
+      Player_Walk_Anim_Blue_withdeath_8: 4100641048244988579
+      Player_Walk_Anim_Blue_withdeath_9: 2444323674712707161
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
