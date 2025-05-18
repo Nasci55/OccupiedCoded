@@ -18,6 +18,8 @@ public class EnemyAI : MonoBehaviour
 
 
 
+
+
     [SerializeField]
     private Vector2 velocity;
     
@@ -34,11 +36,7 @@ public class EnemyAI : MonoBehaviour
     {
         player = FindFirstObjectByType<Player>();
         visionState = GetComponentInChildren<EnemyVisionState>();
-<<<<<<< HEAD
         enemyAttack = GetComponent<EnemyAttack>();
-
-=======
->>>>>>> 2855a5f95294177e30daed3182f96542c864741e
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -46,20 +44,17 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        enemyAttack.Attack();
         playerPos = player.transform.position;
         //Chase();
         if (visionState.IsPlayerBeingSeen == true)
         {
             Chase();
             EnemySeeingPlayerAudio();
-            
         }
         else
         {
           Wandering();
         }
-
     }
     private void Chase()
     {
@@ -67,6 +62,7 @@ public class EnemyAI : MonoBehaviour
         {
             if (playerPos.x - transform.position.x < maxDistance && playerPos.x - transform.position.x >-maxDistance)
             {
+                
                 currentVelocity = velocity *0;
 
             }
@@ -77,7 +73,6 @@ public class EnemyAI : MonoBehaviour
                 {
                     
                     currentVelocity = -velocity;
-                    
                     
                 }
                 else if (playerPos.x > transform.position.x)
@@ -103,7 +98,7 @@ public class EnemyAI : MonoBehaviour
             soundEffect = true;
         }
     }
-
+    
     
     private void Wandering()
     {
