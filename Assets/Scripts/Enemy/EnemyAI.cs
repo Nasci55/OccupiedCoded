@@ -44,6 +44,17 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
+
+        if (rb.linearVelocity.x < 0)
+        {
+            transform.rotation = Quaternion.Euler(0.0f, 180.0f, 0.0f);
+        }
+        else if (rb.linearVelocity.x > 0)
+        {
+            transform.rotation = Quaternion.identity;
+        }
+
+
         playerPos = player.transform.position;
         if (visionState.IsPlayerBeingSeen == true)
         {
