@@ -126,8 +126,4 @@ public class EnemyAI : MonoBehaviour
         }
 
     }
-    public float GetCurrentVelocity()
-    {
-        return rb.linearVelocity.x;
-    }
 }
