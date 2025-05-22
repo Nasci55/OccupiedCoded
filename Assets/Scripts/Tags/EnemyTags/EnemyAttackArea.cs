@@ -2,6 +2,14 @@ using UnityEngine;
 
 public class EnemyAttackArea : MonoBehaviour
 {
+    [SerializeField]
+    private Animator animator;
+
+    [SerializeField]
+    private GameObject playerObject;
+
+    [SerializeField]
+    private string AttackParameter = "Attack"; 
     private int damage = 1;
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -10,6 +18,8 @@ public class EnemyAttackArea : MonoBehaviour
         {
             Debug.Log($"{name} collided with {healthSystem.name}");
             healthSystem.DealDamage(damage);
+            animator.SetTrigger(AttackParameter);
+            SceneTransition.TransitionToScene("Main Menu Restart");
             Debug.Log($"The player Health now is {healthSystem.getHealth}");
         }
     }

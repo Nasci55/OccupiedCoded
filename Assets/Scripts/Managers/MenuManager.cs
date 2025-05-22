@@ -14,7 +14,7 @@ public class UIManager : MonoBehaviour
     {
         //SceneManager.LoadScene("Visual Updated");
         SceneTransition.TransitionToScene("Visual Updated");
-        Debug.Log("aaaaaaaaaaaa");
+        Debug.Log("Started Game");
     }
 
     public void OnGameSettingsPress()
