@@ -22,11 +22,11 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField]
     private Vector2 velocity;
-    
+
     [SerializeField]
     private float maxDistance;
 
-    [SerializeField, Header ("Audio")]
+    [SerializeField, Header("Audio")]
     private AudioClip EnemyAudio;
 
     [SerializeField]
@@ -40,7 +40,7 @@ public class EnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    
+
 
     private void Update()
     {
@@ -52,17 +52,17 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-          Wandering();
+            Wandering();
         }
     }
     private void Chase()
     {
         if (player != null)
         {
-            if (playerPos.x - transform.position.x < maxDistance && playerPos.x - transform.position.x >-maxDistance)
+            if (playerPos.x - transform.position.x < maxDistance && playerPos.x - transform.position.x > -maxDistance)
             {
-                
-                currentVelocity = velocity *0;
+
+                currentVelocity = velocity * 0;
                 enemyAttack.Attack();
 
             }
@@ -71,13 +71,13 @@ public class EnemyAI : MonoBehaviour
 
                 if (playerPos.x < transform.position.x)
                 {
-                    
+
                     currentVelocity = -velocity;
-                    
+
                 }
                 else if (playerPos.x > transform.position.x)
                 {
-                   
+
                     currentVelocity = velocity;
                 }
             }
@@ -98,32 +98,37 @@ public class EnemyAI : MonoBehaviour
             soundEffect = true;
         }
     }
-    
-    
+
+
     private void Wandering()
     {
-         changeInDirectionCooldown -= Time.deltaTime;
-       
-        
-        
-        if(changeInDirectionCooldown <= 0)
+        changeInDirectionCooldown -= Time.deltaTime;
+
+
+
+        if (changeInDirectionCooldown <= 0)
         {
             randomDirection = Random.Range(-1f, 1f);
-            changeInDirectionCooldown = Random.Range(2f, 3f);   
+            changeInDirectionCooldown = Random.Range(2f, 3f);
             //Debug.Log($"Cooldown : {changeInDirectionCooldown} \n velocity = {rb.linearVelocity}");
         }
         else
         {
             if (randomDirection < 0)
             {
-                rb.linearVelocity = velocity/1.25f * -1;
+                rb.linearVelocity = velocity / 1.25f * -1;
             }
             else
             {
-                rb.linearVelocity = velocity/1.25f * 1;
-            }        
-        
+                rb.linearVelocity = velocity / 1.25f * 1;
+            }
+
         }
 
+    }
+    
+    public float GetCurrentVelocity()
+    {
+        return rb.linearVelocity.x;
     }
 }
