@@ -4,6 +4,8 @@ public class BasementDoor : MonoBehaviour
 {
     [SerializeField]
     private BasementLock isUnlocked;
+    [SerializeField]
+    private Vector3 doorExit;
 
     private bool isPlayerInside;
     private Player player;
@@ -31,7 +33,7 @@ public class BasementDoor : MonoBehaviour
             && Input.GetKeyDown(KeyCode.W)
             && isUnlocked.GetIsLocked() == true)
         {
-            player.transform.position = new Vector3(873.5f, -17.3999996f, -1.9902519f);
+            player.transform.position = doorExit;
 
         }
         else if (isPlayerInside == true
