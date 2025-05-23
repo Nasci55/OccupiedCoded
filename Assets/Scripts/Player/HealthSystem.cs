@@ -1,11 +1,13 @@
 using System.Collections;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
-    [SerializeField] private int MaxHealth = 3; 
+    [SerializeField] private int MaxHealth = 2; 
+    [SerializeField] private Animator animator;
 
     private int health;
 

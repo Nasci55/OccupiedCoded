@@ -24,7 +24,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float          groundCheckRadius = 2.0f;
 
-    private float          jumpTimer;
+    
+
+    private float jumpTimer;
     private Rigidbody2D    rb;
     private string         horizontalAxisName = "Horizontal";
     private Camera         mainCamera;
