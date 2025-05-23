@@ -30,7 +30,7 @@ public class EnemyAttackArea : MonoBehaviour
                 Debug.Log($"{name} collided with {healthSystem.name}");
                 healthSystem.DealDamage(damage);
                 animator.SetTrigger(AttackParameter);
-                SceneTransition.TransitionToScene("Main Menu Restart");
+                
                 Debug.Log($"The player Health now is {healthSystem.getHealth}");
             }
         }

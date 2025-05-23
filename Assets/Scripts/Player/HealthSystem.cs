@@ -33,7 +33,7 @@ public class HealthSystem : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Debug.Log(SceneManager.GetActiveScene().name);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneTransition.TransitionToScene("Main Menu Restart");
     }
 
     public void Die()
@@ -42,6 +42,7 @@ public class HealthSystem : MonoBehaviour
         {
             child.gameObject.SetActive(false);
         }
+        
         StartCoroutine(Respawn());
     }
 
