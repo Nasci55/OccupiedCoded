@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -23,6 +24,10 @@ public class Player : MonoBehaviour
     private Transform      groundCheck;
     [SerializeField]
     private float          groundCheckRadius = 2.0f;
+
+    [SerializeField, Header("Animator")]
+    private Animator       Animator;
+
 
     
 
@@ -165,7 +170,16 @@ public class Player : MonoBehaviour
         if (health.getHealth <= 0)
         {
             velocity = new Vector2(0, 0);
-            health.Die();
+
+            Animator.SetTrigger("Die");
+            StartCoroutine(RespawnCooldown());
+
+            IEnumerator RespawnCooldown()
+            {
+                yield return new WaitForSeconds(2f); 
+                SceneTransition.TransitionToScene("Main Menu Restart");
+            }
+            
         }
     }
 
