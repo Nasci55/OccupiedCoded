@@ -170,6 +170,7 @@ public class Player : MonoBehaviour
         if (health.getHealth <= 0)
         {
             velocity = new Vector2(0, 0);
+            rb.linearVelocity = velocity;
 
             Animator.SetTrigger("Die");
             StartCoroutine(RespawnCooldown());
@@ -179,7 +180,11 @@ public class Player : MonoBehaviour
                 yield return new WaitForSeconds(2f); 
                 SceneTransition.TransitionToScene("Main Menu Restart");
             }
-            
+            GameObject flashlight = GameObject.Find("Flashlight");
+            if (flashlight != null)
+            {
+                flashlight.SetActive(false);
+            }
         }
     }
 
