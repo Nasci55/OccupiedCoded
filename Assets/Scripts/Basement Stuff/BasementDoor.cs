@@ -5,7 +5,7 @@ public class BasementDoor : MonoBehaviour
     [SerializeField]
     private BasementLock isUnlocked;
     [SerializeField]
-    private Vector3 doorExit;
+    private Transform doorExit;
 
     private bool isPlayerInside;
     private Player player;
@@ -20,7 +20,7 @@ public class BasementDoor : MonoBehaviour
     }
     private void Update()
     {
-        if (isUnlocked.GetIsLocked() == true)
+        if (isUnlocked.IsLocked == true)
         {
             lockSprite.enabled = false;
         }
@@ -31,14 +31,14 @@ public class BasementDoor : MonoBehaviour
 
         if (isPlayerInside == true
             && Input.GetKeyDown(KeyCode.W)
-            && isUnlocked.GetIsLocked() == true)
+            && isUnlocked.IsLocked == true)
         {
-            player.transform.position = doorExit;
+            player.transform.position = new Vector3(doorExit.position.x, doorExit.position.y, player.transform.position.z);
 
         }
         else if (isPlayerInside == true
                  && Input.GetKeyDown(KeyCode.W)
-                 && isUnlocked.GetIsLocked() == false)
+                 && isUnlocked.IsLocked == false)
         {
             Debug.Log("Nope");
         }

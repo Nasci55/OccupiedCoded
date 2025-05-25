@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BasementLock : MonoBehaviour
 {
-    private bool IsLocked = false;
+    public bool IsLocked { get; private set; }
     private Player player;
 
     void Start()
@@ -21,8 +21,6 @@ public class BasementLock : MonoBehaviour
         }
     }
 
-    public bool GetIsLocked()
-    { return IsLocked; }
 
 
 }
