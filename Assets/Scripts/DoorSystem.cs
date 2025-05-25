@@ -29,7 +29,7 @@ public class DoorSystem : MonoBehaviour
         if (findColl != null)
         {
             isPlayerInside = true;
-            Debug.Log("Player entered the area");
+            //Debug.Log("Player entered the area");
         }
         else { }
     }
@@ -40,7 +40,7 @@ public class DoorSystem : MonoBehaviour
         if (findColl != null )
         {
             isPlayerInside = false;
-            Debug.Log("Player left the area");
+            //Debug.Log("Player left the area");
         }
         else { }
     }

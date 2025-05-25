@@ -23,7 +23,7 @@ public class EnemyAttackArea : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         isPlayerHiding = PlayerHiding.currentlyHiding;
-        Debug.Log(isPlayerHiding);
+        //Debug.Log(isPlayerHiding);
         if (isPlayerHiding == false)
         {
             HealthSystem healthSystem = collider.GetComponentInParent<HealthSystem>();

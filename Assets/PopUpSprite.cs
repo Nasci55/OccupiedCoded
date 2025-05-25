@@ -3,32 +3,30 @@ using UnityEngineInternal;
 
 public class PopUpSprite : MonoBehaviour
 {
-    private DoorSystem popUpAppearsForDoor;
-    private BasementDoor popUpAppearsForBasementDoor;
-    private PlayerHiding popUpAppearsForPlayerHiding;
-
+    
+    private Player player;
     private SpriteRenderer popUpVisual;
 
     private void Start()
     {
+        popUpVisual = GetComponent<SpriteRenderer>();
         popUpVisual.enabled = false;
+        player = FindFirstObjectByType<Player>();
     }
 
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider == (popUpAppearsForBasementDoor
-                    || popUpAppearsForPlayerHiding
-                    || popUpAppearsForDoor))
+        player = collider.GetComponent<Player>();
+        if (player != null)
         {
             popUpVisual.enabled = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider == (popUpAppearsForBasementDoor
-                   || popUpAppearsForPlayerHiding
-                   || popUpAppearsForDoor))
+        player = collider.GetComponent<Player>();
+        if (player != null)
         {
             popUpVisual.enabled = false;
         }
