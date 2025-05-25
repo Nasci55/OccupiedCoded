@@ -7,6 +7,9 @@ public class SoundON : MonoBehaviour
 
     [SerializeField]
     private AudioSource OtherSound;
+
+    [SerializeField]
+    private GameObject Player;
     void Start()
     {
         audioSource.enabled = false;
@@ -18,21 +21,21 @@ public class SoundON : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (OtherSound.enabled == false)
+        if (collider.gameObject == Player)
         {
-            audioSource.enabled = true;
-            if (collider.CompareTag("Player"))
+            Debug.Log("Player entered the trigger");
+            if (OtherSound != null && OtherSound.enabled == false)
             {
-                Debug.Log("Player entered the trigger");
+                audioSource.enabled = true;
                 if (!audioSource.isPlaying)
                 {
                     audioSource.Play();
                 }
             }
-        }
-        if (OtherSound.enabled == true)
-        {
-            audioSource.enabled = false;
+            else if (OtherSound != null && OtherSound.enabled == true)
+            {
+                audioSource.enabled = false;
+            }
         }
     } 
 }
