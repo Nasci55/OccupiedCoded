@@ -10,12 +10,6 @@ public class BoxSound : MonoBehaviour
         audioSource.enabled = false;
     }
 
-    void Awake()
-    {
-        audioSource = GetComponent<AudioSource>();
-
-    }
-
     void OnTriggerEnter2D(Collider2D collider)
     {
         audioSource.enabled = true;
@@ -34,7 +28,6 @@ public class BoxSound : MonoBehaviour
         if (collider.CompareTag("Player"))
         {
             Debug.Log("Player exited the trigger");
-            audioSource.enabled = false;
             Collider2D triggerCollider = GetComponent<Collider2D>();
                 if (triggerCollider != null)
                 {
