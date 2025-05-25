@@ -6,13 +6,15 @@ public class FinalVault : MonoBehaviour
     private VaultKey Key;
     [SerializeField]
     private BasementLock isUnlocked;
+    [SerializeField]
+    private SpriteRenderer lockSprite;
 
-    private bool didThePLayerGetTheKey;
+
+    public bool didThePLayerGetTheKey { get; private set; }
     private bool isPlayerInside = false;
     [SerializeField]
     private Collider2D WallCollider;
     private Player player;
-    private SpriteRenderer lockSprite;
 
     
         

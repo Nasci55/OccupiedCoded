@@ -5,7 +5,16 @@ public class HouseSafeAnim : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
+    public bool activateFinalScene {  get; private set; }
+    private FinalVault FinalVault;
+
     private bool playerInTrigger = false;
+
+    private void Start()
+    {
+        activateFinalScene = false;
+        FinalVault = FindFirstObjectByType<FinalVault>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -27,10 +36,11 @@ public class HouseSafeAnim : MonoBehaviour
 
     private void Update()
     {
-        if (playerInTrigger && Input.GetKeyDown(KeyCode.E))
+        if (playerInTrigger && Input.GetKeyDown(KeyCode.W) && FinalVault.didThePLayerGetTheKey)
         {
             Debug.Log("E key pressed");
             animator.SetBool("IsOpen", true);
+            activateFinalScene = true;
         }
     }
 }

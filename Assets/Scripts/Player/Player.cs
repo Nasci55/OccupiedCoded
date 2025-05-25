@@ -1,5 +1,4 @@
 using System.Collections;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -87,7 +86,7 @@ public class Player : MonoBehaviour
 
         // Jump Button
         
-        if (Input.GetButtonDown("Jump"))
+        /*if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded)
             {
@@ -112,7 +111,7 @@ public class Player : MonoBehaviour
         else
         {
             rb.gravityScale = originalGravity;
-        }
+        }*/
         
         // Sneak Button
         if (Input.GetKey(KeyCode.LeftShift) == true)
