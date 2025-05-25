@@ -17,14 +17,16 @@ public class EnemyAttackArea : MonoBehaviour
     private void Start()
     {
         PlayerHiding = FindFirstObjectByType<PlayerHiding>();
-        isPlayerHiding = PlayerHiding.currentlyHiding;
     }
+
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        HealthSystem healthSystem = collider.GetComponentInParent<HealthSystem>();
+        isPlayerHiding = PlayerHiding.currentlyHiding;
+        Debug.Log(isPlayerHiding);
         if (isPlayerHiding == false)
         {
+            HealthSystem healthSystem = collider.GetComponentInParent<HealthSystem>();
             if (healthSystem != null)
             {
                 Debug.Log($"{name} collided with {healthSystem.name}");
