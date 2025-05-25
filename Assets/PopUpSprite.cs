@@ -3,29 +3,34 @@ using UnityEngineInternal;
 
 public class PopUpSprite : MonoBehaviour
 {
-    [SerializeField]
-    private bool popUpAppears;
+    private DoorSystem popUpAppearsForDoor;
+    private BasementDoor popUpAppearsForBasementDoor;
+    private PlayerHiding popUpAppearsForPlayerHiding;
 
     private SpriteRenderer popUpVisual;
-    void Start()
+
+    private void Start()
     {
-        popUpVisual = GetComponent<SpriteRenderer>();
         popUpVisual.enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (popUpVisual != null)
+        if (collider == (popUpAppearsForBasementDoor
+                    || popUpAppearsForPlayerHiding
+                    || popUpAppearsForDoor))
         {
-            if (popUpAppears)
-            {
-                popUpVisual.enabled = true;
-            }
-            else
-            {
-                popUpVisual.enabled = false;
-            }
+            popUpVisual.enabled = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider == (popUpAppearsForBasementDoor
+                   || popUpAppearsForPlayerHiding
+                   || popUpAppearsForDoor))
+        {
+            popUpVisual.enabled = false;
         }
     }
 }

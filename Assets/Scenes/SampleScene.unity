@@ -11242,12 +11242,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751819297}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.058018822}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.5, y: 15.4, z: 0}
+  m_LocalScale: {x: 17.235786, y: 34.04068, z: 17.235786}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1705051314892744952}
+  m_Father: {fileID: 1937834012}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1751819299
 MonoBehaviour:
@@ -11261,7 +11261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 082423ed0cfc1ac48a86fe30609d5a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popUpAppears: 0
 --- !u!212 &1751819300
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11561,6 +11560,7 @@ Transform:
   - {fileID: 1178380500}
   - {fileID: 159196294}
   - {fileID: 1455457419}
+  - {fileID: 1751819298}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1937834013
@@ -11584,6 +11584,7 @@ MonoBehaviour:
   jumpMaxDuration: 0.5
   groundCheck: {fileID: 159196294}
   groundCheckRadius: 5
+  Animator: {fileID: 0}
 --- !u!114 &1937834014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11597,6 +11598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 3
+  animator: {fileID: 0}
 --- !u!1001 &1705051314892744951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11651,17 +11653,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6195998494400502719, guid: d24d870d2b82e6848977b85b29ae3415, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1751819298}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24d870d2b82e6848977b85b29ae3415, type: 3}
---- !u!4 &1705051314892744952 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6195998494400502719, guid: d24d870d2b82e6848977b85b29ae3415, type: 3}
-  m_PrefabInstance: {fileID: 1705051314892744951}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2640496122198913031
 PrefabInstance:
   m_ObjectHideFlags: 0
