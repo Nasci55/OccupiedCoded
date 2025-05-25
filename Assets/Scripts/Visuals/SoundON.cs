@@ -14,10 +14,7 @@ public class SoundON : MonoBehaviour
     {
         audioSource.enabled = false;
     }
-    void Awake()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+    
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D collider)
     {
