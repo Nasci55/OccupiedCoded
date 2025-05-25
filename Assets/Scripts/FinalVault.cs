@@ -4,20 +4,35 @@ public class FinalVault : MonoBehaviour
 {
     [SerializeField]
     private VaultKey Key;
+    [SerializeField]
+    private BasementLock isUnlocked;
 
     private bool didThePLayerGetTheKey;
     private bool isPlayerInside = false;
     [SerializeField]
     private Collider2D WallCollider;
     private Player player;
+    private SpriteRenderer lockSprite;
+
+    
         
     private void Start()
     {
        player = FindFirstObjectByType<Player>();
+       lockSprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void Update()
     {
+
+        if (isUnlocked.IsLocked == true)
+        {
+            lockSprite.enabled = false;
+        }
+        else
+        {
+            lockSprite.enabled = true;
+        }
         didThePLayerGetTheKey = Key.isKeyCollected;
         //Debug.Log($"Key: {didThePLayerGetTheKey}, Inside : {isPlayerInside}, W: {Input.GetKeyDown(KeyCode.W)}");
         if (isPlayerInside == true
