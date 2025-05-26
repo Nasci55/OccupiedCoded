@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
     private Transform player;
     [SerializeField]
     private Transform destination;
+    [SerializeField]
+    private Transform finalRoom;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +21,10 @@ public class GameManager : MonoBehaviour
         if (Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.Y) && Input.GetKey(KeyCode.E))
         {
             player.position = destination.position;
+        }
+        if (Input.GetKey(KeyCode.V) && Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.U))
+        {
+            player.position = finalRoom.position;
         }
     }
 }

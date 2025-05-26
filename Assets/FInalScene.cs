@@ -61,7 +61,10 @@ public class FInalScene : MonoBehaviour
             firstLight.enabled = true;
             secondLight.enabled = true; 
             RealEnemySpawn();
+            StartCoroutine(ChangeScene());
+
         }
+        
        
     
     }
@@ -133,5 +136,12 @@ public class FInalScene : MonoBehaviour
     private void RealEnemySpawn()
     {
         Enemy.SetActive(true);
+    }
+
+    IEnumerator ChangeScene()
+    {
+        yield return new WaitForSeconds(1f);
+
+        SceneTransition.TransitionToScene("FinalOfTheChapter");
     }
 }
