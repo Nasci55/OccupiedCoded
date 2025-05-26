@@ -21,7 +21,6 @@ public class FinalVault : MonoBehaviour
     private void Start()
     {
        player = FindFirstObjectByType<Player>();
-       lockSprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void Update()
