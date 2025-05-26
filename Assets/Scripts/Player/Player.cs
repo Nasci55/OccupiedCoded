@@ -46,6 +46,8 @@ public class Player : MonoBehaviour
 
     private EnemyAI enemy;
     private Collider2D enemyCollider;
+    private HouseSafeAnim finalScene;
+    private bool startFinalScene;
 
     void Start()
     {
@@ -58,6 +60,8 @@ public class Player : MonoBehaviour
         enemy = FindFirstObjectByType<EnemyAI>();
         enemyCollider = enemy.GetComponent<Collider2D>();
         playerCollider = GetComponent<Collider2D>();
+        finalScene = FindFirstObjectByType<HouseSafeAnim>();
+
     }
 
     // Update is called once per frame
@@ -133,6 +137,16 @@ public class Player : MonoBehaviour
 
         IsPlayerHiding();
 
+        startFinalScene = finalScene.activateFinalScene;
+        if (startFinalScene == true)
+        {
+            GameObject flashlight = GameObject.Find("Flashlight");
+            if (flashlight != null)
+            {
+                flashlight.SetActive(false);
+            }
+
+        }
     }
     public float GetCurrentVelocity()
     {

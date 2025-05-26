@@ -64,6 +64,7 @@ public class EnemyAI : MonoBehaviour
         else
         {
             Wandering();
+            soundEffect = true;
         }
     }
     private void Chase()
@@ -106,7 +107,6 @@ public class EnemyAI : MonoBehaviour
         }
         else if (visionState.IsPlayerBeingSeen == false && soundEffect == false)
         {
-            soundEffect = true;
         }
     }
 

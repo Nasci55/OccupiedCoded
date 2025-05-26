@@ -19,20 +19,28 @@ public class FInalScene : MonoBehaviour
     [SerializeField]
     private SpriteRenderer enemyAracnoid;
     [SerializeField, Header("Audio")]
-    private AudioSource firstAudio;
+    private AudioClip firstAudio;
     [SerializeField]
-    private AudioSource secondAudio;
+    private float volume1;
     [SerializeField]
-    private AudioSource thirdAudio;
+    private AudioClip secondAudio;
+    [SerializeField]
+    private float volume2;
+    [SerializeField]
+    private AudioClip thirdAudio;
+    [SerializeField]
+    private float volume3;
+
+    private bool finalSceneCoroutineStarted = false;
+    private bool finalSceneCoroutineMiddle = false;
+    private bool Audio = false;
 
     private HouseSafeAnim start;
     private bool thirdTime = true;
     private bool secondTime = true;
     private bool firstTime = true;
-    private float initialTimer;
     void Start()
     {
-        initialTimer = firstTimerToTurnOffLight;
         enemyAracnoid.enabled = false;
         start = FindFirstObjectByType<HouseSafeAnim>();
     }
@@ -42,22 +50,37 @@ public class FInalScene : MonoBehaviour
     {
         if (firstTime == true && secondTime == true && thirdTime == true && start.activateFinalScene)
         {
+            if (!finalSceneCoroutineStarted)
+            {
+                finalSceneCoroutineStarted = true;
+                StartCoroutine(StartFinalScene());
+            }
+            if (firstAudio != null && Audio == false)
+            {
+                SoundManager.instance.playSound(firstAudio, transform, volume1);
+                Audio = true;
+            }
             TurnOffAndOnLights();
         }
         if (firstTime == false &&  secondTime == true && thirdTime == true)
         {
-            enemyAracnoid.enabled = true;
+            
             SecondTurnOffAndOnLights();
+            if (!finalSceneCoroutineMiddle)
+            {
+                StartCoroutine(LightFlicker());
+                finalSceneCoroutineMiddle = true;
+            }
  
         }
         if (firstTime == false && secondTime == false && thirdTime == true)
         {
-            enemyAracnoid.enabled = false;
             ThirdTurnOffAndOnLights();
         }
         if (firstTime == false && secondTime == false && firstTime == false)
         {
 
+            enemyAracnoid.enabled = false;
             firstLight.enabled = true;
             secondLight.enabled = true; 
             RealEnemySpawn();
@@ -79,10 +102,6 @@ public class FInalScene : MonoBehaviour
             Debug.Log("CABOU");
             firstLight.enabled = !firstLight.enabled;
             secondLight.enabled = !secondLight.enabled;
-            if (firstAudio != null)
-            {
-                firstAudio.Play();
-            }
             enemyAracnoid.enabled = true;
             firstTime = false;
         }
@@ -96,11 +115,11 @@ public class FInalScene : MonoBehaviour
         if (secondTimerToTurnOffLight < 0 && secondTime == true)
         {
             Debug.Log("CABOU");
-            firstLight.enabled = !firstLight.enabled;
-            secondLight.enabled = !secondLight.enabled;
+            firstLight.enabled = false;
+            secondLight.enabled = false;
             if (secondAudio != null)
             {
-                secondAudio.Play();
+                SoundManager.instance.playSound(secondAudio, transform, volume2);
             }
             
             secondTime = false;
@@ -119,19 +138,14 @@ public class FInalScene : MonoBehaviour
             secondLight.enabled = !secondLight.enabled;
             if (thirdAudio != null)
             {
-                thirdAudio.Play();
+                SoundManager.instance.playSound(thirdAudio, transform, volume3);
             }
 
-
-            enemyAracnoid.enabled = false;
+            enemyAracnoid.enabled = !enemyAracnoid.enabled;
             thirdTime = false;
         }
     }
 
-    private void EnemySpawnAndDispawn()
-    {
-        enemyAracnoid.enabled = !enemyAracnoid.enabled;
-    }
 
     private void RealEnemySpawn()
     {
@@ -140,8 +154,24 @@ public class FInalScene : MonoBehaviour
 
     IEnumerator ChangeScene()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
 
         SceneTransition.TransitionToScene("FinalOfTheChapter");
+    }
+
+    IEnumerator StartFinalScene()
+    {
+        yield return new WaitForSeconds(1f);
+
+        firstLight.enabled = !firstLight.enabled;
+        secondLight.enabled = !secondLight.enabled;
+    }
+
+    IEnumerator LightFlicker()
+    {
+        yield return new WaitForSeconds(1f);
+
+        firstLight.enabled = !firstLight.enabled;
+        secondLight.enabled = !secondLight.enabled;
     }
 }
