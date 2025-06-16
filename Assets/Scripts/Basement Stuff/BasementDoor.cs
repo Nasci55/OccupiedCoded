@@ -6,27 +6,31 @@ public class BasementDoor : MonoBehaviour
     private BasementLock isUnlocked;
     [SerializeField]
     private Transform doorExit;
+    [SerializeField]
+    private GameObject lockSprite;
 
     private bool isPlayerInside;
     private Player player;
-    private SpriteRenderer lockSprite;
 
     private void Start()
     {
+        if (lockSprite == null)
+        {
+            Debug.LogWarning("No popUpVisual attached");
+        }
         player = FindFirstObjectByType<Player>();
  
-        lockSprite = GetComponentInChildren<SpriteRenderer>();
         
     }
     private void Update()
     {
         if (isUnlocked.IsLocked == true)
         {
-            lockSprite.enabled = false;
+            lockSprite.SetActive(false);
         }
         else
         {
-            lockSprite.enabled = true;
+            lockSprite.SetActive(true);
         }
 
         if (isPlayerInside == true
