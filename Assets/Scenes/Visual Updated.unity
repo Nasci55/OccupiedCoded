@@ -74980,7 +74980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0948ea1d9110df540b93adecb5ae4dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alarmSystem: {fileID: 1624675429}
+  alarmSystem: {fileID: 1680113065}
   signSprites:
   - {fileID: 3354366947788940190, guid: b80e2c9ab5eefad4fb3b9f22135cf22a, type: 3}
   - {fileID: 574605110, guid: b80e2c9ab5eefad4fb3b9f22135cf22a, type: 3}
