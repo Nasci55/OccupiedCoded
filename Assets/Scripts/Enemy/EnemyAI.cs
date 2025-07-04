@@ -20,6 +20,8 @@ public class EnemyAI : MonoBehaviour
 
 
 
+
+    
     [SerializeField]
     private Vector2 velocity;
 
@@ -35,12 +37,16 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private float volume = 0.1f;
 
+
+
+
     void Start()
     {
         player = FindFirstObjectByType<Player>();
         visionState = GetComponentInChildren<EnemyVisionState>();
         enemyAttack = GetComponent<EnemyAttack>();
         rb = GetComponent<Rigidbody2D>();
+
     }
 
 
@@ -63,11 +69,13 @@ public class EnemyAI : MonoBehaviour
         {
             Chase();
             EnemySeeingPlayerAudio();
+            
         }
         else
         {
             Wandering();
             soundEffect = true;
+          
         }
     }
     private void Chase()
@@ -79,6 +87,7 @@ public class EnemyAI : MonoBehaviour
 
                 currentVelocity = velocity * 0;
                 enemyAttack.Attack();
+
 
             }
             else

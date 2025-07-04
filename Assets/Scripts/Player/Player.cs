@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.VFX;
 using UnityEngine.XR;
@@ -11,6 +12,8 @@ public class Player : MonoBehaviour
     private Vector2        velocity;
     [SerializeField]
     private LayerMask      groundCheckLayers;
+    [SerializeField]
+    private Light2D         deathLight;
     
     [SerializeField, Header("Camera Points")]
     private Transform      cameraTarget1;
@@ -49,6 +52,8 @@ public class Player : MonoBehaviour
     private HouseSafeAnim finalScene;
     private bool startFinalScene;
 
+    public bool isPlayerDead {  get; private set; }
+
     void Start()
     {
         mainCamera = Camera.main;
@@ -61,6 +66,8 @@ public class Player : MonoBehaviour
         enemyCollider = enemy.GetComponent<Collider2D>();
         playerCollider = GetComponent<Collider2D>();
         finalScene = FindFirstObjectByType<HouseSafeAnim>();
+        isPlayerDead = false;
+        deathLight.enabled = false;
 
     }
 
@@ -184,6 +191,8 @@ public class Player : MonoBehaviour
         {
             velocity = new Vector2(0, 0);
             rb.linearVelocity = velocity;
+            deathLight.enabled = true;
+            isPlayerDead = true;
 
             Animator.SetTrigger("Die");
             StartCoroutine(RespawnCooldown());
