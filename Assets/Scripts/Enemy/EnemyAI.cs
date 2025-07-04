@@ -24,6 +24,9 @@ public class EnemyAI : MonoBehaviour
     private Vector2 velocity;
 
     [SerializeField]
+    private Vector2 ChaseVelocityMulti;
+
+    [SerializeField]
     private float maxDistance;
 
     [SerializeField, Header("Audio")]
@@ -84,13 +87,13 @@ public class EnemyAI : MonoBehaviour
                 if (playerPos.x < transform.position.x)
                 {
 
-                    currentVelocity = -velocity;
+                    currentVelocity = -velocity * ChaseVelocityMulti;
 
                 }
                 else if (playerPos.x > transform.position.x)
                 {
 
-                    currentVelocity = velocity;
+                    currentVelocity = velocity * ChaseVelocityMulti;
                 }
             }
             rb.linearVelocity = currentVelocity;
