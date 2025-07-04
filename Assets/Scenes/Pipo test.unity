@@ -72151,9 +72151,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5ee671e62cfa146aced01e66281ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1937834012}
+  playerPos: {fileID: 0}
   destination: {fileID: 1142168667}
   finalRoom: {fileID: 1989132248}
+  normalGlobalVolume: {fileID: 0}
+  ChaseGlobalVolume: {fileID: 0}
+  DeathGlobalVolume: {fileID: 0}
 --- !u!114 &1265403742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301732,6 +301735,7 @@ MonoBehaviour:
   groundCheckLayers:
     serializedVersion: 2
     m_Bits: 64
+  deathLight: {fileID: 0}
   cameraTarget1: {fileID: 1455457419}
   gravityScaling: 1
   jumpMaxDuration: 0.5
