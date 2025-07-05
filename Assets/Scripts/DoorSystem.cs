@@ -4,6 +4,7 @@ public class DoorSystem : MonoBehaviour
 {
 
     [SerializeField] private Transform Door;
+    [SerializeField] private GameObject DoorUI;
     private bool isPlayerInside;
     private Player player;
     private Camera camera;
@@ -11,15 +12,15 @@ public class DoorSystem : MonoBehaviour
 
     private void Start()
     {
-      player = FindFirstObjectByType<Player>();
-      camera = FindFirstObjectByType<Camera>();
+        player = FindFirstObjectByType<Player>();
+        camera = FindFirstObjectByType<Camera>();
     }
     private void Update()
     {
-        
+
         if (isPlayerInside && Input.GetKeyDown(KeyCode.W))
         {
-            player.transform.position = new Vector3 (Door.position.x, Door.position.y, player.transform.position.z);
+            player.transform.position = new Vector3(Door.position.x, Door.position.y, player.transform.position.z);
             camera.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 38, camera.transform.position.z);
         }
     }
@@ -37,12 +38,21 @@ public class DoorSystem : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collider)
     {
         Player findColl = collider.GetComponent<Player>();
-        if (findColl != null )
+        if (findColl != null)
         {
             isPlayerInside = false;
             //Debug.Log("Player left the area");
         }
         else { }
+    }
+
+    private void OnDoorOpen()
+    {
+        //Debug.Log("Door opened");
+        DoorUI.SetActive(true);
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        player.enabled=false;
     }
 
 

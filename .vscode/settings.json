@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Occupied_Full_Coded.sln"
+    "dotnet.defaultSolution": "OccupiedCoded.sln"
 }
