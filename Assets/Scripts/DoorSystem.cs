@@ -5,6 +5,7 @@ public class DoorSystem : MonoBehaviour
 
     [SerializeField] private Transform Door;
     [SerializeField] private GameObject DoorUI;
+    [SerializeField] private Animator DoorAnimator;
     private bool isPlayerInside;
     private Player player;
     private Camera camera;
@@ -14,6 +15,7 @@ public class DoorSystem : MonoBehaviour
     {
         player = FindFirstObjectByType<Player>();
         camera = FindFirstObjectByType<Camera>();
+        DoorAnimator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -50,9 +52,13 @@ public class DoorSystem : MonoBehaviour
     {
         //Debug.Log("Door opened");
         DoorUI.SetActive(true);
-        Time.timeScale = 0f;
-        Cursor.lockState = CursorLockMode.None;
-        player.enabled=false;
+        DoorAnimator.SetTrigger("Open");
+    }
+
+    public void OnDoorClose()
+    {
+        //Debug.Log("Door closed");
+        DoorUI.SetActive(false);
     }
 
 
