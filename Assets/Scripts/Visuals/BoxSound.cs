@@ -15,7 +15,7 @@ public class BoxSound : MonoBehaviour
         audioSource.enabled = true;
         if (collider.CompareTag("Player"))
         {
-            Debug.Log("Player entered the trigger");
+            //Debug.Log("Player entered the trigger");
             if (!audioSource.isPlaying)
             {
                 audioSource.Play();
@@ -27,7 +27,7 @@ public class BoxSound : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            Debug.Log("Player exited the trigger");
+            //Debug.Log("Player exited the trigger");
             Collider2D triggerCollider = GetComponent<Collider2D>();
                 if (triggerCollider != null)
                 {

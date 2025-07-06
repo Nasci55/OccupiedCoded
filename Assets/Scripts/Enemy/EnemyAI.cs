@@ -50,9 +50,13 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField]
     private Transform enemyHoldOffPoint;
+    [SerializeField]
+    private GameObject EnemySittingSprite;
 
     private bool activateEnemySeated;
-    private bool activateChase;
+    private bool activateChase = false;
+    private bool tpToCorridor = true;
+    private bool tpToHoldOff = true;
 
 
 
@@ -64,14 +68,16 @@ public class EnemyAI : MonoBehaviour
         visionState = GetComponentInChildren<EnemyVisionState>();
         enemyAttack = GetComponent<EnemyAttack>();
         rb = GetComponent<Rigidbody2D>();
-        activateChase = playerPassThroughCorridor;
+        playerPassThroughCorridor.enabled = false;
+        
     }
 
 
 
     private void Update()
     {
-
+        Debug.Log($"EnemySeated = {activateEnemySeated}     " +
+                  $"EnemyChasing = {activateChase}");
         if (rb.linearVelocity.x < 0)
         {
             transform.rotation = Quaternion.Euler(0.0f, 180.0f, 0.0f);
@@ -101,6 +107,8 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
+            playerPassThroughCorridor.enabled = true;
+            EnemySittingSprite.SetActive(true);
             ChaseScene();
         }
 
@@ -186,18 +194,32 @@ public class EnemyAI : MonoBehaviour
 
     private void ChaseScene()
     {
-        playerPassThroughCorridor.enabled = true;
         activateChase = playerPassThroughCorridor.didThePlayerPassThrough;
 
-        if (!activateChase)
+        if (activateChase == false)
         {
-            transform.position = enemyHoldOffPoint.position;
-            Wandering();
+            if (!tpToHoldOff)
+            {
+                rb.position = enemyHoldOffPoint.position;
+                Debug.Log("Adeus vou me embora");
+                tpToHoldOff = false;
+            }
         }
-        else
+        else if (activateChase)
         {
-            transform.position = startPointForEnemyChase.position;
+            EnemySittingSprite.SetActive(false);
+            if (tpToCorridor)
+            { 
+                rb.position = startPointForEnemyChase.position;
+                Debug.Log("Olá voltei");
+                tpToCorridor = false;
+            }
             Chase();
+            if (visionState.IsPlayerBeingSeen == true)
+            {
+                EnemySeeingPlayerAudio();
+            }
+
         }
     }
 

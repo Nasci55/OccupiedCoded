@@ -20,7 +20,7 @@ public class SoundON : MonoBehaviour
     {
         if (collider.gameObject == Player)
         {
-            Debug.Log("Player entered the trigger");
+            //Debug.Log("Player entered the trigger");
             if (OtherSound != null && OtherSound.enabled == false)
             {
                 audioSource.enabled = true;

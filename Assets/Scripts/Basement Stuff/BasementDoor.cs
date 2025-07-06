@@ -54,7 +54,7 @@ public class BasementDoor : MonoBehaviour
         if (playerCollider != null)
         {
             isPlayerInside = true;
-            Debug.Log("Player entered the area");
+            //Debug.Log("Player entered the area");
         }
     }
 
@@ -64,7 +64,7 @@ public class BasementDoor : MonoBehaviour
         if (playerCollider != null)
         {
             isPlayerInside = false;
-            Debug.Log("Player left the area");
+            //Debug.Log("Player left the area");
         }
     }
 

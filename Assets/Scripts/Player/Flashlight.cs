@@ -61,7 +61,7 @@ public class Flashlight : MonoBehaviour
                 light.GetComponent<Light2D>().enabled = true;
 
                 lightTurn = true;
-                Debug.Log("Turned Off");
+                //Debug.Log("Turned Off");
             }
         }
     }

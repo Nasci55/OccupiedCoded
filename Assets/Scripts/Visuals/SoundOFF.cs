@@ -11,7 +11,7 @@ public class SoundOFF : MonoBehaviour
     {
         if (collider.gameObject == Player)
         {
-            Debug.Log("Player entered the trigger");
+            //Debug.Log("Player entered the trigger");
             audioSource.enabled = false;
         }
         

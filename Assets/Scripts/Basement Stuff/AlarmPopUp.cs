@@ -16,7 +16,6 @@ public class AlarmPopUp : MonoBehaviour
     private void Update()
     {
         alarmLevel = alarmSystem.AlertLevel;
-        Debug.Log((int)alarmSystem.AlertLevel);
         
         if ((int)alarmLevel == 0)
         {
