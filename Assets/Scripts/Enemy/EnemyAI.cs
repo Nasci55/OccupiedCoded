@@ -21,7 +21,7 @@ public class EnemyAI : MonoBehaviour
 
 
 
-    
+
     [SerializeField]
     private Vector2 velocity;
 
@@ -37,6 +37,24 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private float volume = 0.1f;
 
+    [SerializeField, Header("Chase Scene")]
+    private bool testChaseScene;
+
+    [SerializeField]
+    private DidThePlayerPassThrough playerPassThroughInFamilyRoom;
+    [SerializeField]
+    private DidThePlayerPassThrough playerPassThroughCorridor;
+    [SerializeField]
+    private Transform startPointForEnemyChase;
+
+
+    [SerializeField]
+    private Transform enemyHoldOffPoint;
+
+    private bool activateEnemySeated;
+    private bool activateChase;
+
+
 
 
 
@@ -46,7 +64,7 @@ public class EnemyAI : MonoBehaviour
         visionState = GetComponentInChildren<EnemyVisionState>();
         enemyAttack = GetComponent<EnemyAttack>();
         rb = GetComponent<Rigidbody2D>();
-
+        activateChase = playerPassThroughCorridor;
     }
 
 
@@ -63,21 +81,34 @@ public class EnemyAI : MonoBehaviour
             transform.rotation = Quaternion.identity;
         }
 
+        activateEnemySeated = playerPassThroughInFamilyRoom.didThePlayerPassThrough;
 
         playerPos = player.transform.position;
-        if (visionState.IsPlayerBeingSeen == true)
+        if (!activateEnemySeated)
         {
-            Chase();
-            EnemySeeingPlayerAudio();
-            
+            if (visionState.IsPlayerBeingSeen == true)
+            {
+                Chase();
+                EnemySeeingPlayerAudio();
+
+            }
+            else
+            {
+                Wandering();
+                soundEffect = true;
+
+            }
         }
         else
         {
-            Wandering();
-            soundEffect = true;
-          
+            ChaseScene();
         }
+
+
     }
+
+
+
     private void Chase()
     {
         if (player != null)
@@ -149,9 +180,25 @@ public class EnemyAI : MonoBehaviour
         }
 
     }
-    
-    public float GetCurrentVelocity()
+
+    public float GetCurrentVelocity() => rb.linearVelocity.x;
+
+
+    private void ChaseScene()
     {
-        return rb.linearVelocity.x;
+        playerPassThroughCorridor.enabled = true;
+        activateChase = playerPassThroughCorridor.didThePlayerPassThrough;
+
+        if (!activateChase)
+        {
+            transform.position = enemyHoldOffPoint.position;
+            Wandering();
+        }
+        else
+        {
+            transform.position = startPointForEnemyChase.position;
+            Chase();
+        }
     }
+
 }
