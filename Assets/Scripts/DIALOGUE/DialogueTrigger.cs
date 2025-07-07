@@ -21,9 +21,12 @@ public class Dialogue
 {
     public List<DialogueLine> dialogueLines = new List<DialogueLine>();
 }
- 
+
 public class DialogueTrigger : MonoBehaviour
 {
+    [SerializeField]
+    private bool showDialogueOnlyOnce;
+ 
     public Dialogue dialogue;
  
     public void TriggerDialogue()
@@ -36,6 +39,10 @@ public class DialogueTrigger : MonoBehaviour
         if(collision.tag == "Player")
         {
             TriggerDialogue();
+            if (showDialogueOnlyOnce)
+            {
+                this.gameObject.GetComponent<Collider2D>().enabled = false;
+            }
         }
     }
 }
