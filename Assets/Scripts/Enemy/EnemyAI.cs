@@ -68,7 +68,7 @@ public class EnemyAI : MonoBehaviour
         visionState = GetComponentInChildren<EnemyVisionState>();
         enemyAttack = GetComponent<EnemyAttack>();
         rb = GetComponent<Rigidbody2D>();
-        playerPassThroughCorridor.enabled = false;
+        playerPassThroughCorridor.GetComponent<Collider2D>().enabled = false ;
         
     }
 
@@ -194,11 +194,12 @@ public class EnemyAI : MonoBehaviour
 
     private void ChaseScene()
     {
+        playerPassThroughCorridor.GetComponent<Collider2D>().enabled = true;
         activateChase = playerPassThroughCorridor.didThePlayerPassThrough;
 
         if (activateChase == false)
         {
-            if (!tpToHoldOff)
+            if (tpToHoldOff)
             {
                 rb.position = enemyHoldOffPoint.position;
                 Debug.Log("Adeus vou me embora");
@@ -208,6 +209,7 @@ public class EnemyAI : MonoBehaviour
         else if (activateChase)
         {
             EnemySittingSprite.SetActive(false);
+            ChaseVelocityMulti = Vector2.right * 3;
             if (tpToCorridor)
             { 
                 rb.position = startPointForEnemyChase.position;
