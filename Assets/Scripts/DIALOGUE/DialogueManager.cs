@@ -8,18 +8,29 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
  
-    public Image characterIcon;
-    public TextMeshProUGUI characterName;
-    public TextMeshProUGUI dialogueArea;
+    [SerializeField] private Image characterIcon;
+    [SerializeField] private TextMeshProUGUI characterName;
+    [SerializeField] private TextMeshProUGUI dialogueArea;
  
     private Queue<DialogueLine> lines;
-    
-    public bool isDialogueActive = false;
- 
-    public float typingSpeed = 0.2f;
- 
-    public Animator animator;
- 
+
+    [SerializeField]
+    private bool isDialogueActive = false;
+
+    [SerializeField]
+    private float typingSpeed = 0.2f;
+
+    [SerializeField]
+    private Animator animator;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            DisplayNextDialogueLine();
+        }
+    }
+
     private void Awake()
     {
         if (Instance == null)
