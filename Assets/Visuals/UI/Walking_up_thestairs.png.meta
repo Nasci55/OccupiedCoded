@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Walking_up_thestairs_0: 7902303436293827582
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
