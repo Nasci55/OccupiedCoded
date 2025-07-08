@@ -154,7 +154,7 @@ public class FInalScene : MonoBehaviour
 
     IEnumerator ChangeScene()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
 
         SceneTransition.TransitionToScene("FinalOfTheChapter");
     }
