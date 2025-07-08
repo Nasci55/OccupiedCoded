@@ -15,7 +15,6 @@ public class DoorSystem : MonoBehaviour
     {
         player = FindFirstObjectByType<Player>();
         camera = FindFirstObjectByType<Camera>();
-        DoorAnimator = GetComponent<Animator>();
     }
     private void Update()
     {
