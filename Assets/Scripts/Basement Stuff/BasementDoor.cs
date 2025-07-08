@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BasementDoor : MonoBehaviour
 {
@@ -8,6 +9,12 @@ public class BasementDoor : MonoBehaviour
     private Transform doorExit;
     [SerializeField]
     private GameObject lockSprite;
+
+    [SerializeField] private bool changeScene;
+    [SerializeField] private string sceneName;
+
+    [SerializeField] private GameObject DoorUI;
+    [SerializeField] private Animator DoorAnimator;
 
     private bool isPlayerInside;
     private Player player;
@@ -37,8 +44,14 @@ public class BasementDoor : MonoBehaviour
             && Input.GetKeyDown(KeyCode.W)
             && isUnlocked.IsLocked == true)
         {
-            player.transform.position = new Vector3(doorExit.position.x, doorExit.position.y, player.transform.position.z);
-
+            OnDoorOpen();
+            if (!changeScene)
+                player.transform.position = new Vector3(doorExit.position.x, doorExit.position.y, player.transform.position.z);
+            else
+            {
+                //player.transform.position = new Vector3(doorExit.position.x, doorExit.position.y, player.transform.position.z);
+                SceneManager.LoadScene($"{sceneName}");
+            }
         }
         else if (isPlayerInside == true
                  && Input.GetKeyDown(KeyCode.W)
@@ -46,7 +59,18 @@ public class BasementDoor : MonoBehaviour
         {
             Debug.Log("Nope");
         }
-        
+        if (isDoorOpening)
+        {
+            AnimatorStateInfo stateInfo = DoorAnimator.GetCurrentAnimatorStateInfo(0);
+            Debug.Log("Door animation state: " + stateInfo.normalizedTime);
+            if (stateInfo.normalizedTime >= 1.0f)
+            {
+                Debug.Log("Door animation completed");
+                DoorUI.SetActive(false);
+                isDoorOpening = false;
+            }
+        }
+
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -68,5 +92,14 @@ public class BasementDoor : MonoBehaviour
         }
     }
 
+    private bool isDoorOpening = false;
+    private void OnDoorOpen()
+    {
+        //Debug.Log("Door opened");
+        DoorUI.SetActive(true);
+        DoorAnimator.SetTrigger("OpenDoor");
+        isDoorOpening = true;
+
+    }
 
 }
