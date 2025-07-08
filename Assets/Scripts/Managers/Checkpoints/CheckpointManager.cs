@@ -40,12 +40,9 @@ public class CheckpointManager : MonoBehaviour
                     checkpoints.Push(checkpoint);
                     return;
                 }
-                else
-                {
-                    Debug.Log(checkpoints);
-                    checkpoints.Push(checkpoint);
-                }
             }
+             Debug.Log(checkpoints.ToString());
+             checkpoints.Push(checkpoint);
         }
         else
         {
