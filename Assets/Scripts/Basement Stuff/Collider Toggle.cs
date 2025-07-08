@@ -5,6 +5,7 @@ using UnityEngine;
 public class ColliderToggle : MonoBehaviour
 {
     [SerializeField] private bool isThisOnlyUsedOnce;
+    [SerializeField] private bool deactivateThisScriptButKeepCollider;
     [SerializeField] private bool startOn;
     [SerializeField] private Collider2D colliderToToggle;
 
@@ -14,9 +15,13 @@ public class ColliderToggle : MonoBehaviour
         {
              colliderToToggle.enabled = !startOn;
 
-             if (isThisOnlyUsedOnce)
+             if (isThisOnlyUsedOnce && !deactivateThisScriptButKeepCollider)
              {
                  this.gameObject.SetActive(false);
+             }
+             if (deactivateThisScriptButKeepCollider && !isThisOnlyUsedOnce)
+             {
+                this.gameObject.GetComponent<ColliderToggle>().enabled = false;
              }
         }
     }

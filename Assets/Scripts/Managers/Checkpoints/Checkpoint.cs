@@ -3,6 +3,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     private CheckpointManager checkpointManager;
+    [SerializeField] private bool onlyUsedOnce;
     private void Start()
     {
         checkpointManager = FindFirstObjectByType<CheckpointManager>();
@@ -13,6 +14,8 @@ public class Checkpoint : MonoBehaviour
         {
             checkpointManager.AddCheckpointToStack(this);
             Debug.Log("Checkpoint Entered");
+            if (onlyUsedOnce)
+                gameObject.GetComponent<Collider2D>().enabled = false;
         }
     }
 }

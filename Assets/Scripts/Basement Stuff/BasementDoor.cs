@@ -49,7 +49,7 @@ public class BasementDoor : MonoBehaviour
                 player.transform.position = new Vector3(doorExit.position.x, doorExit.position.y, player.transform.position.z);
             else
             {
-                player.transform.position = new Vector3(doorExit.position.x, doorExit.position.y, player.transform.position.z);
+                //player.transform.position = new Vector3(doorExit.position.x, doorExit.position.y, player.transform.position.z);
                 SceneManager.LoadScene($"{sceneName}");
             }
         }
