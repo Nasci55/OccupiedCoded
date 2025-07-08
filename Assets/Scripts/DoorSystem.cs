@@ -22,8 +22,20 @@ public class DoorSystem : MonoBehaviour
 
         if (isPlayerInside && Input.GetKeyDown(KeyCode.W))
         {
+            OnDoorOpen();
             player.transform.position = new Vector3(Door.position.x, Door.position.y, player.transform.position.z);
             camera.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 38, camera.transform.position.z);
+        }
+        if (isDoorOpening)
+        {
+            AnimatorStateInfo stateInfo = DoorAnimator.GetCurrentAnimatorStateInfo(0);
+            Debug.Log("Door animation state: " + stateInfo.normalizedTime);
+            if (stateInfo.normalizedTime >= 1.0f )
+            {
+                Debug.Log("Door animation completed");
+                DoorUI.SetActive(false);
+                isDoorOpening = false;
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D collider)
@@ -48,18 +60,14 @@ public class DoorSystem : MonoBehaviour
         else { }
     }
 
+    private bool isDoorOpening = false;
     private void OnDoorOpen()
     {
         //Debug.Log("Door opened");
         DoorUI.SetActive(true);
-        DoorAnimator.SetTrigger("Open");
+        DoorAnimator.SetTrigger("OpenDoor");
+        isDoorOpening = true;
+        
     }
-
-    public void OnDoorClose()
-    {
-        //Debug.Log("Door closed");
-        DoorUI.SetActive(false);
-    }
-
 
 }

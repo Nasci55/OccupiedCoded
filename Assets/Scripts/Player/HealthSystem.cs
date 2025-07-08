@@ -8,6 +8,7 @@ public class HealthSystem : MonoBehaviour
 {
     [SerializeField] private int MaxHealth = 2; 
     [SerializeField] private Animator animator;
+    [SerializeField] private string sceneName;
 
     private int health;
 
@@ -35,7 +36,7 @@ public class HealthSystem : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Debug.Log(SceneManager.GetActiveScene().name);
-        SceneTransition.TransitionToScene("Main Menu Restart");
+        SceneTransition.TransitionToScene($"{sceneName}");
     }
 
     public void Die()

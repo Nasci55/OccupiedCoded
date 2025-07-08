@@ -54,6 +54,8 @@ public class Player : MonoBehaviour
 
     public bool isPlayerDead {  get; private set; }
 
+    private CheckpointManager checkpointManager;
+
     void Start()
     {
         mainCamera = Camera.main;
@@ -68,6 +70,10 @@ public class Player : MonoBehaviour
         finalScene = FindFirstObjectByType<HouseSafeAnim>();
         isPlayerDead = false;
         deathLight.enabled = false;
+
+        checkpointManager = FindFirstObjectByType<CheckpointManager>();
+
+        transform.position = checkpointManager.LastCheckpointPosition();
 
     }
 
