@@ -45,7 +45,7 @@ public class DoorSystem : MonoBehaviour
             isPlayerInside = true;
             //Debug.Log("Player entered the area");
         }
-        else { }
+        
     }
 
     private void OnTriggerExit2D(Collider2D collider)
@@ -56,7 +56,7 @@ public class DoorSystem : MonoBehaviour
             isPlayerInside = false;
             //Debug.Log("Player left the area");
         }
-        else { }
+        
     }
 
     private bool isDoorOpening = false;
