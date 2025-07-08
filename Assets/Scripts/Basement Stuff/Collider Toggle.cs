@@ -7,6 +7,7 @@ public class ColliderToggle : MonoBehaviour
     [SerializeField] private bool isThisOnlyUsedOnce;
     [SerializeField] private bool deactivateThisScriptButKeepCollider;
     [SerializeField] private bool startOn;
+    [SerializeField] private bool deactivateEntireGameObject;
     [SerializeField] private Collider2D colliderToToggle;
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -23,6 +24,10 @@ public class ColliderToggle : MonoBehaviour
              {
                 this.gameObject.GetComponent<ColliderToggle>().enabled = false;
              }
+             if (deactivateEntireGameObject)
+            {
+                colliderToToggle.GetComponent<GameObject>().SetActive(false);
+            }
         }
     }
 }
