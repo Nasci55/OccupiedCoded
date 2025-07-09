@@ -4,7 +4,7 @@ public class DoorOnStart : MonoBehaviour
 {
     [SerializeField] private GameObject DoorUI;
     [SerializeField] private Animator DoorAnimator;
-
+    [SerializeField] private AudioSource DoorOpenSound;
 
     void Start()
     {
@@ -33,6 +33,7 @@ public class DoorOnStart : MonoBehaviour
         //Debug.Log("Door opened");
         DoorUI.SetActive(true);
         DoorAnimator.SetTrigger("OpenDoor");
+        DoorOpenSound.Play();
         isDoorOpening = true;
 
     }
