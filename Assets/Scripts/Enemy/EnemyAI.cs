@@ -31,6 +31,13 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private float maxDistance;
 
+    [SerializeField, Header("Wall Detector")]
+    private Transform wallDetector;
+    [SerializeField, Range(0, 5)]
+    private float wallDetectorRadius;
+    [SerializeField]
+    private LayerMask layersToTurnEnemy;
+
     [SerializeField, Header("Audio")]
     private AudioClip EnemyAudio;
 
@@ -52,6 +59,7 @@ public class EnemyAI : MonoBehaviour
     private Transform enemyHoldOffPoint;
     [SerializeField]
     private GameObject EnemySittingSprite;
+
 
     private bool activateEnemySeated;
     private bool activateChase = false;
@@ -76,8 +84,8 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log($"EnemySeated = {activateEnemySeated}     " +
-                  $"EnemyChasing = {activateChase}");
+        /*Debug.Log($"EnemySeated = {activateEnemySeated}     " +
+                  $"EnemyChasing = {activateChase}");*/
         if (rb.linearVelocity.x < 0)
         {
             transform.rotation = Quaternion.Euler(0.0f, 180.0f, 0.0f);
@@ -179,10 +187,20 @@ public class EnemyAI : MonoBehaviour
             if (randomDirection < 0)
             {
                 rb.linearVelocity = velocity / 1.25f * -1;
+                if(Physics2D.CircleCast(new Vector2(wallDetector.position.x, wallDetector.position.y), wallDetectorRadius, Vector2.one, layersToTurnEnemy))
+                {
+                    rb.linearVelocity = velocity / 1.25f * -1;
+                    Debug.Log("Bati Na parede");
+                }
             }
             else
             {
                 rb.linearVelocity = velocity / 1.25f * 1;
+                if (Physics2D.CircleCast(new Vector2(wallDetector.position.x, wallDetector.position.y), wallDetectorRadius, Vector2.one, layersToTurnEnemy))
+                {
+                    Debug.Log("Bati Na parede");
+                    rb.linearVelocity = velocity / 1.25f * -1;
+                }
             }
 
         }
@@ -225,4 +243,10 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(wallDetector.position, wallDetectorRadius);
+    }
 }
