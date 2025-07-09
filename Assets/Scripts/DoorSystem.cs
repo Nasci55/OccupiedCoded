@@ -6,6 +6,7 @@ public class DoorSystem : MonoBehaviour
     [SerializeField] private Transform Door;
     [SerializeField] private GameObject DoorUI;
     [SerializeField] private Animator DoorAnimator;
+    [SerializeField] private AudioSource DoorOpenSound;
     private bool isPlayerInside;
     private Player player;
     private Camera camera;
@@ -65,6 +66,7 @@ public class DoorSystem : MonoBehaviour
         //Debug.Log("Door opened");
         DoorUI.SetActive(true);
         DoorAnimator.SetTrigger("OpenDoor");
+        DoorOpenSound.Play();
         isDoorOpening = true;
         
     }
