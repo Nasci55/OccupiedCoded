@@ -8,6 +8,10 @@ public class CheckpointManager : MonoBehaviour
 
     [SerializeField]
     private Stack<Checkpoint> checkpoints = new Stack<Checkpoint>();
+    
+    [SerializeField]
+    private Checkpoint initialCheckpoint;
+
     public static CheckpointManager Instance => instance;
     private void Awake()
     {
@@ -25,8 +29,12 @@ public class CheckpointManager : MonoBehaviour
 
     public Vector3 LastCheckpointPosition()
     {
-        Checkpoint LastCheckpoint = checkpoints.Peek();
-        return LastCheckpoint.GetComponent<Transform>().position;
+        if (checkpoints.Count > 0)
+        {
+            Checkpoint LastCheckpoint = checkpoints.Peek();
+            return LastCheckpoint.GetComponent<Transform>().position;
+        }
+        return initialCheckpoint.GetComponent<Transform>().position;
     }
 
     public void AddCheckpointToStack(Checkpoint checkpoint)

@@ -30,6 +30,9 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField]
     private float maxDistance;
+    [SerializeField]
+    private float timerAfterSeeing = 2;
+    private float timerCount;
 
     [SerializeField, Header("Wall Detector")]
     private Transform wallDetector;
@@ -76,7 +79,7 @@ public class EnemyAI : MonoBehaviour
         visionState = GetComponentInChildren<EnemyVisionState>();
         enemyAttack = GetComponent<EnemyAttack>();
         rb = GetComponent<Rigidbody2D>();
-        playerPassThroughCorridor.GetComponent<Collider2D>().enabled = false ;
+        playerPassThroughCorridor.GetComponent<Collider2D>().enabled = false;
         
     }
 
@@ -104,12 +107,21 @@ public class EnemyAI : MonoBehaviour
             {
                 Chase();
                 EnemySeeingPlayerAudio();
-
+                timerCount = timerAfterSeeing;
             }
             else
             {
-                Wandering();
-                soundEffect = true;
+                timerCount -=Time.deltaTime;
+                if (timerCount > 0 && transform.position.x != playerPos.x)
+                {
+                    Chase();
+                    Debug.Log("Tou a chegar aqui");
+                }
+                else
+                { 
+                    Wandering();
+                    soundEffect = true;
+                }
 
             }
         }
@@ -119,6 +131,7 @@ public class EnemyAI : MonoBehaviour
             EnemySittingSprite.SetActive(true);
             ChaseScene();
         }
+        //Debug.Log(timerCount);
 
 
     }
@@ -134,8 +147,6 @@ public class EnemyAI : MonoBehaviour
 
                 currentVelocity = velocity * 0;
                 enemyAttack.Attack();
-
-
             }
             else
             {
@@ -173,34 +184,34 @@ public class EnemyAI : MonoBehaviour
     private void Wandering()
     {
         changeInDirectionCooldown -= Time.deltaTime;
-
+        bool touchingWall = Physics2D.OverlapCircle(wallDetector.position, wallDetectorRadius, layersToTurnEnemy);
 
 
         if (changeInDirectionCooldown <= 0)
         {
             randomDirection = Random.Range(-1f, 1f);
-            changeInDirectionCooldown = Random.Range(2f, 3f);
+            changeInDirectionCooldown = Random.Range(2f, 4f);
+            Debug.Log(changeInDirectionCooldown);
             //Debug.Log($"Cooldown : {changeInDirectionCooldown} \n velocity = {rb.linearVelocity}");
         }
         else
         {
-            if (randomDirection < 0)
+            if (randomDirection < -0.33f)
             {
                 rb.linearVelocity = velocity / 1.25f * -1;
-                if(Physics2D.CircleCast(new Vector2(wallDetector.position.x, wallDetector.position.y), wallDetectorRadius, Vector2.one, layersToTurnEnemy))
-                {
-                    rb.linearVelocity = velocity / 1.25f * -1;
-                    Debug.Log("Bati Na parede");
-                }
+
             }
-            else
+            else if (randomDirection > 0.33)
             {
                 rb.linearVelocity = velocity / 1.25f * 1;
-                if (Physics2D.CircleCast(new Vector2(wallDetector.position.x, wallDetector.position.y), wallDetectorRadius, Vector2.one, layersToTurnEnemy))
-                {
-                    Debug.Log("Bati Na parede");
-                    rb.linearVelocity = velocity / 1.25f * -1;
-                }
+            }
+            else if(-0.33f < randomDirection && randomDirection < 0.33f)
+            {
+                rb.linearVelocity = velocity / 1.25f * 0;
+            }
+            if (touchingWall)
+            {
+                changeInDirectionCooldown = -1;
             }
 
         }
