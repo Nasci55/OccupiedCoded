@@ -144,8 +144,8 @@ public class EnemyAI : MonoBehaviour
         {
             if (playerPos.x - transform.position.x < maxDistance && playerPos.x - transform.position.x > -maxDistance)
             {
-
-                currentVelocity = velocity * 0;
+                Vector3 playerDirection = (playerPos - transform.position).normalized;
+                currentVelocity = velocity * playerDirection.x * 0.001f;
                 enemyAttack.Attack();
             }
             else

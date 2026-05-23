@@ -14,11 +14,7 @@ public class EnemyAttack : MonoBehaviour
         attackCollider = TAG_AttackArea.gameObject;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     public void Attack()
     {
         Debug.Log(attackCollider);
@@ -29,12 +25,12 @@ public class EnemyAttack : MonoBehaviour
             Attacking();
             Debug.Log("Enemy is attacking");
         }
-        else if (timer <= 5 && timer >= 0.01)
+        else if (timer <= 1 && timer >= 0.01)
         {
             StopAttacking();
             Debug.Log("Enemy attack is on cooldown");
         }
-        else if (timer >= 5)
+        else if (timer >= 1)
         {
             timer = -0.1f; 
 
