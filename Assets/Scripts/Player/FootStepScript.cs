@@ -6,6 +6,9 @@ public class FootStepScript : MonoBehaviour
     private Animator mAnim;
     private AudioSource audioSource;
 
+    [SerializeField]
+    private AudioClip[] footStepsClips;
+
     private void Start()
     {
         mAnim = GetComponent<Animator>();
@@ -16,10 +19,11 @@ public class FootStepScript : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    private void Step()
+    public void Step()
     {   
         if (mAnim.GetBool("IsGrounded"))
         {
+            audioSource.clip = footStepsClips[Random.Range(0, footStepsClips.Length)];
             audioSource.Play();
         }
     }
