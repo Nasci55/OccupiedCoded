@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -7,8 +8,11 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField]
     private GameObject flashlight;
+    [SerializeField]
+    private int mainMenuSceneIndex;
 
     private bool isPaused;
+
     void Start()
     {
         pauseMenuUI.SetActive(false);
@@ -45,5 +49,10 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
         flashlight.SetActive(true);
+    }
+
+    public void OnQuitGame()
+    {
+        SceneManager.LoadScene(mainMenuSceneIndex);
     }
 }
