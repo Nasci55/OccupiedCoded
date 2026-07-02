@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class FootStepScript : MonoBehaviour
 {
@@ -9,9 +10,13 @@ public class FootStepScript : MonoBehaviour
     [SerializeField]
     private AudioClip[] footStepsClips;
 
+
+    private Queue<AudioClip> audioClipInCooldown;
+
     private void Start()
     {
         mAnim = GetComponent<Animator>();
+        audioClipInCooldown = new Queue<AudioClip>();
     }
 
     private void Awake()
@@ -23,7 +28,20 @@ public class FootStepScript : MonoBehaviour
     {   
         if (mAnim.GetBool("IsGrounded"))
         {
-            audioSource.clip = footStepsClips[Random.Range(0, footStepsClips.Length)];
+            AudioClip currentClip = footStepsClips[Random.Range(0, footStepsClips.Length)];
+
+            while (audioClipInCooldown.Contains(currentClip))
+            {
+                currentClip = footStepsClips[Random.Range(0, footStepsClips.Length)];
+            }
+            
+            audioClipInCooldown.Enqueue(currentClip);
+
+            if (audioClipInCooldown.Count >= 2) //MagicNumber
+                audioClipInCooldown.Dequeue();
+
+            audioSource.clip = currentClip;
+
             audioSource.Play();
         }
     }
