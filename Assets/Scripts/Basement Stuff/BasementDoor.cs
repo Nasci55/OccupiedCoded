@@ -16,6 +16,9 @@ public class BasementDoor : MonoBehaviour
     [SerializeField] private GameObject DoorUI;
     [SerializeField] private Animator DoorAnimator;
 
+    //This serves for the player go back from the basement without changing scene
+    [SerializeField] private bool specialCondition;
+
     private bool isPlayerInside;
     private Player player;
 
@@ -26,12 +29,12 @@ public class BasementDoor : MonoBehaviour
             Debug.LogWarning("No popUpVisual attached");
         }
         player = FindFirstObjectByType<Player>();
- 
-        
+
+
     }
     private void Update()
     {
-        if (isUnlocked.IsLocked == true)
+        if (isUnlocked.IsLocked == true || specialCondition)
         {
             lockSprite.SetActive(false);
         }
@@ -57,8 +60,14 @@ public class BasementDoor : MonoBehaviour
                  && Input.GetKeyDown(KeyCode.W)
                  && isUnlocked.IsLocked == false)
         {
-            Debug.Log("Nope");
+            if (changeScene && specialCondition)
+            {
+                OnDoorOpen();
+                player.transform.position = new Vector3(doorExit.position.x, doorExit.position.y, player.transform.position.z);
+            }
         }
+
+
         if (isDoorOpening)
         {
             AnimatorStateInfo stateInfo = DoorAnimator.GetCurrentAnimatorStateInfo(0);

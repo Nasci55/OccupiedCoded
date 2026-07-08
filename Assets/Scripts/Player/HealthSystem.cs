@@ -26,7 +26,7 @@ public class HealthSystem : MonoBehaviour
         }
         else if (health <= 0)
         {
-
+            GetComponent<Collider>().enabled = false;
         }
     }
 
