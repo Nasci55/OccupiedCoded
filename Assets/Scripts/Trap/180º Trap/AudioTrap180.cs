@@ -31,9 +31,9 @@ public class Audio180Trap : MonoBehaviour
         }
 
     }
-    private IEnumerator delay()
+    public IEnumerator delay()
     {
-        yield return new WaitForSeconds(2f); 
         SoundManager.instance.playSound(audioClipGoingUp, transform, 1f);
+        yield return null;
     }
 }

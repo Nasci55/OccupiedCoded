@@ -12,19 +12,21 @@ public class Trap180 : MonoBehaviour
     private float angleToStop = 270;
     bool activate = true;
 
+    Animator animator;
 
 
     private float rotation;
     private int damage = 1;
     private void Start()
     {
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
         if (trigger180.isActivated() == true)
         {
-            StartCoroutine(TrapActivating());
+            animator.enabled = true;
         }
 
     }
