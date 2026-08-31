@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
- 
+using UnityEngine.Events;
+
 [System.Serializable]
 public class DialogueCharacter
 {
@@ -28,10 +29,13 @@ public class DialogueTrigger : MonoBehaviour
     private bool showDialogueOnlyOnce;
  
     public Dialogue dialogue;
- 
+
+    public UnityEvent OnDialogueTriggered;
+
     public void TriggerDialogue()
     {
         DialogueManager.Instance.StartDialogue(dialogue);
+        OnDialogueTriggered?.Invoke();
     }
  
     private void OnTriggerEnter2D(Collider2D collision)
