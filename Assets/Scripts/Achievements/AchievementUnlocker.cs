@@ -4,12 +4,18 @@ using UnityEngine.Events;
 public class AchievementUnlocker : MonoBehaviour
 {
     [SerializeField]
-    private eAchievement achievement;
+    private SteamManager steamManager;
 
-    public UnityEvent<string> OnAchieved;
+    [SerializeField]
+    private string achievement;
+
+    private void Start()
+    {
+         steamManager = FindFirstObjectByType<SteamManager>();
+    }
 
     public void UnlockAchievement()
     {
-        OnAchieved?.Invoke(achievement.ToString());
+        steamManager.UnlockAchievement(achievement);
     }
 }

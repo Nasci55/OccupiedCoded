@@ -5,6 +5,11 @@ public class HouseSafeAnim : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
+    [SerializeField]
+    private SteamManager steamManager;
+    [SerializeField]
+    private string achievementName;
+
     public bool activateFinalScene {  get; private set; }
     private FinalVault FinalVault;
 
@@ -40,6 +45,8 @@ public class HouseSafeAnim : MonoBehaviour
         {
             Debug.Log("E key pressed");
             animator.SetBool("IsOpen", true);
+            steamManager.UnlockAchievement(achievementName);
+            Debug.Log($"ACHIEVEMENT UNLOCKED----------------------{achievementName}");
             activateFinalScene = true;
         }
     }
