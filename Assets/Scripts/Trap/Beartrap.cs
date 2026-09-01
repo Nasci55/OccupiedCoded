@@ -6,6 +6,7 @@ public class Beartrap : MonoBehaviour
 {
     [SerializeField] private int damage = 1;
     [SerializeField] private AudioClip audioClip;
+    [SerializeField] private string trapId = "Beartrap";
     private void OnTriggerStay2D(Collider2D collider)
     {
         HealthSystem healthSystem = collider.GetComponentInParent<HealthSystem>();
@@ -17,7 +18,7 @@ public class Beartrap : MonoBehaviour
         {
             SoundManager.instance.playSound(audioClip, transform, 1f);
             //Debug.Log($"{name} collided with {healthSystem.name}");
-            healthSystem.DealDamage(damage);
+            healthSystem.DealDamage(damage, trapId);
             Debug.Log($"The player Health now is {healthSystem.getHealth}");
             Destroy(gameObject.GetComponent<BoxCollider2D>());
             Destroy(gameObject, audioClip.length);

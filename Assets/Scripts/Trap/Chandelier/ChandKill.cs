@@ -5,8 +5,9 @@ public class ChandKill : MonoBehaviour
     [SerializeField] private int damage = 1;
     [SerializeField]
     private AudioClip audioClip;
-    [SerializeField] 
+    [SerializeField]
     private AudioClip audioClipHitting;
+    [SerializeField] private string trapId = "Chandelier";
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -21,7 +22,7 @@ public class ChandKill : MonoBehaviour
         else
         {
             SoundManager.instance.playSound(audioClipHitting, transform, 0.5f);
-            healthSystem.DealDamage(damage);
+            healthSystem.DealDamage(damage, trapId);
             Destroy(gameObject.GetComponent<BoxCollider2D>());
             Destroy(gameObject.GetComponent<SpriteRenderer>());
             Destroy(gameObject, audioClipHitting.length);

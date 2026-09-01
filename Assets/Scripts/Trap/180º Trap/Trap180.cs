@@ -10,6 +10,8 @@ public class Trap180 : MonoBehaviour
     private float rotateSpeed;
     [SerializeField, Description("0 - 360")]
     private float angleToStop = 270;
+    [SerializeField]
+    private string trapId = "Trap180";
     bool activate = true;
 
     Animator animator;
@@ -67,7 +69,7 @@ public class Trap180 : MonoBehaviour
         if (healthSystem != null)
         {
             Debug.Log($"{name} collided with {healthSystem.name}");
-            healthSystem.DealDamage(damage);
+            healthSystem.DealDamage(damage, trapId);
             Debug.Log($"The player Health now is {healthSystem.getHealth}");    
         }
         else
