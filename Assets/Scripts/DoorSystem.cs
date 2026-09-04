@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DoorSystem : MonoBehaviour
@@ -7,6 +8,8 @@ public class DoorSystem : MonoBehaviour
     [SerializeField] private GameObject DoorUI;
     [SerializeField] private Animator DoorAnimator;
     [SerializeField] private AudioSource DoorOpenSound;
+    [SerializeField] private TAG_PlayerLoadingArea playerLoadingArea;
+    [SerializeField] private float timeToAnimationEnd = 1.4f;
     private bool isPlayerInside;
     private Player player;
     private Camera camera;
@@ -16,6 +19,7 @@ public class DoorSystem : MonoBehaviour
     {
         player = FindFirstObjectByType<Player>();
         camera = FindFirstObjectByType<Camera>();
+        playerLoadingArea = FindFirstObjectByType<TAG_PlayerLoadingArea>();
     }
     private void Update()
     {
@@ -23,8 +27,8 @@ public class DoorSystem : MonoBehaviour
         if (isPlayerInside && Input.GetKeyDown(KeyCode.W))
         {
             OnDoorOpen();
-            player.transform.position = new Vector3(Door.position.x, Door.position.y, player.transform.position.z);
-            camera.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 38, camera.transform.position.z);
+            player.transform.position = playerLoadingArea.transform.position;
+            StartCoroutine(TeleportPlayerToCorrectPosition());
         }
         if (isDoorOpening)
         {
@@ -69,6 +73,13 @@ public class DoorSystem : MonoBehaviour
         DoorOpenSound.Play();
         isDoorOpening = true;
         
+    }
+
+    public IEnumerator TeleportPlayerToCorrectPosition()
+    {
+        yield return new WaitForSeconds(timeToAnimationEnd);
+        player.transform.position = new Vector3(Door.position.x, Door.position.y, player.transform.position.z);
+        camera.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 38, camera.transform.position.z);
     }
 
 }
